@@ -1,0 +1,413 @@
+fileFormatVersion: 2
+guid: ffd54106273c93d4dad0dc2b76b3aea9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1868395337412966109
+    second: corazon - pierde_0
+  - first:
+      213: 4527182304061296899
+    second: corazon - pierde_1
+  - first:
+      213: 761090253727694906
+    second: corazon - pierde_2
+  - first:
+      213: 3214790299317708553
+    second: corazon - pierde_3
+  - first:
+      213: -6167114459332266757
+    second: corazon - pierde_4
+  - first:
+      213: 6368344116290670670
+    second: corazon - pierde_5
+  - first:
+      213: 8937975308238530598
+    second: corazon - pierde_6
+  - first:
+      213: -6399409390328107116
+    second: corazon - pierde_7
+  - first:
+      213: -4719970435984746116
+    second: corazon - pierde_8
+  - first:
+      213: 4663877165811945175
+    second: corazon - pierde_9
+  - first:
+      213: -9054592285717788982
+    second: corazon - pierde_10
+  - first:
+      213: 5030625251031103785
+    second: corazon - pierde_11
+  - first:
+      213: 8453204354771331471
+    second: corazon - pierde_12
+  - first:
+      213: 3041204854060273101
+    second: corazon - pierde_13
+  - first:
+      213: -3390574112756225642
+    second: corazon - pierde_14
+  - first:
+      213: -6552705218190969827
+    second: corazon - pierde_15
+  - first:
+      213: -4722179640157329927
+    second: corazon - pierde_16
+  - first:
+      213: 8669495463254175846
+    second: corazon - pierde_17
+  - first:
+      213: 4086558695922748162
+    second: corazon - pierde_18
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: corazon - pierde_0
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 10
+        width: 42
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd6fe7209afdde910800000000000000
+      internalID: 1868395337412966109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: corazon - pierde_1
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 10
+        width: 46
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 301120bc158c3de30800000000000000
+      internalID: 4527182304061296899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: corazon - pierde_2
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 10
+        width: 46
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a308377ad8fef8a00800000000000000
+      internalID: 761090253727694906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: corazon - pierde_3
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 11
+        width: 46
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 907243a9eba3d9c20800000000000000
+      internalID: 3214790299317708553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: corazon - pierde_4
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 11
+        width: 51
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf43352f2120a6aa0800000000000000
+      internalID: -6167114459332266757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: corazon - pierde_5
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 11
+        width: 51
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4054fa9b37e06850800000000000000
+      internalID: 6368344116290670670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: corazon - pierde_6
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 12
+        width: 51
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62825caff211a0c70800000000000000
+      internalID: 8937975308238530598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: corazon - pierde_11
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 15
+        width: 51
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 929b1dd230f50d540800000000000000
+      internalID: 5030625251031103785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: corazon - pierde_12
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 32
+        width: 27
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f892eebd290df4570800000000000000
+      internalID: 8453204354771331471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: corazon - pierde_7
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 30
+        width: 17
+        height: 15
+      alignment: 9
+      pivot: {x: 0.48424575, y: 0.47321752}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b93b9490993d4704ebc393b8063ec1a1
+      internalID: -6399409390328107116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: bec5972cbb5379647bfa53a7f0c1a0f5
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      corazon - pierde_0: 1868395337412966109
+      corazon - pierde_1: 4527182304061296899
+      corazon - pierde_10: -9054592285717788982
+      corazon - pierde_11: 5030625251031103785
+      corazon - pierde_12: 8453204354771331471
+      corazon - pierde_13: 3041204854060273101
+      corazon - pierde_14: -3390574112756225642
+      corazon - pierde_15: -6552705218190969827
+      corazon - pierde_16: -4722179640157329927
+      corazon - pierde_17: 8669495463254175846
+      corazon - pierde_18: 4086558695922748162
+      corazon - pierde_2: 761090253727694906
+      corazon - pierde_3: 3214790299317708553
+      corazon - pierde_4: -6167114459332266757
+      corazon - pierde_5: 6368344116290670670
+      corazon - pierde_6: 8937975308238530598
+      corazon - pierde_7: -6399409390328107116
+      corazon - pierde_8: -4719970435984746116
+      corazon - pierde_9: 4663877165811945175
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

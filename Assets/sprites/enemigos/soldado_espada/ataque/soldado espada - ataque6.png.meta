@@ -1,0 +1,403 @@
+fileFormatVersion: 2
+guid: 53a0162578032c440a8a40903908c57f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1226000910873506157
+    second: soldado espada - ataque6_0
+  - first:
+      213: -7079568320730893593
+    second: soldado espada - ataque6_1
+  - first:
+      213: -8995146843516681312
+    second: soldado espada - ataque6_2
+  - first:
+      213: -776536310738375266
+    second: soldado espada - ataque6_3
+  - first:
+      213: 297777712818386383
+    second: soldado espada - ataque6_4
+  - first:
+      213: -1468357873733704938
+    second: soldado espada - ataque6_5
+  - first:
+      213: -94637766399847690
+    second: soldado espada - ataque6_6
+  - first:
+      213: 1655468030026662370
+    second: soldado espada - ataque6_7
+  - first:
+      213: -8362322199141798345
+    second: soldado espada - ataque6_8
+  - first:
+      213: -3479179724948443713
+    second: soldado espada - ataque6_9
+  - first:
+      213: -7133866998565023501
+    second: soldado espada - ataque6_10
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: soldado espada - ataque6_0
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 1019
+        width: 102
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d61bbe23551a30110800000000000000
+      internalID: 1226000910873506157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldado espada - ataque6_1
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 319
+        width: 452
+        height: 742
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e2f9b71f1250cd90800000000000000
+      internalID: -7079568320730893593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldado espada - ataque6_2
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 939
+        width: 62
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a346b9aa91da2380800000000000000
+      internalID: -8995146843516681312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldado espada - ataque6_3
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 899
+        width: 52
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9d2f33f6503935f0800000000000000
+      internalID: -776536310738375266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldado espada - ataque6_4
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 859
+        width: 42
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc5719a804be12400800000000000000
+      internalID: 297777712818386383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldado espada - ataque6_5
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 809
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61364f42b485f9be0800000000000000
+      internalID: -1468357873733704938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldado espada - ataque6_6
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 779
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f2966fe377cfaef0800000000000000
+      internalID: -94637766399847690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldado espada - ataque6_7
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 789
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e141caf66769f610800000000000000
+      internalID: 1655468030026662370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldado espada - ataque6_8
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 659
+        width: 122
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73e2acee34013fb80800000000000000
+      internalID: -8362322199141798345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldado espada - ataque6_9
+      rect:
+        serializedVersion: 2
+        x: 909
+        y: 629
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbde4b0497877bfc0800000000000000
+      internalID: -3479179724948443713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldado espada - ataque6_10
+      rect:
+        serializedVersion: 2
+        x: 929
+        y: 629
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f056abf2c96ffc90800000000000000
+      internalID: -7133866998565023501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      soldado espada - ataque6_0: 1226000910873506157
+      soldado espada - ataque6_1: -7079568320730893593
+      soldado espada - ataque6_10: -7133866998565023501
+      soldado espada - ataque6_2: -8995146843516681312
+      soldado espada - ataque6_3: -776536310738375266
+      soldado espada - ataque6_4: 297777712818386383
+      soldado espada - ataque6_5: -1468357873733704938
+      soldado espada - ataque6_6: -94637766399847690
+      soldado espada - ataque6_7: 1655468030026662370
+      soldado espada - ataque6_8: -8362322199141798345
+      soldado espada - ataque6_9: -3479179724948443713
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

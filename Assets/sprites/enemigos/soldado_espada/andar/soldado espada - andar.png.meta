@@ -1,0 +1,481 @@
+fileFormatVersion: 2
+guid: 6792cfca4f2c0a24791343215a14212a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 982818540302630204
+    second: soldado espada - andar_0
+  - first:
+      213: 2614400903071779849
+    second: soldado espada - andar_1
+  - first:
+      213: -2075168451116529288
+    second: soldado espada - andar_2
+  - first:
+      213: -4197558201729592075
+    second: soldado espada - andar_3
+  - first:
+      213: -5436268179546894964
+    second: soldado espada - andar_4
+  - first:
+      213: -8724632057737388632
+    second: soldado espada - andar_5
+  - first:
+      213: -1854332309233492485
+    second: soldado espada - andar_6
+  - first:
+      213: 1877696567909743969
+    second: soldado espada - andar_7
+  - first:
+      213: 8890524524066244151
+    second: soldado espada - andar_8
+  - first:
+      213: 4882187080842272253
+    second: soldado espada - andar_9
+  - first:
+      213: 7585652692596470132
+    second: soldado espada - andar_10
+  - first:
+      213: 575619881126697034
+    second: soldado espada - andar_11
+  - first:
+      213: 8121054388783332267
+    second: soldado espada - andar_12
+  - first:
+      213: -4105695230314411808
+    second: soldado espada - andar_13
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 159
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: soldado espada - andar_0
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 55
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3df765514ca3ad00800000000000000
+      internalID: 982818540302630204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldado espada - andar_1
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 52
+        width: 65
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90ccd0805c7384420800000000000000
+      internalID: 2614400903071779849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldado espada - andar_2
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 52
+        width: 64
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8790a16d9458333e0800000000000000
+      internalID: -2075168451116529288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldado espada - andar_3
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 49
+        width: 64
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f451ed1e074fb5c0800000000000000
+      internalID: -4197558201729592075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldado espada - andar_4
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 49
+        width: 64
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8d095ea4ee7e84b0800000000000000
+      internalID: -5436268179546894964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldado espada - andar_5
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 49
+        width: 65
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8add39a5e51ebe680800000000000000
+      internalID: -8724632057737388632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldado espada - andar_6
+      rect:
+        serializedVersion: 2
+        x: 1111
+        y: 48
+        width: 66
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfd9b94e6961446e0800000000000000
+      internalID: -1854332309233492485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldado espada - andar_7
+      rect:
+        serializedVersion: 2
+        x: 1287
+        y: 48
+        width: 64
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16dfa3e741bee0a10800000000000000
+      internalID: 1877696567909743969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldado espada - andar_8
+      rect:
+        serializedVersion: 2
+        x: 1463
+        y: 49
+        width: 62
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7360edb53fc716b70800000000000000
+      internalID: 8890524524066244151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldado espada - andar_9
+      rect:
+        serializedVersion: 2
+        x: 1639
+        y: 49
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfdda98784301c340800000000000000
+      internalID: 4882187080842272253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldado espada - andar_10
+      rect:
+        serializedVersion: 2
+        x: 1815
+        y: 49
+        width: 64
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 471b2b3fee6a54960800000000000000
+      internalID: 7585652692596470132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldado espada - andar_11
+      rect:
+        serializedVersion: 2
+        x: 1991
+        y: 52
+        width: 65
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a48953c6b330df700800000000000000
+      internalID: 575619881126697034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldado espada - andar_12
+      rect:
+        serializedVersion: 2
+        x: 2167
+        y: 52
+        width: 66
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: babbe0d70f7c3b070800000000000000
+      internalID: 8121054388783332267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldado espada - andar_13
+      rect:
+        serializedVersion: 2
+        x: 2343
+        y: 55
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e80811e0f3a507c0800000000000000
+      internalID: -4105695230314411808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      soldado espada - andar_0: 982818540302630204
+      soldado espada - andar_1: 2614400903071779849
+      soldado espada - andar_10: 7585652692596470132
+      soldado espada - andar_11: 575619881126697034
+      soldado espada - andar_12: 8121054388783332267
+      soldado espada - andar_13: -4105695230314411808
+      soldado espada - andar_2: -2075168451116529288
+      soldado espada - andar_3: -4197558201729592075
+      soldado espada - andar_4: -5436268179546894964
+      soldado espada - andar_5: -8724632057737388632
+      soldado espada - andar_6: -1854332309233492485
+      soldado espada - andar_7: 1877696567909743969
+      soldado espada - andar_8: 8890524524066244151
+      soldado espada - andar_9: 4882187080842272253
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

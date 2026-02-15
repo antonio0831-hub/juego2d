@@ -1,0 +1,597 @@
+fileFormatVersion: 2
+guid: 6375d432e4e2c364caf59edb7fbb374b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4584158409389291386
+    second: "constructo peque\xF1o - muerte_0"
+  - first:
+      213: -3525622557963715044
+    second: "constructo peque\xF1o - muerte_1"
+  - first:
+      213: 5083298316786574461
+    second: "constructo peque\xF1o - muerte_2"
+  - first:
+      213: -5846268306300556177
+    second: "constructo peque\xF1o - muerte_3"
+  - first:
+      213: -7604646910177079914
+    second: "constructo peque\xF1o - muerte_4"
+  - first:
+      213: -562654303084849863
+    second: "constructo peque\xF1o - muerte_5"
+  - first:
+      213: -5102751345134315130
+    second: "constructo peque\xF1o - muerte_6"
+  - first:
+      213: 2135504637771259244
+    second: "constructo peque\xF1o - muerte_7"
+  - first:
+      213: -7109517816460469747
+    second: "constructo peque\xF1o - muerte_8"
+  - first:
+      213: -2154255412169548148
+    second: "constructo peque\xF1o - muerte_9"
+  - first:
+      213: 7595981941741023752
+    second: "constructo peque\xF1o - muerte_10"
+  - first:
+      213: 6840020876565555448
+    second: "constructo peque\xF1o - muerte_11"
+  - first:
+      213: 6609168965138397674
+    second: "constructo peque\xF1o - muerte_12"
+  - first:
+      213: -4800712970840382996
+    second: "constructo peque\xF1o - muerte_13"
+  - first:
+      213: 6489494967068287302
+    second: "constructo peque\xF1o - muerte_14"
+  - first:
+      213: -2787720098488557535
+    second: "constructo peque\xF1o - muerte_15"
+  - first:
+      213: 331971259661658805
+    second: "constructo peque\xF1o - muerte_16"
+  - first:
+      213: -8253131541223656978
+    second: "constructo peque\xF1o - muerte_17"
+  - first:
+      213: -5349488882876889901
+    second: "constructo peque\xF1o - muerte_18"
+  - first:
+      213: -5128090658976564923
+    second: "constructo peque\xF1o - muerte_19"
+  - first:
+      213: 8685405735942149595
+    second: "constructo peque\xF1o - muerte_20"
+  - first:
+      213: -3899981704862898762
+    second: "constructo peque\xF1o - muerte_21"
+  - first:
+      213: 2640187564117360920
+    second: "constructo peque\xF1o - muerte_22"
+  - first:
+      213: -2767169791157181796
+    second: "constructo peque\xF1o - muerte_23"
+  - first:
+      213: 5778534027592047354
+    second: "constructo peque\xF1o - muerte_24"
+  - first:
+      213: 4736733158281035939
+    second: "constructo peque\xF1o - muerte_25"
+  - first:
+      213: -351889255509310872
+    second: "constructo peque\xF1o - muerte_26"
+  - first:
+      213: 8294603447446232772
+    second: "constructo peque\xF1o - muerte_27"
+  - first:
+      213: 3206948091627952019
+    second: "constructo peque\xF1o - muerte_28"
+  - first:
+      213: 7066508878624490681
+    second: "constructo peque\xF1o - muerte_29"
+  - first:
+      213: -4240377441659312787
+    second: "constructo peque\xF1o - muerte_30"
+  - first:
+      213: 3784488538931611128
+    second: "constructo peque\xF1o - muerte_31"
+  - first:
+      213: -1210411716552507859
+    second: "constructo peque\xF1o - muerte_32"
+  - first:
+      213: 9031119598388440072
+    second: "constructo peque\xF1o - muerte_33"
+  - first:
+      213: -4235666604875701066
+    second: "constructo peque\xF1o - muerte_34"
+  - first:
+      213: -8402990602464590548
+    second: "constructo peque\xF1o - muerte_35"
+  - first:
+      213: -2533573864827273363
+    second: "constructo peque\xF1o - muerte_36"
+  - first:
+      213: 7956968107390068470
+    second: "constructo peque\xF1o - muerte_37"
+  - first:
+      213: 309467047802777609
+    second: "constructo peque\xF1o - muerte_38"
+  - first:
+      213: 7366935275667486673
+    second: "constructo peque\xF1o - muerte_39"
+  - first:
+      213: 7952963254519548675
+    second: "constructo peque\xF1o - muerte_40"
+  - first:
+      213: 7517175274299836049
+    second: "constructo peque\xF1o - muerte_41"
+  - first:
+      213: -4334431773674256315
+    second: "constructo peque\xF1o - muerte_42"
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "constructo peque\xF1o - muerte_0"
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 0
+        width: 60
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6884b3ee63cc160c0800000000000000
+      internalID: -4584158409389291386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "constructo peque\xF1o - muerte_1"
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 0
+        width: 60
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1ef77c86f8721fc0800000000000000
+      internalID: -3525622557963715044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "constructo peque\xF1o - muerte_2"
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 0
+        width: 60
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d74a76bf2e08b8640800000000000000
+      internalID: 5083298316786574461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "constructo peque\xF1o - muerte_3"
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 0
+        width: 60
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6ca45543f1eddea0800000000000000
+      internalID: -5846268306300556177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "constructo peque\xF1o - muerte_4"
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 0
+        width: 60
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69d8f942dedd67690800000000000000
+      internalID: -7604646910177079914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "constructo peque\xF1o - muerte_9"
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 0
+        width: 59
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8edb2acd1c8a12e0800000000000000
+      internalID: -2154255412169548148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "constructo peque\xF1o - muerte_14"
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 0
+        width: 58
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6416acb2a415f0a50800000000000000
+      internalID: 6489494967068287302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "constructo peque\xF1o - muerte_17"
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 1
+        width: 59
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee1bac8179cf67d80800000000000000
+      internalID: -8253131541223656978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "constructo peque\xF1o - muerte_18"
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 0
+        width: 58
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d4c83e243cc2c5b0800000000000000
+      internalID: -5349488882876889901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "constructo peque\xF1o - muerte_27"
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 0
+        width: 58
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ce53c583e95c1370800000000000000
+      internalID: 8294603447446232772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "constructo peque\xF1o - muerte_29"
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 0
+        width: 58
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b48e889268411260800000000000000
+      internalID: 7066508878624490681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "constructo peque\xF1o - muerte_30"
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 0
+        width: 61
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d65215cee272725c0800000000000000
+      internalID: -4240377441659312787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "constructo peque\xF1o - muerte_31"
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 0
+        width: 60
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f54e8b6644358430800000000000000
+      internalID: 3784488538931611128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "constructo peque\xF1o - muerte_32"
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 0
+        width: 59
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2ebae2f4f0c33fe0800000000000000
+      internalID: -1210411716552507859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 6461b38928909b24882d2f0434dc2d90
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      "constructo peque\xF1o - muerte_0": -4584158409389291386
+      "constructo peque\xF1o - muerte_1": -3525622557963715044
+      "constructo peque\xF1o - muerte_10": 7595981941741023752
+      "constructo peque\xF1o - muerte_11": 6840020876565555448
+      "constructo peque\xF1o - muerte_12": 6609168965138397674
+      "constructo peque\xF1o - muerte_13": -4800712970840382996
+      "constructo peque\xF1o - muerte_14": 6489494967068287302
+      "constructo peque\xF1o - muerte_15": -2787720098488557535
+      "constructo peque\xF1o - muerte_16": 331971259661658805
+      "constructo peque\xF1o - muerte_17": -8253131541223656978
+      "constructo peque\xF1o - muerte_18": -5349488882876889901
+      "constructo peque\xF1o - muerte_19": -5128090658976564923
+      "constructo peque\xF1o - muerte_2": 5083298316786574461
+      "constructo peque\xF1o - muerte_20": 8685405735942149595
+      "constructo peque\xF1o - muerte_21": -3899981704862898762
+      "constructo peque\xF1o - muerte_22": 2640187564117360920
+      "constructo peque\xF1o - muerte_23": -2767169791157181796
+      "constructo peque\xF1o - muerte_24": 5778534027592047354
+      "constructo peque\xF1o - muerte_25": 4736733158281035939
+      "constructo peque\xF1o - muerte_26": -351889255509310872
+      "constructo peque\xF1o - muerte_27": 8294603447446232772
+      "constructo peque\xF1o - muerte_28": 3206948091627952019
+      "constructo peque\xF1o - muerte_29": 7066508878624490681
+      "constructo peque\xF1o - muerte_3": -5846268306300556177
+      "constructo peque\xF1o - muerte_30": -4240377441659312787
+      "constructo peque\xF1o - muerte_31": 3784488538931611128
+      "constructo peque\xF1o - muerte_32": -1210411716552507859
+      "constructo peque\xF1o - muerte_33": 9031119598388440072
+      "constructo peque\xF1o - muerte_34": -4235666604875701066
+      "constructo peque\xF1o - muerte_35": -8402990602464590548
+      "constructo peque\xF1o - muerte_36": -2533573864827273363
+      "constructo peque\xF1o - muerte_37": 7956968107390068470
+      "constructo peque\xF1o - muerte_38": 309467047802777609
+      "constructo peque\xF1o - muerte_39": 7366935275667486673
+      "constructo peque\xF1o - muerte_4": -7604646910177079914
+      "constructo peque\xF1o - muerte_40": 7952963254519548675
+      "constructo peque\xF1o - muerte_41": 7517175274299836049
+      "constructo peque\xF1o - muerte_42": -4334431773674256315
+      "constructo peque\xF1o - muerte_5": -562654303084849863
+      "constructo peque\xF1o - muerte_6": -5102751345134315130
+      "constructo peque\xF1o - muerte_7": 2135504637771259244
+      "constructo peque\xF1o - muerte_8": -7109517816460469747
+      "constructo peque\xF1o - muerte_9": -2154255412169548148
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

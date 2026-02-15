@@ -1,0 +1,481 @@
+fileFormatVersion: 2
+guid: a3e5e8fe5516c5f49b5561d2a8b506dc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7682008715084208291
+    second: gael-salto2_0
+  - first:
+      213: 4457100205241129132
+    second: gael-salto2_1
+  - first:
+      213: -533799639769798513
+    second: gael-salto2_2
+  - first:
+      213: 1868913645084769700
+    second: gael-salto2_3
+  - first:
+      213: 4978669404785588460
+    second: gael-salto2_4
+  - first:
+      213: -4712971569600832601
+    second: gael-salto2_5
+  - first:
+      213: 6711191529741071449
+    second: gael-salto2_6
+  - first:
+      213: -5628060960350470740
+    second: gael-salto2_7
+  - first:
+      213: 4195457797311757095
+    second: gael-salto2_8
+  - first:
+      213: -1506929530399179428
+    second: gael-salto2_9
+  - first:
+      213: -4485400362962586927
+    second: gael-salto2_10
+  - first:
+      213: 6755703335645076017
+    second: gael-salto2_11
+  - first:
+      213: -7996462876593776447
+    second: gael-salto2_12
+  - first:
+      213: -7397135609106413655
+    second: gael-salto2_13
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 150
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: gael-salto2_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 4
+        width: 40
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5763ff46c5046590800000000000000
+      internalID: -7682008715084208291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gael-salto2_1
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 4
+        width: 42
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca8d7bd950dcadd30800000000000000
+      internalID: 4457100205241129132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gael-salto2_2
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 4
+        width: 42
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f882a4a4e009798f0800000000000000
+      internalID: -533799639769798513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gael-salto2_3
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 4
+        width: 42
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ad782bee07bfe910800000000000000
+      internalID: 1868913645084769700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gael-salto2_4
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 4
+        width: 42
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce8b95e0279c71540800000000000000
+      internalID: 4978669404785588460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gael-salto2_5
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 4
+        width: 40
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ab5d6de359289eb0800000000000000
+      internalID: -4712971569600832601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gael-salto2_6
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 4
+        width: 41
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 954b3dd8321f22d50800000000000000
+      internalID: 6711191529741071449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gael-salto2_7
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 4
+        width: 40
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cadf014106c15e1b0800000000000000
+      internalID: -5628060960350470740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gael-salto2_8
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 11
+        width: 40
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72bf8ee53a2493a30800000000000000
+      internalID: 4195457797311757095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gael-salto2_9
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 11
+        width: 42
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5db20f739f461be0800000000000000
+      internalID: -1506929530399179428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gael-salto2_10
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 9
+        width: 48
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d2f4327228a0c1c0800000000000000
+      internalID: -4485400362962586927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gael-salto2_11
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 6
+        width: 54
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13adb09f36411cd50800000000000000
+      internalID: 6755703335645076017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gael-salto2_12
+      rect:
+        serializedVersion: 2
+        x: 773
+        y: 4
+        width: 49
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c8970d716bd60190800000000000000
+      internalID: -7996462876593776447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gael-salto2_13
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 4
+        width: 40
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a7c1dfea58185990800000000000000
+      internalID: -7397135609106413655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      gael-salto2_0: -7682008715084208291
+      gael-salto2_1: 4457100205241129132
+      gael-salto2_10: -4485400362962586927
+      gael-salto2_11: 6755703335645076017
+      gael-salto2_12: -7996462876593776447
+      gael-salto2_13: -7397135609106413655
+      gael-salto2_2: -533799639769798513
+      gael-salto2_3: 1868913645084769700
+      gael-salto2_4: 4978669404785588460
+      gael-salto2_5: -4712971569600832601
+      gael-salto2_6: 6711191529741071449
+      gael-salto2_7: -5628060960350470740
+      gael-salto2_8: 4195457797311757095
+      gael-salto2_9: -1506929530399179428
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

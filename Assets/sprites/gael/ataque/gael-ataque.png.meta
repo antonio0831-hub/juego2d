@@ -1,0 +1,507 @@
+fileFormatVersion: 2
+guid: c3413af8b340097439af2548db1d43c6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1314079458998596679
+    second: gael-ataque_0
+  - first:
+      213: 2674453226563546017
+    second: gael-ataque_1
+  - first:
+      213: -6492723481281793259
+    second: gael-ataque_2
+  - first:
+      213: 7187171368012835322
+    second: gael-ataque_3
+  - first:
+      213: 2092345567688913167
+    second: gael-ataque_4
+  - first:
+      213: -6829471972377114409
+    second: gael-ataque_5
+  - first:
+      213: 5898519522096715090
+    second: gael-ataque_6
+  - first:
+      213: -1658625591257556825
+    second: gael-ataque_7
+  - first:
+      213: -1902593080581313093
+    second: gael-ataque_8
+  - first:
+      213: 3676270275896400349
+    second: gael-ataque_9
+  - first:
+      213: -5551087628659891343
+    second: gael-ataque_10
+  - first:
+      213: -3651717651526002302
+    second: gael-ataque_11
+  - first:
+      213: 1557297887022052106
+    second: gael-ataque_12
+  - first:
+      213: -5452094668417132552
+    second: gael-ataque_13
+  - first:
+      213: 5447146020278722611
+    second: gael-ataque_14
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 150
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: gael-ataque_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 4
+        width: 40
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bb40cfb1b373cde0800000000000000
+      internalID: -1314079458998596679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gael-ataque_1
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 1
+        width: 36
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1aba7b92a019d1520800000000000000
+      internalID: 2674453226563546017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gael-ataque_2
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 1
+        width: 41
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5137c59c46635e5a0800000000000000
+      internalID: -6492723481281793259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gael-ataque_3
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 1
+        width: 47
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af9634aa746fdb360800000000000000
+      internalID: 7187171368012835322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gael-ataque_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1
+        width: 46
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f01f5754531890d10800000000000000
+      internalID: 2092345567688913167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gael-ataque_5
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 1
+        width: 42
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d8c9fadc67d831a0800000000000000
+      internalID: -6829471972377114409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gael-ataque_6
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 1
+        width: 39
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 255184fe040cbd150800000000000000
+      internalID: 5898519522096715090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gael-ataque_7
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 2
+        width: 39
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a898b100d06bf8e0800000000000000
+      internalID: -1658625591257556825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gael-ataque_8
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 4
+        width: 51
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbda5df6ca1a895e0800000000000000
+      internalID: -1902593080581313093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gael-ataque_9
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 4
+        width: 55
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd9d125965cb40330800000000000000
+      internalID: 3676270275896400349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gael-ataque_10
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 4
+        width: 54
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17369a0763396f2b0800000000000000
+      internalID: -5551087628659891343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gael-ataque_11
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 4
+        width: 54
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 289d4c0c42e725dc0800000000000000
+      internalID: -3651717651526002302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gael-ataque_12
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 4
+        width: 55
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a037a656d22ac9510800000000000000
+      internalID: 1557297887022052106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gael-ataque_13
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 4
+        width: 41
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f7123719c44654b0800000000000000
+      internalID: -5452094668417132552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gael-ataque_14
+      rect:
+        serializedVersion: 2
+        x: 901
+        y: 4
+        width: 41
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 330656af176289b40800000000000000
+      internalID: 5447146020278722611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      gael-ataque_0: -1314079458998596679
+      gael-ataque_1: 2674453226563546017
+      gael-ataque_10: -5551087628659891343
+      gael-ataque_11: -3651717651526002302
+      gael-ataque_12: 1557297887022052106
+      gael-ataque_13: -5452094668417132552
+      gael-ataque_14: 5447146020278722611
+      gael-ataque_2: -6492723481281793259
+      gael-ataque_3: 7187171368012835322
+      gael-ataque_4: 2092345567688913167
+      gael-ataque_5: -6829471972377114409
+      gael-ataque_6: 5898519522096715090
+      gael-ataque_7: -1658625591257556825
+      gael-ataque_8: -1902593080581313093
+      gael-ataque_9: 3676270275896400349
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

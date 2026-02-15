@@ -1,0 +1,620 @@
+fileFormatVersion: 2
+guid: bd954cd1bf053a04fbbd1f7eba471c2b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4570539620551328123
+    second: soldado espada - muerte_0
+  - first:
+      213: -2101164433700910114
+    second: soldado espada - muerte_1
+  - first:
+      213: 5692630919461608330
+    second: soldado espada - muerte_2
+  - first:
+      213: 4865702217452698534
+    second: soldado espada - muerte_3
+  - first:
+      213: -2369177303019643283
+    second: soldado espada - muerte_4
+  - first:
+      213: 3427922211823305507
+    second: soldado espada - muerte_5
+  - first:
+      213: 3228559130922733980
+    second: soldado espada - muerte_6
+  - first:
+      213: -2083555449170612671
+    second: soldado espada - muerte_7
+  - first:
+      213: -4560945269549855120
+    second: soldado espada - muerte_8
+  - first:
+      213: -7964616951966786546
+    second: soldado espada - muerte_9
+  - first:
+      213: -4689315174283693428
+    second: soldado espada - muerte_10
+  - first:
+      213: 3458169676869251986
+    second: soldado espada - muerte_11
+  - first:
+      213: 4608071708376913188
+    second: soldado espada - muerte_12
+  - first:
+      213: 3268838721927230731
+    second: soldado espada - muerte_13
+  - first:
+      213: -1497459047695293891
+    second: soldado espada - muerte_14
+  - first:
+      213: 5349333664418725509
+    second: soldado espada - muerte_15
+  - first:
+      213: 1742920618320930524
+    second: soldado espada - muerte_16
+  - first:
+      213: 4657476029670219502
+    second: soldado espada - muerte_17
+  - first:
+      213: -5659408811232201727
+    second: soldado espada - muerte_18
+  - first:
+      213: -7609618679024332462
+    second: soldado espada - muerte_19
+  - first:
+      213: -4780546672681102199
+    second: soldado espada - muerte_20
+  - first:
+      213: -4216536118528398429
+    second: soldado espada - muerte_21
+  - first:
+      213: 213946647156848401
+    second: soldado espada - muerte_22
+  - first:
+      213: -996711824601303476
+    second: soldado espada - muerte_23
+  - first:
+      213: -8022070435178987663
+    second: soldado espada - muerte_24
+  - first:
+      213: 369011820298695930
+    second: soldado espada - muerte_25
+  - first:
+      213: -3730141158918057686
+    second: soldado espada - muerte_26
+  - first:
+      213: 7764029956640221893
+    second: soldado espada - muerte_27
+  - first:
+      213: 1472122453457473688
+    second: soldado espada - muerte_28
+  - first:
+      213: 4675052719009187215
+    second: soldado espada - muerte_29
+  - first:
+      213: -6570810694204946862
+    second: soldado espada - muerte_30
+  - first:
+      213: -3658132687023773404
+    second: soldado espada - muerte_31
+  - first:
+      213: -3715008912397250158
+    second: soldado espada - muerte_32
+  - first:
+      213: -1854086983212168611
+    second: soldado espada - muerte_33
+  - first:
+      213: -5082275308307311274
+    second: soldado espada - muerte_34
+  - first:
+      213: -1751239626226717580
+    second: soldado espada - muerte_35
+  - first:
+      213: -4916397962858196234
+    second: soldado espada - muerte_36
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 150
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: soldado espada - muerte_0
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 0
+        width: 62
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b718fc2b191dd6f30800000000000000
+      internalID: 4570539620551328123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldado espada - muerte_2
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 0
+        width: 62
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8b1aef09a9400f40800000000000000
+      internalID: 5692630919461608330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldado espada - muerte_3
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 1
+        width: 62
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ab391e1362768340800000000000000
+      internalID: 4865702217452698534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldado espada - muerte_4
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 1
+        width: 62
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6e989b9bcdfe1fd0800000000000000
+      internalID: -2369177303019643283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldado espada - muerte_5
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 1
+        width: 62
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3234669f61d629f20800000000000000
+      internalID: 3427922211823305507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldado espada - muerte_6
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 1
+        width: 61
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c915ef68c652ecc20800000000000000
+      internalID: 3228559130922733980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldado espada - muerte_7
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 1
+        width: 63
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14e2b5eab59b513e0800000000000000
+      internalID: -2083555449170612671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldado espada - muerte_8
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 1
+        width: 67
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07e8b78317444b0c0800000000000000
+      internalID: -4560945269549855120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldado espada - muerte_9
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 1
+        width: 67
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0c17fd941ff77190800000000000000
+      internalID: -7964616951966786546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldado espada - muerte_10
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 0
+        width: 70
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c82b8fca1b43ceeb0800000000000000
+      internalID: -4689315174283693428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldado espada - muerte_11
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 0
+        width: 70
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 293b1dabff2edff20800000000000000
+      internalID: 3458169676869251986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldado espada - muerte_17
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 36
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eeed36ac5cda2a040800000000000000
+      internalID: 4657476029670219502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldado espada - muerte_19
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 0
+        width: 70
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 251d3900124356690800000000000000
+      internalID: -7609618679024332462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldado espada - muerte_30
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 0
+        width: 69
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 256839dbc7acfc4a0800000000000000
+      internalID: -6570810694204946862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldado espada - muerte_34
+      rect:
+        serializedVersion: 2
+        x: 964
+        y: 0
+        width: 72
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6559a9db8812879b0800000000000000
+      internalID: -5082275308307311274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldado espada - muerte_35
+      rect:
+        serializedVersion: 2
+        x: 1037
+        y: 0
+        width: 73
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47c2b22a6d852b7e0800000000000000
+      internalID: -1751239626226717580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 000b062fbc849934b97471ee1d183167
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      soldado espada - muerte_0: 4570539620551328123
+      soldado espada - muerte_1: -2101164433700910114
+      soldado espada - muerte_10: -4689315174283693428
+      soldado espada - muerte_11: 3458169676869251986
+      soldado espada - muerte_12: 4608071708376913188
+      soldado espada - muerte_13: 3268838721927230731
+      soldado espada - muerte_14: -1497459047695293891
+      soldado espada - muerte_15: 5349333664418725509
+      soldado espada - muerte_16: 1742920618320930524
+      soldado espada - muerte_17: 4657476029670219502
+      soldado espada - muerte_18: -5659408811232201727
+      soldado espada - muerte_19: -7609618679024332462
+      soldado espada - muerte_2: 5692630919461608330
+      soldado espada - muerte_20: -4780546672681102199
+      soldado espada - muerte_21: -4216536118528398429
+      soldado espada - muerte_22: 213946647156848401
+      soldado espada - muerte_23: -996711824601303476
+      soldado espada - muerte_24: -8022070435178987663
+      soldado espada - muerte_25: 369011820298695930
+      soldado espada - muerte_26: -3730141158918057686
+      soldado espada - muerte_27: 7764029956640221893
+      soldado espada - muerte_28: 1472122453457473688
+      soldado espada - muerte_29: 4675052719009187215
+      soldado espada - muerte_3: 4865702217452698534
+      soldado espada - muerte_30: -6570810694204946862
+      soldado espada - muerte_31: -3658132687023773404
+      soldado espada - muerte_32: -3715008912397250158
+      soldado espada - muerte_33: -1854086983212168611
+      soldado espada - muerte_34: -5082275308307311274
+      soldado espada - muerte_35: -1751239626226717580
+      soldado espada - muerte_36: -4916397962858196234
+      soldado espada - muerte_37: 1565531341
+      soldado espada - muerte_4: -2369177303019643283
+      soldado espada - muerte_5: 3427922211823305507
+      soldado espada - muerte_6: 3228559130922733980
+      soldado espada - muerte_7: -2083555449170612671
+      soldado espada - muerte_8: -4560945269549855120
+      soldado espada - muerte_9: -7964616951966786546
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

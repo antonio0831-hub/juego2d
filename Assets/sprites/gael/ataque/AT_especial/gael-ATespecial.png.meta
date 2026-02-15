@@ -1,0 +1,631 @@
+fileFormatVersion: 2
+guid: 320c7d9f9ae80974b8e5ee24d666b414
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2154117797810863436
+    second: gael-ATespecial_0
+  - first:
+      213: 546076403092226342
+    second: gael-ATespecial_1
+  - first:
+      213: 5675440665262423350
+    second: gael-ATespecial_2
+  - first:
+      213: -2640046939742365803
+    second: gael-ATespecial_3
+  - first:
+      213: -2546531128915351072
+    second: gael-ATespecial_4
+  - first:
+      213: -5321625282551673176
+    second: gael-ATespecial_5
+  - first:
+      213: -7733959294675268092
+    second: gael-ATespecial_6
+  - first:
+      213: -2280107578645102641
+    second: gael-ATespecial_7
+  - first:
+      213: 6900168838980593431
+    second: gael-ATespecial_8
+  - first:
+      213: -6382204056245931647
+    second: gael-ATespecial_9
+  - first:
+      213: -4280420009134270490
+    second: gael-ATespecial_10
+  - first:
+      213: 3216800969737569984
+    second: gael-ATespecial_11
+  - first:
+      213: 8308079059362690572
+    second: gael-ATespecial_12
+  - first:
+      213: 3082972103060251852
+    second: gael-ATespecial_13
+  - first:
+      213: 3275921759180713090
+    second: gael-ATespecial_14
+  - first:
+      213: 3122708224300863313
+    second: gael-ATespecial_15
+  - first:
+      213: 2099056161631204658
+    second: gael-ATespecial_16
+  - first:
+      213: -3594524617278737473
+    second: gael-ATespecial_17
+  - first:
+      213: 1131695347475044982
+    second: gael-ATespecial_18
+  - first:
+      213: 6412423275984847374
+    second: gael-ATespecial_19
+  - first:
+      213: -8350926188397886957
+    second: gael-ATespecial_20
+  - first:
+      213: 7933989517168915726
+    second: gael-ATespecial_21
+  - first:
+      213: -6105185596489762841
+    second: gael-ATespecial_22
+  - first:
+      213: 495121400716114109
+    second: gael-ATespecial_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 150
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: gael-ATespecial_0
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 16
+        width: 66
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b20321a6490b12e0800000000000000
+      internalID: -2154117797810863436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gael-ATespecial_1
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 16
+        width: 66
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 621098a689d049700800000000000000
+      internalID: 546076403092226342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gael-ATespecial_2
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 16
+        width: 64
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63df5cc173733ce40800000000000000
+      internalID: 5675440665262423350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gael-ATespecial_4
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 16
+        width: 64
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e9a68b2e67e8acd0800000000000000
+      internalID: -2546531128915351072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gael-ATespecial_6
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 16
+        width: 64
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40ecc8d6ff47ba490800000000000000
+      internalID: -7733959294675268092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gael-ATespecial_7
+      rect:
+        serializedVersion: 2
+        x: 806
+        y: 16
+        width: 68
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcfbe2ddc3e6b50e0800000000000000
+      internalID: -2280107578645102641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gael-ATespecial_9
+      rect:
+        serializedVersion: 2
+        x: 886
+        y: 16
+        width: 72
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1817767a93bdd67a0800000000000000
+      internalID: -6382204056245931647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gael-ATespecial_11
+      rect:
+        serializedVersion: 2
+        x: 966
+        y: 16
+        width: 75
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c6075a407f54ac20800000000000000
+      internalID: 3216800969737569984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gael-ATespecial_13
+      rect:
+        serializedVersion: 2
+        x: 1046
+        y: 16
+        width: 64
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc4685f1bcae8ca20800000000000000
+      internalID: 3082972103060251852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gael-ATespecial_14
+      rect:
+        serializedVersion: 2
+        x: 1126
+        y: 16
+        width: 64
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28c60ffbb79667d20800000000000000
+      internalID: 3275921759180713090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gael-ATespecial_15
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 16
+        width: 40
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15fc4aec596165b20800000000000000
+      internalID: 3122708224300863313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gael-ATespecial_16
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 16
+        width: 46
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2357f9d2578512d10800000000000000
+      internalID: 2099056161631204658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gael-ATespecial_17
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 16
+        width: 47
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb334bab7eead1ec0800000000000000
+      internalID: -3594524617278737473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gael-ATespecial_18
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 16
+        width: 55
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67a563c2ce694bf00800000000000000
+      internalID: 1131695347475044982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gael-ATespecial_19
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 16
+        width: 67
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e02068abef08df850800000000000000
+      internalID: 6412423275984847374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gael-ATespecial_20
+      rect:
+        serializedVersion: 2
+        x: 1209
+        y: 16
+        width: 62
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 312890370ec8b1c80800000000000000
+      internalID: -8350926188397886957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gael-ATespecial_21
+      rect:
+        serializedVersion: 2
+        x: 1289
+        y: 16
+        width: 55
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e05b6860e613b1e60800000000000000
+      internalID: 7933989517168915726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gael-ATespecial_22
+      rect:
+        serializedVersion: 2
+        x: 1372
+        y: 16
+        width: 47
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e77561fb06064ba0800000000000000
+      internalID: -6105185596489762841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gael-ATespecial_23
+      rect:
+        serializedVersion: 2
+        x: 1451
+        y: 16
+        width: 43
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db8b06a6a460fd600800000000000000
+      internalID: 495121400716114109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 99e2987c677218c48bd57742cc81f202
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      gael-ATespecial_0: -2154117797810863436
+      gael-ATespecial_1: 546076403092226342
+      gael-ATespecial_10: -4280420009134270490
+      gael-ATespecial_11: 3216800969737569984
+      gael-ATespecial_12: 8308079059362690572
+      gael-ATespecial_13: 3082972103060251852
+      gael-ATespecial_14: 3275921759180713090
+      gael-ATespecial_15: 3122708224300863313
+      gael-ATespecial_16: 2099056161631204658
+      gael-ATespecial_17: -3594524617278737473
+      gael-ATespecial_18: 1131695347475044982
+      gael-ATespecial_19: 6412423275984847374
+      gael-ATespecial_2: 5675440665262423350
+      gael-ATespecial_20: -8350926188397886957
+      gael-ATespecial_21: 7933989517168915726
+      gael-ATespecial_22: -6105185596489762841
+      gael-ATespecial_23: 495121400716114109
+      gael-ATespecial_3: -2640046939742365803
+      gael-ATespecial_4: -2546531128915351072
+      gael-ATespecial_5: -5321625282551673176
+      gael-ATespecial_6: -7733959294675268092
+      gael-ATespecial_7: -2280107578645102641
+      gael-ATespecial_8: 6900168838980593431
+      gael-ATespecial_9: -6382204056245931647
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,597 @@
+fileFormatVersion: 2
+guid: d7be6a52b84d4054897bcc0d2531e5ae
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8692299712944254953
+    second: "constructo peque\xF1o - ataque_0"
+  - first:
+      213: 2327257611568158803
+    second: "constructo peque\xF1o - ataque_1"
+  - first:
+      213: 5987455356036156958
+    second: "constructo peque\xF1o - ataque_2"
+  - first:
+      213: -7990059842700707086
+    second: "constructo peque\xF1o - ataque_3"
+  - first:
+      213: 5331250127138323505
+    second: "constructo peque\xF1o - ataque_4"
+  - first:
+      213: -4388520370979089701
+    second: "constructo peque\xF1o - ataque_5"
+  - first:
+      213: 9145661951172492731
+    second: "constructo peque\xF1o - ataque_6"
+  - first:
+      213: 5347639017020917713
+    second: "constructo peque\xF1o - ataque_7"
+  - first:
+      213: -7861627044606509743
+    second: "constructo peque\xF1o - ataque_8"
+  - first:
+      213: -6005433574153038127
+    second: "constructo peque\xF1o - ataque_9"
+  - first:
+      213: -3944097135834337825
+    second: "constructo peque\xF1o - ataque_10"
+  - first:
+      213: 5144734716233286037
+    second: "constructo peque\xF1o - ataque_11"
+  - first:
+      213: -6027780088276052006
+    second: "constructo peque\xF1o - ataque_12"
+  - first:
+      213: 3102641788318989893
+    second: "constructo peque\xF1o - ataque_13"
+  - first:
+      213: 235396778410181638
+    second: "constructo peque\xF1o - ataque_14"
+  - first:
+      213: 5562870215252440160
+    second: "constructo peque\xF1o - ataque_15"
+  - first:
+      213: 3565052284370170415
+    second: "constructo peque\xF1o - ataque_16"
+  - first:
+      213: -6364336691796900156
+    second: "constructo peque\xF1o - ataque_17"
+  - first:
+      213: -3607970750738147856
+    second: "constructo peque\xF1o - ataque_18"
+  - first:
+      213: -7622530856349909194
+    second: "constructo peque\xF1o - ataque_19"
+  - first:
+      213: -3010384377595386489
+    second: "constructo peque\xF1o - ataque_20"
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "constructo peque\xF1o - ataque_0"
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 0
+        width: 60
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7105ab0077fbe5780800000000000000
+      internalID: -8692299712944254953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "constructo peque\xF1o - ataque_1"
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 0
+        width: 64
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3581856a7741c4020800000000000000
+      internalID: 2327257611568158803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "constructo peque\xF1o - ataque_2"
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 0
+        width: 61
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1e8b056ce6b71350800000000000000
+      internalID: 5987455356036156958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "constructo peque\xF1o - ataque_3"
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 0
+        width: 51
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2faf5bdf7ea9d1190800000000000000
+      internalID: -7990059842700707086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "constructo peque\xF1o - ataque_4"
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 0
+        width: 50
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13cf5d49eb76cf940800000000000000
+      internalID: 5331250127138323505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "constructo peque\xF1o - ataque_5"
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 0
+        width: 53
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd2d93659f7d813c0800000000000000
+      internalID: -4388520370979089701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "constructo peque\xF1o - ataque_6"
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 0
+        width: 60
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbd317bb61bebee70800000000000000
+      internalID: 9145661951172492731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "constructo peque\xF1o - ataque_7"
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 0
+        width: 60
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d70d8c5a51a63a40800000000000000
+      internalID: 5347639017020917713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "constructo peque\xF1o - ataque_8"
+      rect:
+        serializedVersion: 2
+        x: 789
+        y: 0
+        width: 60
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15dff990bd3e5e290800000000000000
+      internalID: -7861627044606509743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "constructo peque\xF1o - ataque_9"
+      rect:
+        serializedVersion: 2
+        x: 881
+        y: 0
+        width: 64
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d657628bf968aca0800000000000000
+      internalID: -6005433574153038127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "constructo peque\xF1o - ataque_10"
+      rect:
+        serializedVersion: 2
+        x: 977
+        y: 0
+        width: 65
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdd65fa3d80c349c0800000000000000
+      internalID: -3944097135834337825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "constructo peque\xF1o - ataque_11"
+      rect:
+        serializedVersion: 2
+        x: 1057
+        y: 0
+        width: 81
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59184b867f4c56740800000000000000
+      internalID: 5144734716233286037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "constructo peque\xF1o - ataque_12"
+      rect:
+        serializedVersion: 2
+        x: 1151
+        y: 0
+        width: 83
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad7122e32f5095ca0800000000000000
+      internalID: -6027780088276052006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "constructo peque\xF1o - ataque_13"
+      rect:
+        serializedVersion: 2
+        x: 1247
+        y: 0
+        width: 83
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54e390a944cce0b20800000000000000
+      internalID: 3102641788318989893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "constructo peque\xF1o - ataque_14"
+      rect:
+        serializedVersion: 2
+        x: 1343
+        y: 0
+        width: 83
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 604096e6f1c444300800000000000000
+      internalID: 235396778410181638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "constructo peque\xF1o - ataque_18"
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 0
+        width: 82
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f5d042d7b9ededc0800000000000000
+      internalID: -3607970750738147856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "constructo peque\xF1o - ataque_19"
+      rect:
+        serializedVersion: 2
+        x: 1558
+        y: 0
+        width: 60
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63f3fc17294573690800000000000000
+      internalID: -7622530856349909194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "constructo peque\xF1o - ataque_20"
+      rect:
+        serializedVersion: 2
+        x: 1653
+        y: 0
+        width: 60
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 785aa08bb57f836d0800000000000000
+      internalID: -3010384377595386489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 0e69e4225c074d046be57ae20bb445cc
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      "constructo peque\xF1o - ataque_0": -8692299712944254953
+      "constructo peque\xF1o - ataque_1": 2327257611568158803
+      "constructo peque\xF1o - ataque_10": -3944097135834337825
+      "constructo peque\xF1o - ataque_11": 5144734716233286037
+      "constructo peque\xF1o - ataque_12": -6027780088276052006
+      "constructo peque\xF1o - ataque_13": 3102641788318989893
+      "constructo peque\xF1o - ataque_14": 235396778410181638
+      "constructo peque\xF1o - ataque_15": 5562870215252440160
+      "constructo peque\xF1o - ataque_16": 3565052284370170415
+      "constructo peque\xF1o - ataque_17": -6364336691796900156
+      "constructo peque\xF1o - ataque_18": -3607970750738147856
+      "constructo peque\xF1o - ataque_19": -7622530856349909194
+      "constructo peque\xF1o - ataque_2": 5987455356036156958
+      "constructo peque\xF1o - ataque_20": -3010384377595386489
+      "constructo peque\xF1o - ataque_3": -7990059842700707086
+      "constructo peque\xF1o - ataque_4": 5331250127138323505
+      "constructo peque\xF1o - ataque_5": -4388520370979089701
+      "constructo peque\xF1o - ataque_6": 9145661951172492731
+      "constructo peque\xF1o - ataque_7": 5347639017020917713
+      "constructo peque\xF1o - ataque_8": -7861627044606509743
+      "constructo peque\xF1o - ataque_9": -6005433574153038127
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

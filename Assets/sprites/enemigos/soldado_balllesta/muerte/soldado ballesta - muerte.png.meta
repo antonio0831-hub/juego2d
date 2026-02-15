@@ -1,0 +1,517 @@
+fileFormatVersion: 2
+guid: 415acaaa53b6dc14fb8e229696e1d950
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7412946284422267847
+    second: soldado ballesta - muerte_0
+  - first:
+      213: -4083443017058001620
+    second: soldado ballesta - muerte_1
+  - first:
+      213: 2752486004489375851
+    second: soldado ballesta - muerte_2
+  - first:
+      213: -3999455593791891955
+    second: soldado ballesta - muerte_3
+  - first:
+      213: -1906275382506763924
+    second: soldado ballesta - muerte_4
+  - first:
+      213: 7701325133433179972
+    second: soldado ballesta - muerte_5
+  - first:
+      213: -5951906459229820007
+    second: soldado ballesta - muerte_6
+  - first:
+      213: 5761849104352437552
+    second: soldado ballesta - muerte_7
+  - first:
+      213: -2335472910569054763
+    second: soldado ballesta - muerte_8
+  - first:
+      213: 3517522644866342763
+    second: soldado ballesta - muerte_9
+  - first:
+      213: -2502126680637054650
+    second: soldado ballesta - muerte_10
+  - first:
+      213: 4315466776313984669
+    second: soldado ballesta - muerte_11
+  - first:
+      213: 8280264992447675758
+    second: soldado ballesta - muerte_12
+  - first:
+      213: 5864085704849869395
+    second: soldado ballesta - muerte_13
+  - first:
+      213: -5790149537721440370
+    second: soldado ballesta - muerte_14
+  - first:
+      213: 2630893698385458329
+    second: soldado ballesta - muerte_15
+  - first:
+      213: -1791858526641953134
+    second: soldado ballesta - muerte_16
+  - first:
+      213: -5024314734254244101
+    second: soldado ballesta - muerte_17
+  - first:
+      213: -575483043710744446
+    second: soldado ballesta - muerte_18
+  - first:
+      213: 3793065295454738233
+    second: soldado ballesta - muerte_19
+  - first:
+      213: -233440982831415910
+    second: soldado ballesta - muerte_20
+  - first:
+      213: 6203482309046351357
+    second: soldado ballesta - muerte_21
+  - first:
+      213: -8917176657113772621
+    second: soldado ballesta - muerte_22
+  - first:
+      213: 5744454433722325105
+    second: soldado ballesta - muerte_23
+  - first:
+      213: 563717215120274230
+    second: soldado ballesta - muerte_24
+  - first:
+      213: -5742385914148505183
+    second: soldado ballesta - muerte_25
+  - first:
+      213: 4026777063454580963
+    second: soldado ballesta - muerte_26
+  - first:
+      213: 9149031524365898783
+    second: soldado ballesta - muerte_27
+  - first:
+      213: -1039925358315543051
+    second: soldado ballesta - muerte_28
+  - first:
+      213: 689039466505540651
+    second: soldado ballesta - muerte_29
+  - first:
+      213: -936892146794906821
+    second: soldado ballesta - muerte_30
+  - first:
+      213: 901241773146623917
+    second: soldado ballesta - muerte_31
+  - first:
+      213: 1503966614507313471
+    second: soldado ballesta - muerte_32
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 150
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: soldado ballesta - muerte_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c38a06ce5310e660800000000000000
+      internalID: 7412946284422267847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldado ballesta - muerte_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2d55b30632b457c0800000000000000
+      internalID: -4083443017058001620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldado ballesta - muerte_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b60d2d2107bc23620800000000000000
+      internalID: 2752486004489375851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldado ballesta - muerte_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d06d515d3541f78c0800000000000000
+      internalID: -3999455593791891955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldado ballesta - muerte_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c69cc95b3ac8b85e0800000000000000
+      internalID: -1906275382506763924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldado ballesta - muerte_5
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44f821ec76a90ea60800000000000000
+      internalID: 7701325133433179972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldado ballesta - muerte_6
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99be0412c94966da0800000000000000
+      internalID: -5951906459229820007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldado ballesta - muerte_7
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 035645a9b3336ff40800000000000000
+      internalID: 5761849104352437552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldado ballesta - muerte_8
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5dddbfef2cbb69fd0800000000000000
+      internalID: -2335472910569054763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldado ballesta - muerte_9
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6f96a87530c0d030800000000000000
+      internalID: 3517522644866342763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldado ballesta - muerte_10
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 641e9917a09a64dd0800000000000000
+      internalID: -2502126680637054650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldado ballesta - muerte_11
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d96f1323b2e93eb30800000000000000
+      internalID: 4315466776313984669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldado ballesta - muerte_12
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6d32f0d32969e270800000000000000
+      internalID: 8280264992447675758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: a309351f3282f544c801aad62d3168d6
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":13.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      soldado ballesta - muerte_0: 7412946284422267847
+      soldado ballesta - muerte_1: -4083443017058001620
+      soldado ballesta - muerte_10: -2502126680637054650
+      soldado ballesta - muerte_11: 4315466776313984669
+      soldado ballesta - muerte_12: 8280264992447675758
+      soldado ballesta - muerte_2: 2752486004489375851
+      soldado ballesta - muerte_3: -3999455593791891955
+      soldado ballesta - muerte_4: -1906275382506763924
+      soldado ballesta - muerte_5: 7701325133433179972
+      soldado ballesta - muerte_6: -5951906459229820007
+      soldado ballesta - muerte_7: 5761849104352437552
+      soldado ballesta - muerte_8: -2335472910569054763
+      soldado ballesta - muerte_9: 3517522644866342763
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
