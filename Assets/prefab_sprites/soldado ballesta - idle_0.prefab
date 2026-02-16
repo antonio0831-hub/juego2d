@@ -62,7 +62,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6684739900912870546}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.07977247, y: 0.36981988, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -162,30 +162,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97bb6ab0be003d141b3d154516a2e625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ia_enemigo_tierra
+  attackType: 0
   moveSpeed: 0.2
   pointA: {fileID: 0}
   pointB: {fileID: 0}
   arriveDistance: 0.1
   waitAtPatrolPoint: 1
   playerTag: Player
-  detectionRange: 1.99
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 128
+  detectionRange: 2.48
   attackRange: 1.69
-  attackCooldown: 1
-  attackAnimDuration: 0.45
-  idleAfterAttack: 0.2
+  attackCooldown: 3.04
+  attackAnimDuration: 0.71
+  idleAfterAttack: 0
   ataqueDistancia: {fileID: 4363514965305498044}
   meleeAttack: {fileID: 0}
   viewAngle: 26.7
-  spriteDefaultFacesRight: 0
+  forwardAngleOffset: 0
+  useLineOfSight: 1
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 64
   isWalkingBool: isWalking
   attackTrigger: ataque
   useFlipX: 1
+  spriteToFlip: {fileID: 0}
   drawGizmos: 1
   drawCone: 1
   drawLineToPlayer: 1
+  debugState: 0
 --- !u!114 &4363514965305498044
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -198,10 +205,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61195d7904bc7d44888ac97c65e5d46e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ataque_distancia
+  shotMode: 0
+  useSpriteFlipX: 1
+  defaultFacesRight: 0
   firePoint: {fileID: 8868790991880545537}
   boltPrefab: {fileID: 7186111130963621291, guid: 466eb9ea06d862340bf7f75461439d5a, type: 3}
-  boltSpeed: 12
+  boltSpeed: 7
   boltMaxDistance: 2
+  fromPlayer: 0
+  fireDelay: 0.12
+  blockWhileWaiting: 1
 --- !u!70 &2588314783158640358
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -286,3 +299,5 @@ MonoBehaviour:
   - {fileID: 4363514965305498044}
   disableCollidersOnDeath:
   - {fileID: 2588314783158640358}
+  countKillOnlyIfFromPlayer: 1
+  killValue: 1
