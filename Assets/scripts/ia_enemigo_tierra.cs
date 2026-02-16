@@ -10,49 +10,45 @@ public class ia_enemigo_tierra : MonoBehaviour
     public float moveSpeed = 2f;
     public Transform pointA;
     public Transform pointB;
-    public float arriveDistance = 0.12f;
+    public float arriveDistance = 0.2f;
 
-    [Header("Pausa en puntos (manteniendo ANDAR)")]
+    [Header("Pausa en puntos")]
     public float waitAtPatrolPoint = 1f;
 
     [Header("Jugador")]
     public string playerTag = "Player";
 
-    [Header("Detección (ver al jugador)")]
+    [Header("Detección")]
     public float detectionRange = 6f;
 
-    [Header("Ataque (rango)")]
-    public float attackRange = 1.2f;          // ✅ melee típico ~1-1.5 / distancia 3-5
+    [Header("Ataque")]
+    public float attackRange = 3f; // Para rango, asegúrate que sea menor que detectionRange
     public float attackCooldown = 0.8f;
     public float attackAnimDuration = 0.45f;
     public float idleAfterAttack = 0.25f;
 
-    [Header("Ataque a distancia (opcional)")]
+    [Header("Ataques (Componentes)")]
     public ataque_distancia ataqueDistancia;
+    public melee_universal meleeAttack;
 
-    [Header("Ataque melee (opcional)")]
-    public melee_universal meleeAttack;       // ✅ arrástralo si es enemigo melee
-
-    [Header("Visión (cono delante)")]
-    [Range(0f, 180f)] public float viewAngle = 90f;
+    [Header("Visión (Cono)")]
+    [Range(0f, 360f)] public float viewAngle = 90f;
+    [Tooltip("¿Tu sprite original mira a la derecha?")]
     public bool spriteDefaultFacesRight = true;
 
-    [Header("Paredes (NO atraviesa)")]
-    public LayerMask obstacleLayer; // "walls"
+    [Header("Obstáculos")]
+    public LayerMask obstacleLayer; 
 
-    [Header("Animator")]
+    [Header("Animación")]
     public string isWalkingBool = "isWalking";
     public string attackTrigger = "ataque";
 
     [Header("Flip")]
     public bool useFlipX = true;
 
-    [Header("Gizmos")]
+    [Header("Gizmos Visuales")]
     public bool drawGizmos = true;
-    public bool drawCone = true;
-    public bool drawLineToPlayer = true;
 
-    // ---- privados ----
     private Rigidbody2D rb;
     private Animator anim;
     private SpriteRenderer sr;
@@ -60,7 +56,6 @@ public class ia_enemigo_tierra : MonoBehaviour
 
     private Vector2 aPos, bPos;
     private Vector2 currentPatrolTarget;
-
     private State state = State.Patrol;
     private bool attackingLoop = false;
     private bool isWalking = false;
@@ -78,7 +73,7 @@ public class ia_enemigo_tierra : MonoBehaviour
     {
         if (pointA == null || pointB == null)
         {
-            Debug.LogError("Faltan pointA / pointB en el Inspector.");
+            Debug.LogError("Asigna PointA y PointB en el Inspector.");
             enabled = false;
             return;
         }
@@ -87,53 +82,38 @@ public class ia_enemigo_tierra : MonoBehaviour
         bPos = pointB.position;
         currentPatrolTarget = bPos;
 
-        if (ataqueDistancia == null)
-            ataqueDistancia = GetComponent<ataque_distancia>();
+        if (ataqueDistancia == null) ataqueDistancia = GetComponent<ataque_distancia>();
+        if (meleeAttack == null) meleeAttack = GetComponent<melee_universal>();
 
-        if (meleeAttack == null)
-            meleeAttack = GetComponent<melee_universal>();
-
-        // si existen, desactiva “ataque” por defecto (la IA los activa cuando toca)
         if (ataqueDistancia != null) ataqueDistancia.enabled = false;
 
         FindPlayer();
-        SetWalking(true);
         state = State.Patrol;
     }
 
     void Update()
     {
-        if (player == null) FindPlayer();
+        if (player == null) { FindPlayer(); return; }
         if (attackingLoop) return;
 
-        // si esperamos en punto pero vemos player, cancelamos espera y reaccionamos
-        if (state == State.WaitAtPoint && player != null)
+        bool canSee = CanSeePlayer(out float dist, detectionRange);
+
+        if (canSee)
         {
-            if (CanSeePlayer(out float dist, detectionRange))
+            StopWaiting();
+            if (dist <= attackRange)
             {
-                StopWaiting();
-
-                if (dist <= attackRange && CanSeePlayer(out _, attackRange))
-                    StartAttack();
-                else
-                    state = State.Chase;
-
-                return;
-            }
-        }
-
-        // Lógica principal
-        if (player != null && CanSeePlayer(out float distanceToPlayer, detectionRange))
-        {
-            if (distanceToPlayer <= attackRange && CanSeePlayer(out _, attackRange))
                 StartAttack();
+            }
             else
-                state = State.Chase; // ✅ ve pero no llega -> persigue
+            {
+                state = State.Chase;
+            }
         }
         else
         {
-            if (state == State.Chase) state = State.Patrol;
-            if (state != State.WaitAtPoint) state = State.Patrol;
+            if (state == State.Chase || state == State.Attack)
+                state = State.Patrol;
         }
     }
 
@@ -144,195 +124,137 @@ public class ia_enemigo_tierra : MonoBehaviour
         switch (state)
         {
             case State.Patrol: PatrolMove(); break;
-            case State.Chase:  ChaseMove();  break;
-            case State.WaitAtPoint: /* quieto */ break;
+            case State.Chase: ChaseMove(); break;
+            case State.WaitAtPoint: rb.linearVelocity = Vector2.zero; break;
         }
     }
 
-    // ------------------ PATRULLA ------------------
+    // --- LÓGICA DE MOVIMIENTO ---
+
     void PatrolMove()
     {
-        Vector2 pos = rb.position;
-        Vector2 target = new Vector2(currentPatrolTarget.x, pos.y);
+        Vector2 target = new Vector2(currentPatrolTarget.x, rb.position.y);
+        MoveTowardsTarget(target);
 
-        Vector2 next = Vector2.MoveTowards(pos, target, moveSpeed * Time.fixedDeltaTime);
-        rb.MovePosition(next);
-
-        float dx = target.x - pos.x;
-
-        SetWalking(true);
-        UpdateFlip(dx);
-
-        if (Vector2.Distance(rb.position, new Vector2(currentPatrolTarget.x, rb.position.y)) <= arriveDistance)
+        if (Vector2.Distance(rb.position, target) <= arriveDistance)
         {
-            if (waitRoutine == null)
-                waitRoutine = StartCoroutine(WaitThenSwitchPoint());
+            if (waitRoutine == null) waitRoutine = StartCoroutine(WaitThenSwitchPoint());
         }
     }
 
-    IEnumerator WaitThenSwitchPoint()
-    {
-        state = State.WaitAtPoint;
-        SetWalking(true);
-
-        Vector2 frozen = rb.position;
-        float t = 0f;
-
-        while (t < waitAtPatrolPoint && state == State.WaitAtPoint && !attackingLoop)
-        {
-            rb.MovePosition(frozen);
-            t += Time.fixedDeltaTime;
-            yield return new WaitForFixedUpdate();
-        }
-
-        if (state != State.WaitAtPoint) { waitRoutine = null; yield break; }
-
-        currentPatrolTarget = (currentPatrolTarget == aPos) ? bPos : aPos;
-        state = State.Patrol;
-
-        waitRoutine = null;
-    }
-
-    void StopWaiting()
-    {
-        if (state == State.WaitAtPoint)
-            state = State.Patrol;
-
-        if (waitRoutine != null)
-        {
-            StopCoroutine(waitRoutine);
-            waitRoutine = null;
-        }
-    }
-
-    // ------------------ PERSEGUIR ------------------
     void ChaseMove()
     {
-        if (player == null) { state = State.Patrol; return; }
-
-        Vector2 pos = rb.position;
-        Vector2 target = new Vector2(player.position.x, pos.y);
-
-        Vector2 next = Vector2.MoveTowards(pos, target, moveSpeed * Time.fixedDeltaTime);
-        rb.MovePosition(next);
-
-        float dx = target.x - pos.x;
-
-        SetWalking(true);
-        UpdateFlip(dx);
+        if (player == null) return;
+        Vector2 target = new Vector2(player.position.x, rb.position.y);
+        MoveTowardsTarget(target);
     }
 
-    // ------------------ ATAQUE ------------------
+    void MoveTowardsTarget(Vector2 target)
+    {
+        Vector2 next = Vector2.MoveTowards(rb.position, target, moveSpeed * Time.fixedDeltaTime);
+        rb.MovePosition(next);
+
+        float dx = target.x - rb.position.x;
+        UpdateFlip(dx);
+        SetWalking(true);
+    }
+
+    // --- LÓGICA DE ATAQUE ---
+
     void StartAttack()
     {
-        if (attackingLoop) return;
-        StopWaiting();
-        StartCoroutine(AttackLoop());
+        if (!attackingLoop) StartCoroutine(AttackLoop());
     }
 
     IEnumerator AttackLoop()
     {
         attackingLoop = true;
         state = State.Attack;
-
-        // desactivar movimiento
         SetWalking(false);
 
-        // (opcional) habilitar distancia
         if (ataqueDistancia != null) ataqueDistancia.enabled = true;
 
-        while (true)
+        while (CanSeePlayer(out float dist, attackRange))
         {
-            if (player == null) FindPlayer();
-            if (player == null) break;
+            // Re-orientar hacia el jugador antes de disparar
+            UpdateFlip(player.position.x - transform.position.x);
 
-            bool canHit = CanSeePlayer(out float dist, attackRange);
-            if (!canHit) break;
+            if (meleeAttack != null) meleeAttack.DoAttack();
+            else if (ataqueDistancia != null) ataqueDistancia.Disparar(player);
 
-            // --- Ejecutar ataque ---
-            SetWalking(false);
+            if (anim != null) anim.SetTrigger(attackTrigger);
 
-            // Disparar / pegar
-            if (meleeAttack != null)
-            {
-                meleeAttack.DoAttack(); // ✅ aplica daño usando hitLayer del melee_universal
-            }
-            else if (ataqueDistancia != null)
-            {
-                ataqueDistancia.Disparar(player);
-            }
-
-            // Anim de ataque
-            if (anim != null && !string.IsNullOrEmpty(attackTrigger))
-            {
-                anim.ResetTrigger(attackTrigger);
-                anim.SetTrigger(attackTrigger);
-            }
-
-            // Espera anim + idle + cooldown
-            yield return new WaitForSeconds(attackAnimDuration);
-            yield return new WaitForSeconds(idleAfterAttack);
-            yield return new WaitForSeconds(attackCooldown);
+            yield return new WaitForSeconds(attackAnimDuration + idleAfterAttack + attackCooldown);
         }
 
         if (ataqueDistancia != null) ataqueDistancia.enabled = false;
-
         attackingLoop = false;
         state = State.Patrol;
-        SetWalking(true);
     }
 
-    // ------------------ VISIÓN / LOS ------------------
+    // --- VISIÓN Y FLIP (PUNTOS CLAVE) ---
+
     bool CanSeePlayer(out float dist, float maxRange)
     {
         dist = Mathf.Infinity;
         if (player == null) return false;
 
-        Vector2 origin = rb.position;
-        Vector2 ppos = player.position;
-        dist = Vector2.Distance(origin, ppos);
-
+        dist = Vector2.Distance(transform.position, player.position);
         if (dist > maxRange) return false;
-        if (!IsInFrontCone(ppos)) return false;
-        if (!HasLineOfSight(ppos, maxRange)) return false;
 
-        return true;
-    }
+        // Comprobar ángulo
+        Vector2 dirToPlayer = (player.position - transform.position).normalized;
+        float angle = Vector2.Angle(GetForward2D(), dirToPlayer);
+        if (angle > viewAngle * 0.5f) return false;
 
-    bool IsInFrontCone(Vector2 targetPos)
-    {
-        Vector2 toTarget = (targetPos - rb.position).normalized;
-        Vector2 forward = GetForward2D();
-        return Vector2.Angle(forward, toTarget) <= viewAngle * 0.5f;
+        // Comprobar obstáculos
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, dirToPlayer, dist, obstacleLayer);
+        return hit.collider == null;
     }
 
     Vector2 GetForward2D()
     {
-        Vector2 baseForward = spriteDefaultFacesRight ? Vector2.right : Vector2.left;
-        if (sr != null && sr.flipX) baseForward *= -1f;
-        return baseForward;
-    }
-
-    bool HasLineOfSight(Vector2 targetPos, float maxDistance)
-    {
-        Vector2 origin = rb.position;
-        Vector2 dir = (targetPos - origin).normalized;
-        return Physics2D.Raycast(origin, dir, maxDistance, obstacleLayer).collider == null;
-    }
-
-    // ------------------ ANIM / FLIP ------------------
-    void SetWalking(bool walking)
-    {
-        if (isWalking == walking) return;
-        isWalking = walking;
-        if (anim != null) anim.SetBool(isWalkingBool, walking);
+        // Esta es la corrección principal:
+        if (sr == null) return transform.right;
+        
+        // Si el sprite NO tiene flip, mira hacia su lado original.
+        // Si tiene flip, mira al lado opuesto.
+        Vector2 facing = spriteDefaultFacesRight ? Vector2.right : Vector2.left;
+        return sr.flipX ? -facing : facing;
     }
 
     void UpdateFlip(float dx)
     {
-        if (!useFlipX || sr == null) return;
-        if (dx > 0.01f) sr.flipX = spriteDefaultFacesRight ? false : true;
-        else if (dx < -0.01f) sr.flipX = spriteDefaultFacesRight ? true : false;
+        if (!useFlipX || sr == null || Mathf.Abs(dx) < 0.05f) return;
+
+        // Si dx > 0 (derecha) y el sprite mira originalmente a la derecha, flipX = false
+        if (spriteDefaultFacesRight)
+            sr.flipX = (dx < 0);
+        else
+            sr.flipX = (dx > 0);
+    }
+
+    // --- UTILIDADES ---
+
+    void SetWalking(bool walking)
+    {
+        isWalking = walking;
+        if (anim != null) anim.SetBool(isWalkingBool, walking);
+    }
+
+    IEnumerator WaitThenSwitchPoint()
+    {
+        state = State.WaitAtPoint;
+        SetWalking(false);
+        yield return new WaitForSeconds(waitAtPatrolPoint);
+        currentPatrolTarget = (currentPatrolTarget == aPos) ? bPos : aPos;
+        state = State.Patrol;
+        waitRoutine = null;
+    }
+
+    void StopWaiting()
+    {
+        if (waitRoutine != null) { StopCoroutine(waitRoutine); waitRoutine = null; }
     }
 
     void FindPlayer()
@@ -341,45 +263,19 @@ public class ia_enemigo_tierra : MonoBehaviour
         if (p != null) player = p.transform;
     }
 
-    // ------------------ GIZMOS ------------------
     void OnDrawGizmosSelected()
     {
         if (!drawGizmos) return;
-
         Gizmos.color = Color.cyan;
         Gizmos.DrawWireSphere(transform.position, detectionRange);
-
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, attackRange);
 
-        if (drawCone)
-        {
-            SpriteRenderer s = GetComponent<SpriteRenderer>();
-            Vector2 forward = spriteDefaultFacesRight ? Vector2.right : Vector2.left;
-            if (s != null && s.flipX) forward *= -1f;
-
-            float half = viewAngle * 0.5f;
-            Gizmos.color = Color.yellow;
-            Gizmos.DrawLine(transform.position, (Vector2)transform.position + Rotate(forward, +half).normalized * detectionRange);
-            Gizmos.DrawLine(transform.position, (Vector2)transform.position + Rotate(forward, -half).normalized * detectionRange);
-        }
-
-        if (drawLineToPlayer)
-        {
-            GameObject p = GameObject.FindGameObjectWithTag(playerTag);
-            if (p != null)
-            {
-                Gizmos.color = Color.gray;
-                Gizmos.DrawLine(transform.position, p.transform.position);
-            }
-        }
-    }
-
-    Vector2 Rotate(Vector2 v, float degrees)
-    {
-        float rad = degrees * Mathf.Deg2Rad;
-        float ca = Mathf.Cos(rad);
-        float sa = Mathf.Sin(rad);
-        return new Vector2(ca * v.x - sa * v.y, sa * v.x + ca * v.y);
+        Vector2 forward = GetForward2D();
+        Gizmos.color = Color.yellow;
+        Vector3 leftRay = Quaternion.Euler(0, 0, viewAngle * 0.5f) * forward;
+        Vector3 rightRay = Quaternion.Euler(0, 0, -viewAngle * 0.5f) * forward;
+        Gizmos.DrawLine(transform.position, transform.position + leftRay * detectionRange);
+        Gizmos.DrawLine(transform.position, transform.position + rightRay * detectionRange);
     }
 }

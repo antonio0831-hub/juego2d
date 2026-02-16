@@ -162,16 +162,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97bb6ab0be003d141b3d154516a2e625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ia_enemigo_tierra
-  attackType: 0
   moveSpeed: 0.2
   pointA: {fileID: 0}
   pointB: {fileID: 0}
   arriveDistance: 0.1
   waitAtPatrolPoint: 1
   playerTag: Player
-  playerLayer:
-    serializedVersion: 2
-    m_Bits: 128
   detectionRange: 2.48
   attackRange: 1.69
   attackCooldown: 3.04
@@ -180,19 +176,16 @@ MonoBehaviour:
   ataqueDistancia: {fileID: 4363514965305498044}
   meleeAttack: {fileID: 0}
   viewAngle: 26.7
-  forwardAngleOffset: 0
-  useLineOfSight: 1
+  spriteDefaultFacesRight: 0
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 64
   isWalkingBool: isWalking
   attackTrigger: ataque
   useFlipX: 1
-  spriteToFlip: {fileID: 0}
   drawGizmos: 1
   drawCone: 1
   drawLineToPlayer: 1
-  debugState: 0
 --- !u!114 &4363514965305498044
 MonoBehaviour:
   m_ObjectHideFlags: 0
