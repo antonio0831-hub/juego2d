@@ -9,7 +9,7 @@ public class melee_universal : MonoBehaviour
     public HitShape shape = HitShape.Circle;
 
     [Header("Input (solo si es Player)")]
-    public bool useInput = false;              // ✅ Player: true / Enemigo: false
+    public bool useInput = false;              // Player: true / Enemigo: false
     public KeyCode attackKey = KeyCode.Mouse0;
 
     [Header("Hitbox")]
@@ -28,26 +28,25 @@ public class melee_universal : MonoBehaviour
     public bool damagePlayer = false;
     public bool damageEnemies = true;
 
+    [Header("Origen del daño (IMPORTANTE)")]
+    public bool fromPlayer = true; // ✅ en el melee del PLAYER: true / melee de ENEMIGO: false
+
     [Header("Animator (opcional)")]
     public Animator anim;
     public string attackTrigger = "ataque";
-    public Animator tp;
+
     [Header("Debug")]
     public bool debugHits = false;
 
     private float nextTime;
-    private int contador;
 
     void Update()
     {
         if (!useInput) return;
-
         if (Time.time < nextTime) return;
 
         if (Input.GetKeyDown(attackKey))
-        {
             DoAttack();
-        }
     }
 
     // ✅ Llamar desde IA o desde input
@@ -83,13 +82,11 @@ public class melee_universal : MonoBehaviour
         {
             if (h == null) continue;
 
-            // Evitar autohit (por si tu propio collider entra)
+            // Evitar autohit
             if (h.transform == transform) continue;
 
             if (damageEnemies)
             {
-                contador=contador++;
-                Debug.Log("Funcina el contador");
                 vida_enemigo ve =
                     h.GetComponent<vida_enemigo>() ??
                     h.GetComponentInParent<vida_enemigo>() ??
@@ -98,8 +95,12 @@ public class melee_universal : MonoBehaviour
                 if (ve != null && !damaged.Contains(ve))
                 {
                     damaged.Add(ve);
-                    if (debugHits) Debug.Log($"[melee_universal] Dañando ENEMIGO: {ve.name}");
-                    ve.TakeDamage(damage);
+
+                    if (debugHits)
+                        Debug.Log($"[melee_universal] Dañando ENEMIGO: {ve.name} (fromPlayer={fromPlayer})");
+
+                    // ✅ CLAVE: pasar fromPlayer para que cuente kill solo si mata el player
+                    ve.TakeDamage(damage, fromPlayer);
                     continue;
                 }
             }
@@ -114,7 +115,10 @@ public class melee_universal : MonoBehaviour
                 if (vp != null && !damaged.Contains(vp))
                 {
                     damaged.Add(vp);
-                    if (debugHits) Debug.Log($"[melee_universal] Dañando PLAYER: {vp.name}");
+
+                    if (debugHits)
+                        Debug.Log($"[melee_universal] Dañando PLAYER: {vp.name}");
+
                     vp.TakeDamage(damage);
                     continue;
                 }
@@ -135,13 +139,5 @@ public class melee_universal : MonoBehaviour
             Gizmos.DrawWireSphere(attackPoint.position, radius);
         else
             Gizmos.DrawWireCube(attackPoint.position, boxSize);
-    }
-    void FixedUpdate()
-    {
-        if(contador ==4)
-        {
-            tp.Play("tp");
-            GetComponentInParent<tps>();
-        }
     }
 }

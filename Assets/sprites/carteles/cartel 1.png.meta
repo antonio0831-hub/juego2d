@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 336a534d71ef051419d75543a1c621bf
+guid: ec5aa3277dec5a146ac013027f7a0432
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5443117415474560805
-    second: gael-ATespecial-bola_0
+      213: -6425556968933707341
+    second: cartel 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: gael-ATespecial-bola_0
+      name: cartel 1_0
       rect:
         serializedVersion: 2
-        x: 25
-        y: 25
-        width: 39
-        height: 34
+        x: 12
+        y: 0
+        width: 41
+        height: 44
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bd085ebac892674b0800000000000000
-      internalID: -5443117415474560805
+      spriteID: 3b1bba61bf5d3d6a0800000000000000
+      internalID: -6425556968933707341
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      gael-ATespecial-bola_0: -5443117415474560805
+      cartel 1_0: -6425556968933707341
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

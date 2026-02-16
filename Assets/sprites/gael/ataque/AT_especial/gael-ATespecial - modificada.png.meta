@@ -1,79 +1,73 @@
 fileFormatVersion: 2
-guid: 320c7d9f9ae80974b8e5ee24d666b414
+guid: d30d971dab2f9b74abadb49899166c32
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2154117797810863436
-    second: gael-ATespecial_0
+      213: -3411172029706251885
+    second: gael-ATespecial - modificada_0
   - first:
-      213: 546076403092226342
-    second: gael-ATespecial_1
+      213: 7727958978170324001
+    second: gael-ATespecial - modificada_1
   - first:
-      213: 5675440665262423350
-    second: gael-ATespecial_2
+      213: 7295695046754024321
+    second: gael-ATespecial - modificada_2
   - first:
-      213: -2640046939742365803
-    second: gael-ATespecial_3
+      213: -2587491927113973041
+    second: gael-ATespecial - modificada_3
   - first:
-      213: -2546531128915351072
-    second: gael-ATespecial_4
+      213: 4727400985375719801
+    second: gael-ATespecial - modificada_4
   - first:
-      213: -5321625282551673176
-    second: gael-ATespecial_5
+      213: -4316475627414371258
+    second: gael-ATespecial - modificada_5
   - first:
-      213: -7733959294675268092
-    second: gael-ATespecial_6
+      213: 1914571802134378772
+    second: gael-ATespecial - modificada_6
   - first:
-      213: -2280107578645102641
-    second: gael-ATespecial_7
+      213: -4333970807344604714
+    second: gael-ATespecial - modificada_7
   - first:
-      213: 6900168838980593431
-    second: gael-ATespecial_8
+      213: -4468145666247081820
+    second: gael-ATespecial - modificada_8
   - first:
-      213: -6382204056245931647
-    second: gael-ATespecial_9
+      213: 1627643166332746830
+    second: gael-ATespecial - modificada_9
   - first:
-      213: -4280420009134270490
-    second: gael-ATespecial_10
+      213: 1637609577354658765
+    second: gael-ATespecial - modificada_10
   - first:
-      213: 3216800969737569984
-    second: gael-ATespecial_11
+      213: 5592744896743077488
+    second: gael-ATespecial - modificada_11
   - first:
-      213: 8308079059362690572
-    second: gael-ATespecial_12
+      213: -6724088229735002272
+    second: gael-ATespecial - modificada_12
   - first:
-      213: 3082972103060251852
-    second: gael-ATespecial_13
+      213: 4374738350757554491
+    second: gael-ATespecial - modificada_13
   - first:
-      213: 3275921759180713090
-    second: gael-ATespecial_14
+      213: -4410703154388103980
+    second: gael-ATespecial - modificada_14
   - first:
-      213: 3122708224300863313
-    second: gael-ATespecial_15
+      213: -8076356910560022442
+    second: gael-ATespecial - modificada_15
   - first:
-      213: 2099056161631204658
-    second: gael-ATespecial_16
+      213: -151485702269310394
+    second: gael-ATespecial - modificada_16
   - first:
-      213: -3594524617278737473
-    second: gael-ATespecial_17
+      213: -2765999161883604240
+    second: gael-ATespecial - modificada_17
   - first:
-      213: 1131695347475044982
-    second: gael-ATespecial_18
+      213: 8784754988154503840
+    second: gael-ATespecial - modificada_18
   - first:
-      213: 6412423275984847374
-    second: gael-ATespecial_19
+      213: -5739558460218780255
+    second: gael-ATespecial - modificada_19
   - first:
-      213: -8350926188397886957
-    second: gael-ATespecial_20
+      213: -1916862565459850356
+    second: gael-ATespecial - modificada_20
   - first:
-      213: 7933989517168915726
-    second: gael-ATespecial_21
-  - first:
-      213: -6105185596489762841
-    second: gael-ATespecial_22
-  - first:
-      213: 495121400716114109
-    second: gael-ATespecial_23
+      213: -8337057951064270178
+    second: gael-ATespecial - modificada_21
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -169,13 +163,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: gael-ATespecial_0
+      name: gael-ATespecial - modificada_0
       rect:
         serializedVersion: 2
         x: 404
-        y: 16
+        y: 17
         width: 66
-        height: 76
+        height: 75
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,20 +178,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4b20321a6490b12e0800000000000000
-      internalID: -2154117797810863436
+      spriteID: 3915c95bc1519a0d0800000000000000
+      internalID: -3411172029706251885
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gael-ATespecial_1
+      name: gael-ATespecial - modificada_1
       rect:
         serializedVersion: 2
         x: 484
-        y: 16
+        y: 17
         width: 66
-        height: 88
+        height: 74
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -206,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 621098a689d049700800000000000000
-      internalID: 546076403092226342
+      spriteID: 12402a40fb93f3b60800000000000000
+      internalID: 7727958978170324001
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gael-ATespecial_2
+      name: gael-ATespecial - modificada_2
       rect:
         serializedVersion: 2
         x: 566
-        y: 16
+        y: 17
         width: 64
-        height: 91
+        height: 74
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -228,20 +222,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 63df5cc173733ce40800000000000000
-      internalID: 5675440665262423350
+      spriteID: 18bb953adf38f3560800000000000000
+      internalID: 7295695046754024321
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gael-ATespecial_4
+      name: gael-ATespecial - modificada_4
       rect:
         serializedVersion: 2
         x: 646
-        y: 16
+        y: 17
         width: 64
-        height: 92
+        height: 74
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -250,20 +244,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0e9a68b2e67e8acd0800000000000000
-      internalID: -2546531128915351072
+      spriteID: 971c62c362a1b9140800000000000000
+      internalID: 4727400985375719801
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gael-ATespecial_6
+      name: gael-ATespecial - modificada_6
       rect:
         serializedVersion: 2
         x: 726
-        y: 16
+        y: 17
         width: 64
-        height: 93
+        height: 74
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -272,20 +266,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 40ecc8d6ff47ba490800000000000000
-      internalID: -7733959294675268092
+      spriteID: 419f23309ece19a10800000000000000
+      internalID: 1914571802134378772
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gael-ATespecial_7
+      name: gael-ATespecial - modificada_7
       rect:
         serializedVersion: 2
         x: 806
-        y: 16
+        y: 17
         width: 68
-        height: 91
+        height: 74
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -294,20 +288,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fcfbe2ddc3e6b50e0800000000000000
-      internalID: -2280107578645102641
+      spriteID: 6d9df495384aad3c0800000000000000
+      internalID: -4333970807344604714
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gael-ATespecial_9
+      name: gael-ATespecial - modificada_9
       rect:
         serializedVersion: 2
         x: 886
-        y: 16
-        width: 72
-        height: 89
+        y: 17
+        width: 64
+        height: 74
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -316,20 +310,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1817767a93bdd67a0800000000000000
-      internalID: -6382204056245931647
+      spriteID: e4cfa5e06dc869610800000000000000
+      internalID: 1627643166332746830
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gael-ATespecial_11
+      name: gael-ATespecial - modificada_10
       rect:
         serializedVersion: 2
         x: 966
-        y: 16
-        width: 75
-        height: 84
+        y: 17
+        width: 64
+        height: 74
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -338,20 +332,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0c6075a407f54ac20800000000000000
-      internalID: 3216800969737569984
+      spriteID: dc38003fb35f9b610800000000000000
+      internalID: 1637609577354658765
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gael-ATespecial_13
+      name: gael-ATespecial - modificada_11
       rect:
         serializedVersion: 2
         x: 1046
         y: 16
         width: 64
-        height: 74
+        height: 75
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -360,18 +354,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cc4685f1bcae8ca20800000000000000
-      internalID: 3082972103060251852
+      spriteID: 076ffb91adb6d9d40800000000000000
+      internalID: 5592744896743077488
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gael-ATespecial_14
+      name: gael-ATespecial - modificada_12
       rect:
         serializedVersion: 2
         x: 1126
-        y: 16
+        y: 17
         width: 64
         height: 74
       alignment: 0
@@ -382,20 +376,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 28c60ffbb79667d20800000000000000
-      internalID: 3275921759180713090
+      spriteID: 06f824c716d3fa2a0800000000000000
+      internalID: -6724088229735002272
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gael-ATespecial_15
+      name: gael-ATespecial - modificada_13
       rect:
         serializedVersion: 2
         x: 14
-        y: 16
+        y: 17
         width: 40
-        height: 66
+        height: 65
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -404,20 +398,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 15fc4aec596165b20800000000000000
-      internalID: 3122708224300863313
+      spriteID: b39ae260a5136bc30800000000000000
+      internalID: 4374738350757554491
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gael-ATespecial_16
+      name: gael-ATespecial - modificada_14
       rect:
         serializedVersion: 2
         x: 93
-        y: 16
+        y: 17
         width: 46
-        height: 66
+        height: 65
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -426,20 +420,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2357f9d2578512d10800000000000000
-      internalID: 2099056161631204658
+      spriteID: 4dc800999d80ac2c0800000000000000
+      internalID: -4410703154388103980
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gael-ATespecial_17
+      name: gael-ATespecial - modificada_15
       rect:
         serializedVersion: 2
         x: 172
-        y: 16
+        y: 17
         width: 47
-        height: 66
+        height: 65
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -448,20 +442,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fb334bab7eead1ec0800000000000000
-      internalID: -3594524617278737473
+      spriteID: 6507cc22e240bef80800000000000000
+      internalID: -8076356910560022442
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gael-ATespecial_18
+      name: gael-ATespecial - modificada_16
       rect:
         serializedVersion: 2
         x: 249
-        y: 16
+        y: 17
         width: 55
-        height: 66
+        height: 65
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -470,20 +464,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 67a563c2ce694bf00800000000000000
-      internalID: 1131695347475044982
+      spriteID: 64aefaf6e80d5edf0800000000000000
+      internalID: -151485702269310394
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gael-ATespecial_19
+      name: gael-ATespecial - modificada_17
       rect:
         serializedVersion: 2
         x: 324
-        y: 16
+        y: 17
         width: 67
-        height: 70
+        height: 69
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -492,20 +486,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e02068abef08df850800000000000000
-      internalID: 6412423275984847374
+      spriteID: 0fa46eaca623d99d0800000000000000
+      internalID: -2765999161883604240
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gael-ATespecial_20
+      name: gael-ATespecial - modificada_18
       rect:
         serializedVersion: 2
-        x: 1209
-        y: 16
+        x: 1208
+        y: 17
         width: 62
-        height: 70
+        height: 74
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -514,20 +508,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 312890370ec8b1c80800000000000000
-      internalID: -8350926188397886957
+      spriteID: 0a24acb3e18b9e970800000000000000
+      internalID: 8784754988154503840
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gael-ATespecial_21
+      name: gael-ATespecial - modificada_19
       rect:
         serializedVersion: 2
         x: 1289
-        y: 16
+        y: 17
         width: 55
-        height: 66
+        height: 74
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -536,20 +530,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e05b6860e613b1e60800000000000000
-      internalID: 7933989517168915726
+      spriteID: 1a5521b6dfdf850b0800000000000000
+      internalID: -5739558460218780255
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gael-ATespecial_22
+      name: gael-ATespecial - modificada_20
       rect:
         serializedVersion: 2
         x: 1372
-        y: 16
+        y: 17
         width: 47
-        height: 66
+        height: 74
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -558,20 +552,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7e77561fb06064ba0800000000000000
-      internalID: -6105185596489762841
+      spriteID: c8b858617afe565e0800000000000000
+      internalID: -1916862565459850356
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gael-ATespecial_23
+      name: gael-ATespecial - modificada_21
       rect:
         serializedVersion: 2
         x: 1451
-        y: 16
+        y: 17
         width: 43
-        height: 66
+        height: 74
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -580,8 +574,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: db8b06a6a460fd600800000000000000
-      internalID: 495121400716114109
+      spriteID: e9ad7f217f1dc4c80800000000000000
+      internalID: -8337057951064270178
       vertices: []
       indices: 
       edges: []
@@ -590,7 +584,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 99e2987c677218c48bd57742cc81f202
+    spriteID: 26fbfc593199b5b40986bb700a5a24cb
     internalID: 0
     vertices: []
     indices: 
@@ -600,30 +594,28 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      gael-ATespecial_0: -2154117797810863436
-      gael-ATespecial_1: 546076403092226342
-      gael-ATespecial_10: -4280420009134270490
-      gael-ATespecial_11: 3216800969737569984
-      gael-ATespecial_12: 8308079059362690572
-      gael-ATespecial_13: 3082972103060251852
-      gael-ATespecial_14: 3275921759180713090
-      gael-ATespecial_15: 3122708224300863313
-      gael-ATespecial_16: 2099056161631204658
-      gael-ATespecial_17: -3594524617278737473
-      gael-ATespecial_18: 1131695347475044982
-      gael-ATespecial_19: 6412423275984847374
-      gael-ATespecial_2: 5675440665262423350
-      gael-ATespecial_20: -8350926188397886957
-      gael-ATespecial_21: 7933989517168915726
-      gael-ATespecial_22: -6105185596489762841
-      gael-ATespecial_23: 495121400716114109
-      gael-ATespecial_3: -2640046939742365803
-      gael-ATespecial_4: -2546531128915351072
-      gael-ATespecial_5: -5321625282551673176
-      gael-ATespecial_6: -7733959294675268092
-      gael-ATespecial_7: -2280107578645102641
-      gael-ATespecial_8: 6900168838980593431
-      gael-ATespecial_9: -6382204056245931647
+      gael-ATespecial - modificada_0: -3411172029706251885
+      gael-ATespecial - modificada_1: 7727958978170324001
+      gael-ATespecial - modificada_10: 1637609577354658765
+      gael-ATespecial - modificada_11: 5592744896743077488
+      gael-ATespecial - modificada_12: -6724088229735002272
+      gael-ATespecial - modificada_13: 4374738350757554491
+      gael-ATespecial - modificada_14: -4410703154388103980
+      gael-ATespecial - modificada_15: -8076356910560022442
+      gael-ATespecial - modificada_16: -151485702269310394
+      gael-ATespecial - modificada_17: -2765999161883604240
+      gael-ATespecial - modificada_18: 8784754988154503840
+      gael-ATespecial - modificada_19: -5739558460218780255
+      gael-ATespecial - modificada_2: 7295695046754024321
+      gael-ATespecial - modificada_20: -1916862565459850356
+      gael-ATespecial - modificada_21: -8337057951064270178
+      gael-ATespecial - modificada_3: -2587491927113973041
+      gael-ATespecial - modificada_4: 4727400985375719801
+      gael-ATespecial - modificada_5: -4316475627414371258
+      gael-ATespecial - modificada_6: 1914571802134378772
+      gael-ATespecial - modificada_7: -4333970807344604714
+      gael-ATespecial - modificada_8: -4468145666247081820
+      gael-ATespecial - modificada_9: 1627643166332746830
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

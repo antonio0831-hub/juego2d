@@ -58,7 +58,9 @@ public class bolt : MonoBehaviour
 
     void HandleHit(Collider2D other)
     {
-        // Walls
+        if (other == null) return;
+
+        // 1) Walls
         int otherMask = 1 << other.gameObject.layer;
         if ((wallsLayer.value & otherMask) != 0)
         {
@@ -66,29 +68,32 @@ public class bolt : MonoBehaviour
             return;
         }
 
-        // Si lo dispara el PLAYER, daña ENEMIGOS
+        // 2) Si lo dispara el PLAYER: daña ENEMIGOS
         if (fromPlayer)
         {
-            if (other.CompareTag("Enemy"))
+            // ✅ No dependemos del tag: buscamos vida_enemigo en el objeto o padres
+            vida_enemigo enemy = other.GetComponentInParent<vida_enemigo>();
+            if (enemy != null && !enemy.IsDead())
             {
-                vida_enemigo v = other.GetComponentInParent<vida_enemigo>();
-                if (v != null) v.TakeDamage(damage);
-
+                enemy.TakeDamage(damage, true);  // ✅ clave: fromPlayer=true
                 Destroy(gameObject);
                 return;
             }
         }
-        // Si lo dispara el ENEMIGO, daña PLAYER
+        // 3) Si lo dispara el ENEMIGO: daña PLAYER
         else
         {
-            if (other.CompareTag("Player"))
+            vida playerVida = other.GetComponentInParent<vida>();
+            if (playerVida != null)
             {
-                vida v = other.GetComponentInParent<vida>();
-                if (v != null) v.TakeDamage(damage);
-
+                playerVida.TakeDamage(damage);
                 Destroy(gameObject);
                 return;
             }
         }
+
+        // 4) Opcional: si choca con algo que no es wall ni objetivo, lo destruimos igual
+        // (si no lo quieres, borra estas líneas)
+        // Destroy(gameObject);
     }
 }
