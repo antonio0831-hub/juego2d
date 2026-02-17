@@ -92,23 +92,34 @@ public class vida : MonoBehaviour
 
     public void SetCheckpoint(Transform checkpoint) => currentRespawnPoint = checkpoint;
 
-    public void HealOneHeart()
+public void HealOneHeart()
+{
+    if (currentHealth < maxHealth)
     {
-        if (currentHealth < maxHealth)
+        // El índice es el valor actual de vida antes de sumar
+        // Ej: Si tienes 2 vidas, el índice es 2 (que es el tercer corazón)
+        int idx = currentHealth; 
+        currentHealth++;
+        
+        if (controlador_vida != null && idx < controlador_vida.Length)
         {
-            currentHealth++;
-            int idx = currentHealth - 1;
-            
-            if (idx >= 0 && idx < controlador_vida.Length && controlador_vida[idx] != null)
+            if (controlador_vida[idx] != null)
             {
-                // FORZAR REINICIO DEL ANIMATOR
+                // Aseguramos que el objeto esté activo
+                controlador_vida[idx].gameObject.SetActive(true);
+                
+                // Reiniciamos y reproducimos la animación de corazón lleno
                 controlador_vida[idx].Rebind();
-                controlador_vida[idx].Update(0f);
                 controlador_vida[idx].Play(fullStateName, 0, 0f);
-                Debug.Log("Corazón visual restaurado en índice: " + idx);
+                Debug.Log($"Corazón {idx + 1} restaurado visualmente.");
             }
         }
+        else
+        {
+            Debug.LogWarning("¡Ojo! Intentaste curar pero no hay suficientes Animators asignados en el array.");
+        }
     }
+}
 
     void RefreshHeartsFull()
     {
