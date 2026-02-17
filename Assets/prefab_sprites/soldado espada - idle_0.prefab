@@ -259,7 +259,7 @@ MonoBehaviour:
   pointA: {fileID: 0}
   pointB: {fileID: 0}
   arriveDistance: 0.12
-  waitAtPatrolPoint: 0.4
+  waitAtPatrolPoint: 1
   playerTag: Player
   detectionRange: 1.08
   attackRange: 0.26

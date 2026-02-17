@@ -9,8 +9,8 @@ public class ataque_distancia : MonoBehaviour
     public ShotMode shotMode = ShotMode.AimAtTarget;
 
     [Header("Cómo detectar hacia dónde mira el enemigo")]
-    public bool useSpriteFlipX = true;      // si tu enemigo gira con SpriteRenderer.flipX
-    public bool defaultFacesRight = true;   // si tu sprite “por defecto” mira a la derecha
+    public bool useSpriteFlipX = true;      
+    public bool defaultFacesRight = true;   
 
     [Header("Disparo")]
     public Transform firePoint;
@@ -21,20 +21,25 @@ public class ataque_distancia : MonoBehaviour
     public float boltMaxDistance = 6f;
 
     [Header("Quién dispara")]
-    public bool fromPlayer = false;         // enemigo=false / player=true
+    public bool fromPlayer = false;         
 
     [Header("Sincronización con animación")]
-    public float fireDelay = 0.12f;         // ⬅ ajusta esto hasta que coincida con el frame
-    public bool blockWhileWaiting = true;   // ⬅ evita que spamee bolts si llaman varias veces
+    public float fireDelay = 0.12f;         
+    public bool blockWhileWaiting = true;   
 
     private bool waitingShot = false;
 
     public void Disparar(Transform target)
     {
         if (firePoint == null || boltPrefab == null) return;
-
-        // ✅ Anti-spam: si ya hay un disparo “en cola”, no crear otro
         if (blockWhileWaiting && waitingShot) return;
+
+        // ✅ MEJORA: Si el bicho no sabe quién es su target, lo buscamos aquí
+        if (target == null)
+        {
+            GameObject p = GameObject.FindGameObjectWithTag("Player");
+            if (p != null) target = p.transform;
+        }
 
         StartCoroutine(DelayedShot(target));
     }
@@ -43,7 +48,6 @@ public class ataque_distancia : MonoBehaviour
     {
         waitingShot = true;
 
-        // Espera para sincronizar con la animación
         if (fireDelay > 0f)
             yield return new WaitForSeconds(fireDelay);
 
@@ -55,17 +59,18 @@ public class ataque_distancia : MonoBehaviour
 
         GameObject boltGO = Instantiate(boltPrefab, firePoint.position, Quaternion.identity);
 
-        // ✅ Elegir dirección según modo
-        Vector2 dir = Vector2.right;
+        // ✅ Determinar dirección
+        Vector2 dir;
 
-        if (shotMode == ShotMode.AimAtTarget)
+        // Si tenemos un objetivo y queremos apuntar...
+        if (shotMode == ShotMode.AimAtTarget && target != null)
         {
-            if (target == null) dir = GetFacingDir();
-            else dir = ((Vector2)target.position - (Vector2)firePoint.position).normalized;
+            dir = ((Vector2)target.position - (Vector2)firePoint.position).normalized;
         }
         else
         {
-            dir = GetFacingDir(); // solo izq/der
+            // Si no hay objetivo, usamos hacia donde mira el sprite (GetFacingDir)
+            dir = GetFacingDir();
         }
 
         // Inicializar bolt
@@ -76,14 +81,16 @@ public class ataque_distancia : MonoBehaviour
             b.maxDistance = boltMaxDistance;
             b.SetOwnerAndTarget(fromPlayer);
             b.Init(dir);
+
+            // ✅ EXTRA: Rotar el Bolt para que la punta mire al objetivo
+            float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+            boltGO.transform.rotation = Quaternion.Euler(0, 0, angle);
         }
         else
         {
-            // fallback por si no tiene script bolt
             Rigidbody2D rb = boltGO.GetComponent<Rigidbody2D>();
             if (rb != null)
             {
-                // importante: recto
                 rb.gravityScale = 0f;
                 rb.linearVelocity = dir * boltSpeed;
             }
@@ -92,19 +99,18 @@ public class ataque_distancia : MonoBehaviour
         waitingShot = false;
     }
 
-    // Devuelve Vector2.right o Vector2.left según hacia dónde mira el enemigo
     Vector2 GetFacingDir()
     {
         float sign = 1f;
+        var sr = GetComponent<SpriteRenderer>();
+        
+        // Si no hay SpriteRenderer en este objeto, lo buscamos en los hijos
+        if (sr == null) sr = GetComponentInChildren<SpriteRenderer>();
 
-        if (useSpriteFlipX)
+        if (useSpriteFlipX && sr != null)
         {
-            var sr = GetComponent<SpriteRenderer>();
-            bool flip = (sr != null && sr.flipX);
-
-            sign = (defaultFacesRight)
-                ? (flip ? -1f : 1f)
-                : (flip ? 1f : -1f);
+            bool flip = sr.flipX;
+            sign = (defaultFacesRight) ? (flip ? -1f : 1f) : (flip ? 1f : -1f);
         }
         else
         {

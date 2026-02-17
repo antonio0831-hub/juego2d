@@ -1,27 +1,37 @@
 using UnityEngine;
 
-public class checkpoint : MonoBehaviour
+public class Checkpoint : MonoBehaviour
 {
+    [Header("Configuración")]
     public string playerTag = "Player";
+    public Color activeColor = Color.green;
+    private bool activated = false;
 
-    [Header("Opcional: desactivar tras activarse")]
-    public bool disableAfterUse = true;
-
-    private bool activated;
-
-    void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (activated) return;
-        if (!other.CompareTag(playerTag)) return;
-
-        vida v = other.GetComponentInParent<vida>();
-        if (v != null)
+        // Buscamos al jugador por Tag
+        if (collision.CompareTag(playerTag))
         {
-            v.SetCheckpoint(transform);
-            activated = true;
+            // Buscamos el script vida en el objeto o sus padres
+            vida playerHealth = collision.GetComponentInParent<vida>();
 
-            if (disableAfterUse)
-                GetComponent<Collider2D>().enabled = false;
+            if (playerHealth != null)
+            {
+                // Actualizamos siempre el punto de respawn
+                playerHealth.SetCheckpoint(this.transform);
+
+                // Curamos si es la primera vez que tocamos ESTE checkpoint
+                if (!activated)
+                {
+                    playerHealth.HealOneHeart();
+                    activated = true;
+                    
+                    if (GetComponent<SpriteRenderer>() != null)
+                        GetComponent<SpriteRenderer>().color = activeColor;
+                    
+                    Debug.Log("Checkpoint Activado: Vida aumentada a " + playerHealth.gameObject.name);
+                }
+            }
         }
     }
 }

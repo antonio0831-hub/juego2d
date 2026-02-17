@@ -132,7 +132,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16cc1cc7030ff884d992bd81a2355b5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::bolt
-  speed: 5
+  speed: 2
   maxDistance: 10
   damage: 2
   wallsLayer:
