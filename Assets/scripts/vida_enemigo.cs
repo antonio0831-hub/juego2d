@@ -1,57 +1,62 @@
 using UnityEngine;
+using System.Collections;
 
 [DisallowMultipleComponent]
 public class vida_enemigo : MonoBehaviour
 {
     [Header("Vida")]
     public int maxHealth = 1;
+    private int currentHealth;
 
     [Header("Muerte")]
     public string deathTrigger = "muerte";
-    public float destroyAfterSeconds = 1f;
+    public float deactivateAfterSeconds = 1f;
 
     [Header("Desactivar al morir")]
     public MonoBehaviour[] disableScriptsOnDeath;   // IA, ataque, etc.
     public Collider2D[] disableCollidersOnDeath;    // Colliders del enemigo
 
     [Header("Kills del player (carga)")]
-    public bool countKillOnlyIfFromPlayer = true;   // ✅ lo que pediste
-    public int killValue = 1;                       // por si algún enemigo cuenta +1
+    public bool countKillOnlyIfFromPlayer = true;
+    public int killValue = 1;
 
-    private int currentHealth;
+    // Variables privadas para el sistema de Reset
     private Animator anim;
     private Rigidbody2D rb;
     private bool dead;
-
-    // ✅ Guarda quién dio el último golpe
     private bool lastHitFromPlayer = false;
+    
+    // Guardado de estado inicial
+    private Vector3 posicionInicial;
+    private Quaternion rotacionInicial;
 
     void Awake()
     {
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
 
+        // Guardamos la posición y rotación donde colocaste al enemigo en el editor
+        posicionInicial = transform.position;
+        rotacionInicial = transform.rotation;
+
         currentHealth = Mathf.Max(1, maxHealth);
     }
 
-    // --- Daño “simple” (compatibilidad con scripts viejos) ---
-    // Si llamas a esto, asumimos que NO viene del player (para evitar sumar sin querer).
+    // Daño sin especificar origen (asume falso)
     public void TakeDamage(int amount)
     {
         TakeDamage(amount, false);
     }
 
-    // ✅ Daño con “origen”: desde player o desde enemigo
+    // Daño con origen
     public void TakeDamage(int amount, bool fromPlayer)
     {
         if (dead) return;
 
-        amount = Mathf.Max(1, amount);
         currentHealth = Mathf.Max(0, currentHealth - amount);
-
         lastHitFromPlayer = fromPlayer;
 
-        Debug.Log($"[vida_enemigo] {name} HP: {currentHealth} (fromPlayer={fromPlayer})");
+        Debug.Log($"[vida_enemigo] {name} HP: {currentHealth} (desde Player: {fromPlayer})");
 
         if (currentHealth <= 0)
         {
@@ -64,55 +69,71 @@ public class vida_enemigo : MonoBehaviour
         if (dead) return;
         dead = true;
 
-        // ✅ Si quieres que SOLO cuente cuando mata el player:
+        // Lógica de KillChargeManager (Suma puntos al jugador)
         if (!countKillOnlyIfFromPlayer || lastHitFromPlayer)
-    {
-    GameObject p = GameObject.FindGameObjectWithTag("Player");
-    if (p != null)
-    {
-        var charge = p.GetComponent<KillChargeManager>();
-        if (charge != null)
         {
-            charge.AddKill(Mathf.Max(1, killValue)); // ✅ aquí
+            GameObject p = GameObject.FindGameObjectWithTag("Player");
+            if (p != null)
+            {
+                var charge = p.GetComponent<KillChargeManager>();
+                if (charge != null) charge.AddKill(Mathf.Max(1, killValue));
+            }
         }
-        else
-        {
-            Debug.LogWarning("[vida_enemigo] No existe KillChargeManager en el Player.");
-        }
-    }
-    }
 
-
-        // ✅ Animación muerte
+        // Animación de muerte
         if (anim != null && !string.IsNullOrEmpty(deathTrigger))
         {
-            anim.ResetTrigger(deathTrigger);
             anim.SetTrigger(deathTrigger);
         }
 
-        // ✅ Parar físicas
+        // Desactivar físicas y componentes
+        if (rb != null) rb.simulated = false;
+
+        foreach (var s in disableScriptsOnDeath) if (s != null) s.enabled = false;
+        foreach (var c in disableCollidersOnDeath) if (c != null) c.enabled = false;
+
+        // IMPORTANTE: En lugar de Destroy, usamos una Corrutina para desactivar
+        StartCoroutine(DesactivarEnemigo());
+    }
+
+    IEnumerator DesactivarEnemigo()
+    {
+        yield return new WaitForSeconds(Mathf.Max(0.01f, deactivateAfterSeconds));
+        gameObject.SetActive(false); // El enemigo "desaparece" pero sigue en la escena
+    }
+
+    // --- ESTA FUNCIÓN LA LLAMA EL JUGADOR AL MORIR ---
+    public void ReiniciarEnemigo()
+    {
+        // Reset de estado
+        dead = false;
+        currentHealth = maxHealth;
+        lastHitFromPlayer = false;
+
+        // Volver a posición original
+        transform.position = posicionInicial;
+        transform.rotation = rotacionInicial;
+        
+        // Activar el objeto
+        gameObject.SetActive(true);
+
+        // Reactivar físicas y componentes
         if (rb != null)
         {
-            rb.linearVelocity = Vector2.zero;
-            rb.simulated = false;
+            rb.simulated = true;
+            rb.linearVelocity = Vector2.zero; // Resetea movimiento si estaba cayendo
+            rb.angularVelocity = 0f;
         }
 
-        // ✅ Desactivar scripts (IA, ataque...)
-        if (disableScriptsOnDeath != null)
+        foreach (var s in disableScriptsOnDeath) if (s != null) s.enabled = true;
+        foreach (var c in disableCollidersOnDeath) if (c != null) c.enabled = true;
+
+        // Resetear Animator (para que no se quede en la animación de muerte)
+        if (anim != null)
         {
-            foreach (var s in disableScriptsOnDeath)
-                if (s != null) s.enabled = false;
+            anim.Rebind();
+            anim.Update(0f);
         }
-
-        // ✅ Desactivar colliders
-        if (disableCollidersOnDeath != null)
-        {
-            foreach (var c in disableCollidersOnDeath)
-                if (c != null) c.enabled = false;
-        }
-
-        // ✅ Destruir tras la animación
-        Destroy(gameObject, Mathf.Max(0.01f, destroyAfterSeconds));
     }
 
     public int GetHealth() => currentHealth;

@@ -18,7 +18,7 @@ public class vida : MonoBehaviour
     public float deathAnimDuration = 1.0f;
 
     [Header("Respawn")]
-    public Transform initialRespawnPoint;     
+    public Transform initialRespawnPoint;      
     private Transform currentRespawnPoint;    
 
     [Header("Componentes a desactivar")]
@@ -40,6 +40,7 @@ public class vida : MonoBehaviour
         RefreshHeartsFull();
     }
 
+    // --- SISTEMA DE DAÑO ---
     public void TakeDamage(int amount)
     {
         if (dead) return;
@@ -59,67 +60,82 @@ public class vida : MonoBehaviour
         if (currentHealth <= 0) StartCoroutine(DieAndRespawn());
     }
 
+    // --- SISTEMA DE CURACIÓN (CHECKPOINT) ---
+    public void SetCheckpoint(Transform checkpoint) 
+    {
+        // Si es un checkpoint nuevo, actualizamos y curamos
+        if (currentRespawnPoint != checkpoint)
+        {
+            currentRespawnPoint = checkpoint;
+            HealOneHeart(); 
+        }
+    }
+
+    public void HealOneHeart()
+    {
+        // Solo cura si le falta vida y no está muerto
+        if (currentHealth < maxHealth && !dead)
+        {
+            currentHealth++;
+            int idx = currentHealth - 1;
+            
+            if (idx >= 0 && idx < controlador_vida.Length && controlador_vida[idx] != null)
+            {
+                // Forzar al corazón a mostrarse lleno visualmente
+                controlador_vida[idx].Rebind();
+                controlador_vida[idx].Update(0f);
+                controlador_vida[idx].Play(fullStateName, 0, 0f);
+                Debug.Log("Corazón recuperado en checkpoint. Vida actual: " + currentHealth);
+            }
+        }
+    }
+
+    // --- SISTEMA DE MUERTE Y RESPAWN ---
     IEnumerator DieAndRespawn()
     {
         dead = true;
 
+        // 1. Iniciar animación de muerte y detener físicas
+        if (anim != null) anim.SetTrigger(deathTrigger);
+        if (rb != null) { rb.linearVelocity = Vector2.zero; rb.simulated = false; }
+
         if (disableScriptsWhileDead != null)
             foreach (var s in disableScriptsWhileDead) if (s != null) s.enabled = false;
 
-        if (rb != null) { rb.linearVelocity = Vector2.zero; rb.simulated = false; }
-
-        if (anim != null) anim.SetTrigger(deathTrigger);
-
+        // 2. Esperar a que se vea la animación de muerte
         yield return new WaitForSeconds(deathAnimDuration);
 
+        // 3. REINICIAR ENEMIGOS (sin recargar escena para mantener checkpoints)
+        vida_enemigo[] todosLosEnemigos = Resources.FindObjectsOfTypeAll<vida_enemigo>();
+        foreach (vida_enemigo en in todosLosEnemigos)
+        {
+            // Solo resetear si es un objeto de la escena (no un prefab)
+            if (en.gameObject.scene.name != null) en.ReiniciarEnemigo();
+        }
+
+        // 4. Teletransporte al Checkpoint
         Transform rp = currentRespawnPoint != null ? currentRespawnPoint : initialRespawnPoint;
         if (rp != null) transform.position = rp.position;
 
-        // RESTAURAR VIDA
+        // 5. Restaurar Vida y UI
         currentHealth = maxHealth;
-        
-        // --- REFRESCAR UI ---
         yield return new WaitForEndOfFrame(); 
         RefreshHeartsFull(); 
 
-        if (rb != null) rb.simulated = true;
+        // 6. Resetear Animator del jugador para que pueda volver a caminar
+        if (anim != null)
+        {
+            anim.Rebind();
+            anim.Update(0f);
+        }
 
+        // 7. Reactivar todo
+        if (rb != null) rb.simulated = true;
         if (disableScriptsWhileDead != null)
             foreach (var s in disableScriptsWhileDead) if (s != null) s.enabled = true;
 
         dead = false;
     }
-
-    public void SetCheckpoint(Transform checkpoint) => currentRespawnPoint = checkpoint;
-
-public void HealOneHeart()
-{
-    if (currentHealth < maxHealth)
-    {
-        // El índice es el valor actual de vida antes de sumar
-        // Ej: Si tienes 2 vidas, el índice es 2 (que es el tercer corazón)
-        int idx = currentHealth; 
-        currentHealth++;
-        
-        if (controlador_vida != null && idx < controlador_vida.Length)
-        {
-            if (controlador_vida[idx] != null)
-            {
-                // Aseguramos que el objeto esté activo
-                controlador_vida[idx].gameObject.SetActive(true);
-                
-                // Reiniciamos y reproducimos la animación de corazón lleno
-                controlador_vida[idx].Rebind();
-                controlador_vida[idx].Play(fullStateName, 0, 0f);
-                Debug.Log($"Corazón {idx + 1} restaurado visualmente.");
-            }
-        }
-        else
-        {
-            Debug.LogWarning("¡Ojo! Intentaste curar pero no hay suficientes Animators asignados en el array.");
-        }
-    }
-}
 
     void RefreshHeartsFull()
     {
@@ -128,7 +144,6 @@ public void HealOneHeart()
         {
             if (heart != null)
             {
-                // FORZAR REINICIO DE TODOS LOS CORAZONES
                 heart.Rebind();
                 heart.Update(0f);
                 heart.Play(fullStateName, 0, 0f);
