@@ -1,11 +1,17 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement; // Necesario si quieres reiniciar el nivel después
 
 public class vida : MonoBehaviour
 {
-    [Header("Vida")]
+    [Header("Vida (Corazones)")]
     public int maxHealth = 3;
     private int currentHealth;
+
+    [Header("Intentos (Game Over)")]
+    public int intentosMaximos = 3;
+    private int intentosActuales;
+    public GameObject panelGameOver; // Arrastra aquí tu panel de Game Over
 
     [Header("Corazones UI (Animators)")]
     public Animator[] controlador_vida; 
@@ -36,11 +42,13 @@ public class vida : MonoBehaviour
     void Start()
     {
         currentHealth = maxHealth;
+        intentosActuales = 0; // Empezamos con 0 muertes
+        if (panelGameOver != null) panelGameOver.SetActive(false); // Escondemos el panel al empezar
+
         currentRespawnPoint = initialRespawnPoint != null ? initialRespawnPoint : transform;
         RefreshHeartsFull();
     }
 
-    // --- SISTEMA DE DAÑO ---
     public void TakeDamage(int amount)
     {
         if (dead) return;
@@ -60,40 +68,11 @@ public class vida : MonoBehaviour
         if (currentHealth <= 0) StartCoroutine(DieAndRespawn());
     }
 
-    // --- SISTEMA DE CURACIÓN (CHECKPOINT) ---
-    public void SetCheckpoint(Transform checkpoint) 
-    {
-        // Si es un checkpoint nuevo, actualizamos y curamos
-        if (currentRespawnPoint != checkpoint)
-        {
-            currentRespawnPoint = checkpoint;
-            HealOneHeart(); 
-        }
-    }
-
-    public void HealOneHeart()
-    {
-        // Solo cura si le falta vida y no está muerto
-        if (currentHealth < maxHealth && !dead)
-        {
-            currentHealth++;
-            int idx = currentHealth - 1;
-            
-            if (idx >= 0 && idx < controlador_vida.Length && controlador_vida[idx] != null)
-            {
-                // Forzar al corazón a mostrarse lleno visualmente
-                controlador_vida[idx].Rebind();
-                controlador_vida[idx].Update(0f);
-                controlador_vida[idx].Play(fullStateName, 0, 0f);
-                Debug.Log("Corazón recuperado en checkpoint. Vida actual: " + currentHealth);
-            }
-        }
-    }
-
-    // --- SISTEMA DE MUERTE Y RESPAWN ---
+    // --- SISTEMA DE MUERTE Y RESPAWN MODIFICADO ---
     IEnumerator DieAndRespawn()
     {
         dead = true;
+        intentosActuales++; // Sumamos una muerte
 
         // 1. Iniciar animación de muerte y detener físicas
         if (anim != null) anim.SetTrigger(deathTrigger);
@@ -105,11 +84,17 @@ public class vida : MonoBehaviour
         // 2. Esperar a que se vea la animación de muerte
         yield return new WaitForSeconds(deathAnimDuration);
 
-        // 3. REINICIAR ENEMIGOS (sin recargar escena para mantener checkpoints)
+        // --- COMPROBACIÓN DE GAME OVER ---
+        if (intentosActuales >= intentosMaximos)
+        {
+            MostrarGameOver();
+            yield break; // Detenemos la corrutina aquí, no hay respawn
+        }
+
+        // 3. REINICIAR ENEMIGOS
         vida_enemigo[] todosLosEnemigos = Resources.FindObjectsOfTypeAll<vida_enemigo>();
         foreach (vida_enemigo en in todosLosEnemigos)
         {
-            // Solo resetear si es un objeto de la escena (no un prefab)
             if (en.gameObject.scene.name != null) en.ReiniciarEnemigo();
         }
 
@@ -122,7 +107,7 @@ public class vida : MonoBehaviour
         yield return new WaitForEndOfFrame(); 
         RefreshHeartsFull(); 
 
-        // 6. Resetear Animator del jugador para que pueda volver a caminar
+        // 6. Resetear Animator
         if (anim != null)
         {
             anim.Rebind();
@@ -135,6 +120,44 @@ public class vida : MonoBehaviour
             foreach (var s in disableScriptsWhileDead) if (s != null) s.enabled = true;
 
         dead = false;
+    }
+
+    void MostrarGameOver()
+    {
+        Debug.Log("GAME OVER: Has muerto " + intentosMaximos + " veces.");
+        if (panelGameOver != null) 
+        {
+            panelGameOver.SetActive(true); // Mostramos el panel (el que configuramos antes)
+        }
+        // Opcional: Congelar el tiempo de juego
+        // Time.timeScale = 0f; 
+    }
+
+    // Para botones en el panel de Game Over
+
+    // --- RESTO DE FUNCIONES (SetCheckpoint, Heal, etc) ---
+    public void SetCheckpoint(Transform checkpoint) 
+    {
+        if (currentRespawnPoint != checkpoint)
+        {
+            currentRespawnPoint = checkpoint;
+            HealOneHeart(); 
+        }
+    }
+
+    public void HealOneHeart()
+    {
+        if (currentHealth < maxHealth && !dead)
+        {
+            currentHealth++;
+            int idx = currentHealth - 1;
+            if (idx >= 0 && idx < controlador_vida.Length && controlador_vida[idx] != null)
+            {
+                controlador_vida[idx].Rebind();
+                controlador_vida[idx].Update(0f);
+                controlador_vida[idx].Play(fullStateName, 0, 0f);
+            }
+        }
     }
 
     void RefreshHeartsFull()
@@ -150,4 +173,22 @@ public class vida : MonoBehaviour
             }
         }
     }
+    // Función para cerrar el juego
+public void ReiniciarNivel()
+{
+    Time.timeScale = 1f;
+    // Esta línea carga la escena de nuevo
+    SceneManager.LoadScene(SceneManager.GetActiveScene().name); 
+}
+
+public void SalirDelJuego()
+{
+    #if UNITY_EDITOR
+        // ESTA es la línea que te saca al editor. 
+        // Solo debe estar AQUÍ, no en ReiniciarNivel.
+        UnityEditor.EditorApplication.isPlaying = false; 
+    #else
+        Application.Quit();
+    #endif
+}
 }

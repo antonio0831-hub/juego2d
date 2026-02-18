@@ -1,17 +1,23 @@
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.Events; // Necesario para crear eventos personalizados
-using System.Collections.Generic; // Necesario para usar Listas
+using UnityEngine.Events;
+using System.Collections; // Necesario para las Corrutinas (WaitForSeconds)
+using System.Collections.Generic;
 
 public class contadorManager : MonoBehaviour
 {
     [System.Serializable]
     public class EventoEspecial
     {
-        public string nombreDelEvento; // Solo para organizar en el inspector
-        public int metaDeColeccionables; // A cuántos coleccionables se activa
-        public UnityEvent accionAlCompletar; // Qué pasará cuando se alcance la meta
-        [HideInInspector] public bool completado = false; // Para que no se repita
+        public string nombreDelEvento;
+        public int metaDeColeccionables;
+        
+        [Header("Acciones")]
+        public UnityEvent accionAlActivar;    // Lo que pasa al empezar
+        public float duracionDelEvento = 3f;  // Cuánto tiempo dura activo
+        public UnityEvent accionAlTerminar;   // Lo que pasa al finalizar el tiempo
+
+        [HideInInspector] public bool completado = false;
     }
 
     [Header("Configuración del Conteo")]
@@ -19,7 +25,7 @@ public class contadorManager : MonoBehaviour
     public Text textoContador;
 
     [Header("Lista de Eventos Especiales")]
-    public List<EventoEspecial> listaDeEventos; 
+    public List<EventoEspecial> listaDeEventos;
 
     void Start()
     {
@@ -42,13 +48,29 @@ public class contadorManager : MonoBehaviour
     {
         foreach (EventoEspecial evento in listaDeEventos)
         {
-            // Si llegamos a la meta y el evento no se ha disparado aún
             if (contador >= evento.metaDeColeccionables && !evento.completado)
             {
-                evento.accionAlCompletar.Invoke(); // Ejecuta lo que pusiste en el Inspector
-                evento.completado = true; // Marca como hecho
-                Debug.Log("Evento activado: " + evento.nombreDelEvento);
+                // Iniciamos la secuencia temporal
+                StartCoroutine(EjecutarEventoConDuracion(evento));
+                evento.completado = true;
             }
         }
+    }
+
+    // Esta función maneja el tiempo de espera
+    IEnumerator EjecutarEventoConDuracion(EventoEspecial ev)
+    {
+        Debug.Log("Iniciando evento: " + ev.nombreDelEvento);
+        
+        // 1. Ejecutar lo que configuraste en el Inspector (ej: Activar un texto o animación)
+        ev.accionAlActivar.Invoke();
+
+        // 2. Esperar el tiempo definido
+        yield return new WaitForSeconds(ev.duracionDelEvento);
+
+        // 3. Ejecutar la acción de limpieza (ej: Desactivar el texto o volver a la normalidad)
+        ev.accionAlTerminar.Invoke();
+        
+        Debug.Log("Evento finalizado: " + ev.nombreDelEvento);
     }
 }

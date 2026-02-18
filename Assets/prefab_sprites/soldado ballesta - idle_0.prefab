@@ -284,7 +284,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::vida_enemigo
   maxHealth: 1
   deathTrigger: muerte
-  destroyAfterSeconds: 2
+  deactivateAfterSeconds: 1
   disableScriptsOnDeath:
   - {fileID: 3395556185881975078}
   - {fileID: 4363514965305498044}
