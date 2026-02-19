@@ -39,19 +39,26 @@ public class melee_universal : MonoBehaviour
     public bool debugHits = false;
 
     private float nextTime;
+    private float poderatacar;
 
+    void start()
+    {
+        poderatacar = true;
+    }
     void Update()
     {
         if (!useInput) return;
         if (Time.time < nextTime) return;
 
-        if (Input.GetKeyDown(attackKey))
+        if (Input.GetKeyDown(attackKey) && poderatacar==true)
             DoAttack();
     }
 
     // ✅ Llamar desde IA o desde input
     public void DoAttack()
     {
+        puedoatacar = false;
+        StartCoroutine(cool());
         if (Time.time < nextTime) return;
         nextTime = Time.time + cooldown;
 
@@ -128,7 +135,11 @@ public class melee_universal : MonoBehaviour
                 Debug.Log($"[melee_universal] Golpeó '{h.name}' pero no encontró objetivo válido.");
         }
     }
-
+    IEnumerator cool()
+    {
+        yield return new WaitForSeconds(cooldown);
+        puedoatacar=true
+    }
     void OnDrawGizmosSelected()
     {
         if (attackPoint == null) return;

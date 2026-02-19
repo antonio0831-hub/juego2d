@@ -1,34 +1,10 @@
 fileFormatVersion: 2
-guid: ea16bf00ef7913e46b9b2923516057a9
+guid: 67a906b51d5e80b4d80415b4a583e6d9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1711175984946281978
-    second: prop-coleccionables 1_0
-  - first:
-      213: 5587909912834903182
-    second: prop-coleccionables 1_1
-  - first:
-      213: 8244946139982274296
-    second: prop-coleccionables 1_2
-  - first:
-      213: -5048804150772334862
-    second: prop-coleccionables 1_3
-  - first:
-      213: 5782820905069137098
-    second: prop-coleccionables 1_4
-  - first:
-      213: 4847989771485954247
-    second: prop-coleccionables 1_5
-  - first:
-      213: 9100244541953394261
-    second: prop-coleccionables 1_6
-  - first:
-      213: 651107486920605082
-    second: prop-coleccionables 1_7
-  - first:
-      213: -8099433989629935761
-    second: prop-coleccionables 1_8
+      213: 7042847911465117151
+    second: menu_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -75,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 150
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -124,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: prop-coleccionables 1_1
+      name: menu_0
       rect:
         serializedVersion: 2
-        x: 13
-        y: 1
-        width: 31
-        height: 61
+        x: 0
+        y: 0
+        width: 300
+        height: 176
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -139,52 +115,118 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e8c886fa57e3c8d40800000000000000
-      internalID: 5587909912834903182
+      spriteID: fd5eaf16cd83db160800000000000000
+      internalID: 7042847911465117151
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: prop-coleccionables 1_3
+      name: menu_1
       rect:
         serializedVersion: 2
-        x: 77
-        y: 1
-        width: 31
-        height: 61
+        x: 300
+        y: 0
+        width: 300
+        height: 176
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 2fe72b4ef5b0fe9b0800000000000000
-      internalID: -5048804150772334862
+      spriteID: a08165813725c404c9acdead454254f0
+      internalID: 2015472505
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: prop-coleccionables 1_5
+      name: menu_2
       rect:
         serializedVersion: 2
-        x: 141
-        y: 1
-        width: 32
-        height: 61
+        x: 600
+        y: 0
+        width: 300
+        height: 176
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 7c0c52ce205874340800000000000000
-      internalID: 4847989771485954247
+      spriteID: 36eecf000d06a3946a597c5f8757331b
+      internalID: -1090939375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: menu_3
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 0
+        width: 300
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4a9936af830b12469bb5e0b8461f8af
+      internalID: -748779425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: menu_4
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 0
+        width: 300
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b4a0fa280cdf5f4bab8b43cca6fcb1d
+      internalID: -1567332217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: menu_5
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 0
+        width: 300
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f70c6e8cffba084c9de5438c1ed7a24
+      internalID: -1889849562
       vertices: []
       indices: 
       edges: []
@@ -193,7 +235,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 2c88dd88f185d5d47b855d4d6c2496f9
+    spriteID: 1e3dffdfe44869242a21cc0003d627a5
     internalID: 0
     vertices: []
     indices: 
@@ -201,17 +243,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":6.0,"y":1.0},"gridSpriteSize":{"x":300.0,"y":176.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      prop-coleccionables 1_0: 1711175984946281978
-      prop-coleccionables 1_1: 5587909912834903182
-      prop-coleccionables 1_2: 8244946139982274296
-      prop-coleccionables 1_3: -5048804150772334862
-      prop-coleccionables 1_4: 5782820905069137098
-      prop-coleccionables 1_5: 4847989771485954247
-      prop-coleccionables 1_6: 9100244541953394261
-      prop-coleccionables 1_7: 651107486920605082
-      prop-coleccionables 1_8: -8099433989629935761
+      menu_0: 7042847911465117151
+      menu_1: 2015472505
+      menu_2: -1090939375
+      menu_3: -748779425
+      menu_4: -1567332217
+      menu_5: -1889849562
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

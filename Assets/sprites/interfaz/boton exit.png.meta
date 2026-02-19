@@ -1,34 +1,25 @@
 fileFormatVersion: 2
-guid: ea16bf00ef7913e46b9b2923516057a9
+guid: cda3ad78e88f9f340a3b894adc9bf9f7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1711175984946281978
-    second: prop-coleccionables 1_0
+      213: 5110065874986246151
+    second: boton exit_0
   - first:
-      213: 5587909912834903182
-    second: prop-coleccionables 1_1
+      213: -3797332758870210921
+    second: boton exit_1
   - first:
-      213: 8244946139982274296
-    second: prop-coleccionables 1_2
+      213: -1820466902512147412
+    second: boton exit_2
   - first:
-      213: -5048804150772334862
-    second: prop-coleccionables 1_3
+      213: 4273743740521835797
+    second: boton exit_3
   - first:
-      213: 5782820905069137098
-    second: prop-coleccionables 1_4
+      213: 4226095077215734309
+    second: boton exit_4
   - first:
-      213: 4847989771485954247
-    second: prop-coleccionables 1_5
-  - first:
-      213: 9100244541953394261
-    second: prop-coleccionables 1_6
-  - first:
-      213: 651107486920605082
-    second: prop-coleccionables 1_7
-  - first:
-      213: -8099433989629935761
-    second: prop-coleccionables 1_8
+      213: -8201668760268946578
+    second: boton exit_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -75,7 +66,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 150
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -124,13 +115,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: prop-coleccionables 1_1
+      name: boton exit_0
       rect:
         serializedVersion: 2
-        x: 13
-        y: 1
-        width: 31
-        height: 61
+        x: 0
+        y: 0
+        width: 176
+        height: 176
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -139,20 +130,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e8c886fa57e3c8d40800000000000000
-      internalID: 5587909912834903182
+      spriteID: 700a669c6d99ae640800000000000000
+      internalID: 5110065874986246151
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: prop-coleccionables 1_3
+      name: boton exit_1
       rect:
         serializedVersion: 2
-        x: 77
-        y: 1
-        width: 31
-        height: 61
+        x: 176
+        y: 0
+        width: 176
+        height: 176
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -161,20 +152,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2fe72b4ef5b0fe9b0800000000000000
-      internalID: -5048804150772334862
+      spriteID: 796469599f92d4bc0800000000000000
+      internalID: -3797332758870210921
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: prop-coleccionables 1_5
+      name: boton exit_2
       rect:
         serializedVersion: 2
-        x: 141
-        y: 1
-        width: 32
-        height: 61
+        x: 352
+        y: 0
+        width: 176
+        height: 176
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -183,8 +174,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7c0c52ce205874340800000000000000
-      internalID: 4847989771485954247
+      spriteID: c2468665ff66cb6e0800000000000000
+      internalID: -1820466902512147412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boton exit_3
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51d6adae9436f4b30800000000000000
+      internalID: 4273743740521835797
       vertices: []
       indices: 
       edges: []
@@ -193,7 +206,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 2c88dd88f185d5d47b855d4d6c2496f9
+    spriteID: f86c6417d9c8bd24181d201dbe04fc95
     internalID: 0
     vertices: []
     indices: 
@@ -201,17 +214,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":4.0,"y":1.0},"gridSpriteSize":{"x":176.0,"y":176.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      prop-coleccionables 1_0: 1711175984946281978
-      prop-coleccionables 1_1: 5587909912834903182
-      prop-coleccionables 1_2: 8244946139982274296
-      prop-coleccionables 1_3: -5048804150772334862
-      prop-coleccionables 1_4: 5782820905069137098
-      prop-coleccionables 1_5: 4847989771485954247
-      prop-coleccionables 1_6: 9100244541953394261
-      prop-coleccionables 1_7: 651107486920605082
-      prop-coleccionables 1_8: -8099433989629935761
+      boton exit_0: 5110065874986246151
+      boton exit_1: -3797332758870210921
+      boton exit_2: -1820466902512147412
+      boton exit_3: 4273743740521835797
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

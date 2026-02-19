@@ -44,10 +44,6 @@ public class MenuPausa : MonoBehaviour
         // SceneManager.LoadScene("MenuPrincipal"); 
         
         // Por ahora, usemos tu lógica de salir del juego completa:
-        #if UNITY_EDITOR
-            UnityEditor.EditorApplication.isPlaying = false;
-        #else
-            Application.Quit();
-        #endif
+            SceneManager.LoadScene("Interfaz");
     }
 }

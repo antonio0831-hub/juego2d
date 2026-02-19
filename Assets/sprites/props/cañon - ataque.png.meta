@@ -1,0 +1,403 @@
+fileFormatVersion: 2
+guid: 6f5d2a35f5f0a314a890ee446b6f465f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6794444736609774842
+    second: "ca\xF1on - ataque_0"
+  - first:
+      213: -8821522871391891736
+    second: "ca\xF1on - ataque_1"
+  - first:
+      213: 3673618038123807776
+    second: "ca\xF1on - ataque_2"
+  - first:
+      213: 7278163477789077197
+    second: "ca\xF1on - ataque_3"
+  - first:
+      213: 4765194014699675492
+    second: "ca\xF1on - ataque_4"
+  - first:
+      213: -5745451268768232873
+    second: "ca\xF1on - ataque_5"
+  - first:
+      213: -569098842494613944
+    second: "ca\xF1on - ataque_6"
+  - first:
+      213: 7067180361629851711
+    second: "ca\xF1on - ataque_7"
+  - first:
+      213: -2265494158959119739
+    second: "ca\xF1on - ataque_8"
+  - first:
+      213: 1820492425632803686
+    second: "ca\xF1on - ataque_9"
+  - first:
+      213: 687091348581118140
+    second: "ca\xF1on - ataque_10"
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "ca\xF1on - ataque_0"
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 13
+        width: 72
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afce5ab4d77ba4e50800000000000000
+      internalID: 6794444736609774842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "ca\xF1on - ataque_1"
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 14
+        width: 69
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8eec3b8dfa7a39580800000000000000
+      internalID: -8821522871391891736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "ca\xF1on - ataque_2"
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 14
+        width: 76
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02446da54205bf230800000000000000
+      internalID: 3673618038123807776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "ca\xF1on - ataque_3"
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 49
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcee6d62f1b310560800000000000000
+      internalID: 7278163477789077197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "ca\xF1on - ataque_4"
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 14
+        width: 76
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46fddf395be512240800000000000000
+      internalID: 4765194014699675492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "ca\xF1on - ataque_5"
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 13
+        width: 66
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75a80c2038e0440b0800000000000000
+      internalID: -5745451268768232873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "ca\xF1on - ataque_6"
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 13
+        width: 72
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 846c5033e972a18f0800000000000000
+      internalID: -569098842494613944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "ca\xF1on - ataque_7"
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 26
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f30609a681ba31260800000000000000
+      internalID: 7067180361629851711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "ca\xF1on - ataque_8"
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 26
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 582f486c0195f80e0800000000000000
+      internalID: -2265494158959119739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "ca\xF1on - ataque_9"
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 25
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66be12a3730b34910800000000000000
+      internalID: 1820492425632803686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "ca\xF1on - ataque_10"
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 14
+        width: 65
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb0fb60f0f9098900800000000000000
+      internalID: 687091348581118140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      "ca\xF1on - ataque_0": 6794444736609774842
+      "ca\xF1on - ataque_1": -8821522871391891736
+      "ca\xF1on - ataque_10": 687091348581118140
+      "ca\xF1on - ataque_2": 3673618038123807776
+      "ca\xF1on - ataque_3": 7278163477789077197
+      "ca\xF1on - ataque_4": 4765194014699675492
+      "ca\xF1on - ataque_5": -5745451268768232873
+      "ca\xF1on - ataque_6": -569098842494613944
+      "ca\xF1on - ataque_7": 7067180361629851711
+      "ca\xF1on - ataque_8": -2265494158959119739
+      "ca\xF1on - ataque_9": 1820492425632803686
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
