@@ -5,6 +5,11 @@ public class salto_pared : MonoBehaviour
     [Header("Teclas")]
     public KeyCode clingKey = KeyCode.E;
     public KeyCode jumpKey = KeyCode.Space;
+    [Header("Sonidos")]
+    public AudioSource pared;
+    public AudioClip sonidopared;
+    public AudioSource salto;
+    public AudioClip saltar;
 
     [Header("Salto desde pared")]
     public float jumpForceX = 8f;
@@ -61,6 +66,7 @@ public class salto_pared : MonoBehaviour
         // ✅ Toggle real (NO mantener tecla)
         if (Input.GetKeyDown(clingKey))
         {
+            pared.PlayOneShot(sonidopared);
             if (clinging)
                 StopCling();
             else
@@ -97,6 +103,7 @@ public class salto_pared : MonoBehaviour
 
         if (Input.GetKeyDown(jumpKey))
         {
+            salto.PlayOneShot(saltar);
             StopCling();
 
             float dir = -facingDir;

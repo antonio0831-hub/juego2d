@@ -5,6 +5,11 @@ public class ataque_especial : MonoBehaviour
 {
     [Header("Input")]
     public KeyCode key = KeyCode.Q;
+    [Header("Sonidos")]
+    public AudioSource fuenteDeAudiopalabra;
+    public AudioClip sonidopalabra;
+    public AudioSource fuenteDeAudioataque;
+    public AudioClip sonidoAtaque;
 
     [Header("Refs")]
     public KillChargeManager charge;     // arrastra el KillChargeManager del Player (o se auto-busca)
@@ -37,6 +42,7 @@ public class ataque_especial : MonoBehaviour
 
         if (Input.GetKeyDown(key))
         {
+            fuenteDeAudioataque.PlayOneShot(sonidopalabra);
             StartCoroutine(DoSpecial());
         }
     }
@@ -48,6 +54,7 @@ public class ataque_especial : MonoBehaviour
         // Disparar animación
         if (anim != null && !string.IsNullOrEmpty(specialTrigger))
         {
+            fuenteDeAudioataque.PlayOneShot(sonidoAtaque);  
             anim.ResetTrigger(specialTrigger);
             anim.SetTrigger(specialTrigger);
         }

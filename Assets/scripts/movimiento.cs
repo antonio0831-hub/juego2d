@@ -9,6 +9,11 @@ public class movimiento : MonoBehaviour
     public float Speed = 5f;
     public float velocidadNormal;
     public float JumpForce = 8f;
+    [Header("Sonidos")]
+    public AudioSource pasos;
+    public AudioSource salto;
+    public AudioClip sonidosalto;
+    public AudioSource sprint;
 
     [Header("Suelo (Ground Check)")]
     public bool Grounded;
@@ -43,7 +48,21 @@ public class movimiento : MonoBehaviour
     {
         Horizontal = Input.GetAxisRaw("Horizontal");
         anim.SetBool("andar", Horizontal != 0.0f);
-
+    if (Horizontal != 0.0f) 
+    {
+    // ...y el sonido NO está sonando, lo activamos
+    if (!pasos.isPlaying) 
+    {
+        pasos.Play();
+    }
+    }
+    else // SI NO hay movimiento, lo paramos
+    {
+        pasos.Stop();
+    }
+    
+     // Detiene el sonido si el jugador deja de moverse
+    
         // Flip
         if (Horizontal != 0)
             transform.localScale = new Vector3(Mathf.Sign(Horizontal), 1, 1);
@@ -74,6 +93,7 @@ public class movimiento : MonoBehaviour
         // Salto normal SOLO si grounded y NO estás pegado
         if (Input.GetKeyDown(KeyCode.Space) && Grounded && (wallScript == null || !wallScript.IsClinging()))
         {
+            salto.PlayOneShot(sonidosalto);
             anim.SetTrigger("salto");
             rb.AddForce(Vector2.up * JumpForce, ForceMode2D.Impulse);
         }
@@ -85,6 +105,20 @@ public class movimiento : MonoBehaviour
             Speed = 1f;
         else
             Speed = velocidadNormal;
+    if (Input.GetKey(KeyCode.LeftShift)) 
+    {
+    // Solo le damos al Play si NO está sonando ya
+    if (!sprint.isPlaying) 
+    {
+        sprint.Play();
+        pasos.Stop();
+    }
+    }
+    else 
+    {
+    // Si soltamos el Shift, paramos el sonido
+    sprint.Stop();
+    }
     }
 
     void FixedUpdate()

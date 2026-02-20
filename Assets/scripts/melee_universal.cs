@@ -7,7 +7,9 @@ public class melee_universal : MonoBehaviour
 
     [Header("Forma del golpe")]
     public HitShape shape = HitShape.Circle;
-
+    [Header("Audio")]
+    public AudioSource fuenteDeAudio;
+    public AudioClip sonidoAtaque;
     [Header("Input (solo si es Player)")]
     public bool useInput = false;              // Player: true / Enemigo: false
     public KeyCode attackKey = KeyCode.Mouse0;
@@ -16,7 +18,8 @@ public class melee_universal : MonoBehaviour
     public Transform attackPoint;
     public LayerMask hitLayer;
     public int damage = 1;
-    public float cooldown = 0.35f;
+    public float cooldown;
+    //public int cooljugador;
 
     [Header("Círculo")]
     public float radius = 0.6f;
@@ -39,26 +42,32 @@ public class melee_universal : MonoBehaviour
     public bool debugHits = false;
 
     private float nextTime;
-    private float poderatacar;
+    //private bool atacado = false;
 
-    void start()
+    void Start()
     {
-        poderatacar = true;
+
     }
     void Update()
     {
         if (!useInput) return;
         if (Time.time < nextTime) return;
 
-        if (Input.GetKeyDown(attackKey) && poderatacar==true)
+        if (Input.GetKeyDown(KeyCode.Mouse0) /*&& !atacado*/)
+            {
+            //atacado = true;
+            anim.ResetTrigger(attackTrigger);
+            anim.SetTrigger(attackTrigger);
             DoAttack();
+           // StartCoroutine(reset());
+            fuenteDeAudio.PlayOneShot(sonidoAtaque);
+             }
     }
 
     // ✅ Llamar desde IA o desde input
     public void DoAttack()
     {
-        puedoatacar = false;
-        StartCoroutine(cool());
+
         if (Time.time < nextTime) return;
         nextTime = Time.time + cooldown;
 
@@ -111,7 +120,6 @@ public class melee_universal : MonoBehaviour
                     continue;
                 }
             }
-
             if (damagePlayer)
             {
                 vida vp =
@@ -135,11 +143,13 @@ public class melee_universal : MonoBehaviour
                 Debug.Log($"[melee_universal] Golpeó '{h.name}' pero no encontró objetivo válido.");
         }
     }
-    IEnumerator cool()
+    /*System.Collections.IEnumerator reset()
     {
         yield return new WaitForSeconds(cooldown);
-        puedoatacar=true
-    }
+        
+        atacado = false;
+        
+    }*/
     void OnDrawGizmosSelected()
     {
         if (attackPoint == null) return;
