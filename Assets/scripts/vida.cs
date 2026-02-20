@@ -13,6 +13,7 @@ public class vida : MonoBehaviour
     public AudioSource gameover;
     public AudioSource muerte;
     public AudioClip murio;
+    public AudioSource pausa;
     [Header("Intentos (Game Over)")]
     public int intentosMaximos = 3;
     private int intentosActuales;

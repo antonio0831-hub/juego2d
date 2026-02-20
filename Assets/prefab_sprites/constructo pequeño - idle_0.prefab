@@ -166,7 +166,7 @@ MonoBehaviour:
   pointB: {fileID: 0}
   arriveDistance: 0.12
   audioSourcePasos: {fileID: 0}
-  sonidoPaso: {fileID: 8300000, guid: 7f2b127afd034c04d9b782833c482d45, type: 3}
+  sonidoPaso: {fileID: 0}
   tiempoEntrePasos: 0.4
   waitAtPatrolPoint: 1
   playerTag: Player
@@ -291,9 +291,9 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 7f2b127afd034c04d9b782833c482d45, type: 3}
+  m_Resource: {fileID: 8300000, guid: 8ffa1e24b39162d4f8ca50b891c8af86, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.258
+  m_Volume: 0.014
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -302,7 +302,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 2
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
