@@ -7,6 +7,9 @@ public class ataque_distancia : MonoBehaviour
 
     [Header("Modo de disparo")]
     public ShotMode shotMode = ShotMode.AimAtTarget;
+    [Header("Sonidos")]
+    public AudioSource ballesta;
+    public AudioClip flecha;
 
     [Header("Cómo detectar hacia dónde mira el enemigo")]
     public bool useSpriteFlipX = true;      
@@ -50,7 +53,7 @@ public class ataque_distancia : MonoBehaviour
 
         if (fireDelay > 0f)
             yield return new WaitForSeconds(fireDelay);
-
+            ballesta.PlayOneShot(flecha);
         if (firePoint == null || boltPrefab == null)
         {
             waitingShot = false;

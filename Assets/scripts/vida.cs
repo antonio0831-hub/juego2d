@@ -7,7 +7,12 @@ public class vida : MonoBehaviour
     [Header("Vida (Corazones)")]
     public int maxHealth = 3;
     private int currentHealth;
-
+    [Header("Sonidos Vida")]
+    public AudioSource audioSource; // Arrastra el AudioSource del jugador
+    public AudioClip sonidoHerida;  // Arrastra el sonido de "daño"
+    public AudioSource gameover;
+    public AudioSource muerte;
+    public AudioClip murio;
     [Header("Intentos (Game Over)")]
     public int intentosMaximos = 3;
     private int intentosActuales;
@@ -52,7 +57,10 @@ public class vida : MonoBehaviour
     public void TakeDamage(int amount)
     {
         if (dead) return;
-
+        if (audioSource != null && sonidoHerida != null)
+        {
+        audioSource.PlayOneShot(sonidoHerida);
+        }
         int prev = currentHealth;
         currentHealth = Mathf.Max(0, currentHealth - amount);
 
@@ -73,7 +81,10 @@ public class vida : MonoBehaviour
     {
         dead = true;
         intentosActuales++; // Sumamos una muerte
-
+    if (muerte != null && murio != null)
+    {
+        muerte.PlayOneShot(murio);
+    }
         // 1. Iniciar animación de muerte y detener físicas
         if (anim != null) anim.SetTrigger(deathTrigger);
         if (rb != null) { rb.linearVelocity = Vector2.zero; rb.simulated = false; }
@@ -127,7 +138,8 @@ public class vida : MonoBehaviour
         Debug.Log("GAME OVER: Has muerto " + intentosMaximos + " veces.");
         if (panelGameOver != null) 
         {
-            panelGameOver.SetActive(true); // Mostramos el panel (el que configuramos antes)
+            panelGameOver.SetActive(true); //Mostramos el panel (el que configuramos antes)
+            gameover.Play(); 
         }
         // Opcional: Congelar el tiempo de juego
         // Time.timeScale = 0f; 
@@ -179,10 +191,12 @@ public void ReiniciarNivel()
     Time.timeScale = 1f;
     // Esta línea carga la escena de nuevo
     SceneManager.LoadScene(SceneManager.GetActiveScene().name); 
+    gameover.Stop();
 }
 
 public void SalirDelJuego()
 {
+    gameover.Stop();
     #if UNITY_EDITOR
         // ESTA es la línea que te saca al editor. 
         // Solo debe estar AQUÍ, no en ReiniciarNivel.

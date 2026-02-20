@@ -11,7 +11,11 @@ public class ia_enemigo_tierra : MonoBehaviour
     public Transform pointA;
     public Transform pointB;
     public float arriveDistance = 0.2f;
-
+    [Header("Sonido de Pasos")]
+    public AudioSource audioSourcePasos;
+    public AudioClip sonidoPaso;
+    public float tiempoEntrePasos = 0.4f;
+    private float stepTimer;
     [Header("Pausa en puntos")]
     public float waitAtPatrolPoint = 1f;
 
@@ -157,6 +161,15 @@ public class ia_enemigo_tierra : MonoBehaviour
         float dx = target.x - rb.position.x;
         UpdateFlip(dx);
         SetWalking(true);
+        stepTimer -= Time.deltaTime;
+    if (stepTimer <= 0f)
+    {
+        if (audioSourcePasos != null && sonidoPaso != null)
+        {
+            audioSourcePasos.PlayOneShot(sonidoPaso);
+        }
+        stepTimer = tiempoEntrePasos; // Reinicia el cronómetro
+    }
     }
 
     // --- LÓGICA DE ATAQUE ---

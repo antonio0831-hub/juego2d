@@ -6,12 +6,15 @@ public class Checkpoint : MonoBehaviour
     public string playerTag = "Player";
     public Color activeColor = Color.green;
     private bool activated = false;
+    public AudioSource check;
+    public AudioClip checkpoints;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         // Buscamos al jugador por Tag
         if (collision.CompareTag(playerTag))
         {
+            check.PlayOneShot(checkpoints);
             // Buscamos el script vida en el objeto o sus padres
             vida playerHealth = collision.GetComponentInParent<vida>();
 

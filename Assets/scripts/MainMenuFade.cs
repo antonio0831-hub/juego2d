@@ -7,6 +7,7 @@ public class MainMenuFade : MonoBehaviour
 {
     [Header("Panel de menú")]
     public GameObject menuPanel;
+    public AudioSource menu;
 
     [Header("Botones")]
     public Button startButton;
@@ -41,6 +42,7 @@ public class MainMenuFade : MonoBehaviour
             StartCoroutine(FadeAndLoadScene());
         else
             SceneManager.LoadScene("Level1"); // fallback
+            menu.Stop();
     }
 
     private IEnumerator FadeAndLoadScene()

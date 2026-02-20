@@ -7,6 +7,9 @@ public class vida_enemigo : MonoBehaviour
     [Header("Vida")]
     public int maxHealth = 1;
     private int currentHealth;
+    [Header("sonidos")]
+    public AudioSource muertenemigos;
+    public AudioClip murio;
 
     [Header("Muerte")]
     public string deathTrigger = "muerte";
@@ -68,7 +71,10 @@ public class vida_enemigo : MonoBehaviour
     {
         if (dead) return;
         dead = true;
-
+            if (muertenemigos != null && murio != null)
+    {
+        muertenemigos.PlayOneShot(murio);
+    }
         // Lógica de KillChargeManager (Suma puntos al jugador)
         if (!countKillOnlyIfFromPlayer || lastHitFromPlayer)
         {
