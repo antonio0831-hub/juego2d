@@ -265,7 +265,7 @@ MonoBehaviour:
   pointB: {fileID: 0}
   arriveDistance: 0.12
   audioSourcePasos: {fileID: 0}
-  sonidoPaso: {fileID: 0}
+  sonidoPaso: {fileID: 8300000, guid: 7f2b127afd034c04d9b782833c482d45, type: 3}
   tiempoEntrePasos: 0.4
   waitAtPatrolPoint: 1
   playerTag: Player

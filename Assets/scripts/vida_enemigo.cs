@@ -67,40 +67,49 @@ public class vida_enemigo : MonoBehaviour
         }
     }
 
-    void Die()
-    {
-        if (dead) return;
-        dead = true;
-            if (muertenemigos != null && murio != null)
+void Die()
+{
+    if (dead) return;
+    dead = true;
+
+    if (muertenemigos != null && murio != null)
     {
         muertenemigos.PlayOneShot(murio);
     }
-        // Lógica de KillChargeManager (Suma puntos al jugador)
-        if (!countKillOnlyIfFromPlayer || lastHitFromPlayer)
+
+    // --- NUEVO BLOQUE PARA SUMAR KILLS ---
+    if (!countKillOnlyIfFromPlayer || lastHitFromPlayer)
+    {
+        // Buscamos el manager directamente por su tipo de script
+        KillChargeManager charge = Object.FindAnyObjectByType<KillChargeManager>();
+
+        if (charge != null)
         {
-            GameObject p = GameObject.FindGameObjectWithTag("Player");
-            if (p != null)
-            {
-                var charge = p.GetComponent<KillChargeManager>();
-                if (charge != null) charge.AddKill(Mathf.Max(1, killValue));
-            }
+            charge.AddKill(Mathf.Max(1, killValue));
+            Debug.Log("Kill añadida correctamente al KillChargeManager");
         }
-
-        // Animación de muerte
-        if (anim != null && !string.IsNullOrEmpty(deathTrigger))
+        else 
         {
-            anim.SetTrigger(deathTrigger);
+            // Si ves este error en la consola de Unity, es que el Player no tiene el script
+            Debug.LogError("¡OJO! No he encontrado el KillChargeManager en la escena");
         }
-
-        // Desactivar físicas y componentes
-        if (rb != null) rb.simulated = false;
-
-        foreach (var s in disableScriptsOnDeath) if (s != null) s.enabled = false;
-        foreach (var c in disableCollidersOnDeath) if (c != null) c.enabled = false;
-
-        // IMPORTANTE: En lugar de Destroy, usamos una Corrutina para desactivar
-        StartCoroutine(DesactivarEnemigo());
     }
+    // -------------------------------------
+
+    // Animación de muerte
+    if (anim != null && !string.IsNullOrEmpty(deathTrigger))
+    {
+        anim.SetTrigger(deathTrigger);
+    }
+
+    // Desactivar físicas y componentes
+    if (rb != null) rb.simulated = false;
+
+    foreach (var s in disableScriptsOnDeath) if (s != null) s.enabled = false;
+    foreach (var c in disableCollidersOnDeath) if (c != null) c.enabled = false;
+
+    StartCoroutine(DesactivarEnemigo());
+}
 
     IEnumerator DesactivarEnemigo()
     {

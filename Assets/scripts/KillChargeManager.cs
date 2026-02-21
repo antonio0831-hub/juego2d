@@ -4,8 +4,8 @@ using UnityEngine.UI;
 public class KillChargeManager : MonoBehaviour
 {
     [Header("Objetivos")]
-    public int targetKills = 5;   // carga especial
-    public int portalKills = 4;   // aparece portal
+    public int targetKills = 5;   // Carga para ataque especial
+    public int portalKills = 4;   // Carga para el portal
 
     [Header("Estado")]
     public int kills = 0;
@@ -14,27 +14,24 @@ public class KillChargeManager : MonoBehaviour
     [Header("UI (segmentos 0..4)")]
     public Image[] segments;
 
-    [Header("Habilidad al cargar (opcional)")]
-    public MonoBehaviour abilityToEnable;
+    [Header("Habilidad al cargar")]
+    public MonoBehaviour abilityToEnable; // Aquí va el script 'ataque_especial'
 
-    [Header("Portal (aparece 1 vez)")]
-    public GameObject portalObject;                 // arrastra el portal (en escena) o un prefab instanciado ya
-    public string portalUnlockedKey = "PORTAL_4K_UNLOCKED"; // PlayerPrefs key
-    private bool portalUnlocked;
+    [Header("Portal")]
+    public GameObject portalObject; 
+    private bool portalUnlocked = false;
 
     void Awake()
     {
-        // si ya se desbloqueó antes, no volverá a activarse jamás
-        portalUnlocked = false;
-
         kills = 0;
         charged = false;
+        portalUnlocked = false;
 
+        // Desactivamos la habilidad al empezar
         if (abilityToEnable != null) abilityToEnable.enabled = false;
 
-        // si ya estaba desbloqueado, deja el portal activo (o como tú quieras)
-        if (portalObject != null)
-            portalObject.SetActive(portalUnlocked);
+        // Aseguramos que el portal esté apagado
+        if (portalObject != null) portalObject.SetActive(false);
 
         ApplyUI();
     }
@@ -43,47 +40,40 @@ public class KillChargeManager : MonoBehaviour
     {
         if (charged) return;
 
-        kills = Mathf.Clamp(kills + Mathf.Max(1, amount), 0, targetKills);
+        kills = Mathf.Clamp(kills + amount, 0, targetKills);
         Debug.Log($"[KillCharge] {kills}/{targetKills}");
 
-        // ✅ 4 kills -> activar portal SOLO si nunca se activó
+        // --- LÓGICA DEL PORTAL (4 Kills) ---
         if (!portalUnlocked && kills >= portalKills)
         {
             portalUnlocked = true;
-
             if (portalObject != null)
             {
                 portalObject.SetActive(true);
-
-                // si tiene animación, dispara su trigger "appear"
                 var a = portalObject.GetComponent<Animator>();
-                if (a != null)
-                {
-                    a.ResetTrigger("appear");
-                    a.SetTrigger("appear");
-                }
+                if (a != null) a.SetTrigger("appear");
             }
         }
 
-        ApplyUI();
-
-        // ✅ 5 kills -> cargar habilidad
+        // --- LÓGICA DE HABILIDAD (5 Kills) ---
         if (kills >= targetKills)
         {
             charged = true;
             if (abilityToEnable != null) abilityToEnable.enabled = true;
         }
+
+        ApplyUI();
     }
 
     public void Consume()
     {
         kills = 0;
         charged = false;
-
+        
+        // Al usar el ataque, se desactiva el script hasta volver a cargar
         if (abilityToEnable != null) abilityToEnable.enabled = false;
 
         ApplyUI();
-        Debug.Log("[KillCharge] Reset a 0 (el portal NO se resetea)");
     }
 
     void ApplyUI()
@@ -92,8 +82,10 @@ public class KillChargeManager : MonoBehaviour
 
         for (int i = 0; i < segments.Length; i++)
         {
-            if (segments[i] == null) continue;
-            segments[i].gameObject.SetActive(i < kills); // 0 kills -> nada visible
+            if (segments[i] != null)
+            {
+                segments[i].gameObject.SetActive(i < kills);
+            }
         }
     }
 }

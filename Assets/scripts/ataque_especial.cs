@@ -3,76 +3,32 @@ using UnityEngine;
 
 public class ataque_especial : MonoBehaviour
 {
-    [Header("Input")]
     public KeyCode key = KeyCode.Q;
-    [Header("Sonidos")]
-    public AudioSource fuenteDeAudiopalabra;
-    public AudioClip sonidopalabra;
-    public AudioSource fuenteDeAudioataque;
-    public AudioClip sonidoAtaque;
-
-    [Header("Refs")]
-    public KillChargeManager charge;     // arrastra el KillChargeManager del Player (o se auto-busca)
-    public ataque_distancia ranged;      // arrastra el ataque_distancia del Player
-    public Animator anim;                // animator del Player
-
-    [Header("Animator")]
-    public string specialTrigger = "ATespecial";
-
-    [Header("Timing")]
-    public float animDelayToFire = 0.12f;   // cuando quieres que salga el bolt dentro de la anim
-    public float lockTime = 0.35f;          // cuanto bloquea antes de permitir otro input
-
-    private bool busy;
-
-    void Awake()
-    {
-        if (charge == null) charge = GetComponent<KillChargeManager>();
-        if (ranged == null) ranged = GetComponent<ataque_distancia>();
-        if (anim == null) anim = GetComponent<Animator>();
-    }
+    public KillChargeManager charge;     
+    public ataque_distancia ranged;      
 
     void Update()
     {
-        if (busy) return;
-        if (charge == null || ranged == null) return;
+        // Si sale el error de la imagen, esto nos dirá quién es el culpable
+        if (charge == null) { 
+            Debug.LogError("Culpable: No has arrastrado el KillChargeManager al inspector!"); 
+            return; 
+        }
+        if (ranged == null) { 
+            Debug.LogError("Culpable: No has arrastrado el ataque_distancia al inspector!"); 
+            return; 
+        }
 
-        // Solo si está cargado
-        if (!charge.charged) return;
-
-        if (Input.GetKeyDown(key))
+        if (charge.charged && Input.GetKeyDown(key))
         {
-            fuenteDeAudioataque.PlayOneShot(sonidopalabra);
             StartCoroutine(DoSpecial());
         }
     }
 
     IEnumerator DoSpecial()
     {
-        busy = true;
-
-        // Disparar animación
-        if (anim != null && !string.IsNullOrEmpty(specialTrigger))
-        {
-            fuenteDeAudioataque.PlayOneShot(sonidoAtaque);  
-            anim.ResetTrigger(specialTrigger);
-            anim.SetTrigger(specialTrigger);
-        }
-
-        // Esperar a que cuadre con la animación
-        if (animDelayToFire > 0f)
-            yield return new WaitForSeconds(animDelayToFire);
-
-        // Disparo (si es recto, pon shotMode=StraightHorizontal en el ataque_distancia del player)
-        ranged.Disparar(null);
-
-        // Consumir la carga justo cuando se usa
-        charge.Consume();
-
-        // Bloqueo pequeño para evitar spam
-        if (lockTime > 0f)
-            yield return new WaitForSeconds(lockTime);
-
-        busy = false;
+        if (ranged != null) ranged.Disparar(null);
+        if (charge != null) charge.Consume();
+        yield return null;
     }
 }
