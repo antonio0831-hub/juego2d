@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4288834581668333495}
   - component: {fileID: 7221695748932333950}
   - component: {fileID: 2943093100885659451}
+  - component: {fileID: -405441589846028525}
   m_Layer: 0
   m_Name: prop-coleccionables 1_1
   m_TagString: Untagged
@@ -258,3 +259,17 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &-405441589846028525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3199795214741382763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea59be1d0e1e82648aed818f5fd09cba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::coleccionable
+  fuenteDeAudio: {fileID: 0}
+  sonidoAtaque: {fileID: 8300000, guid: d17d1c92e02daab45a5fbf58317e3052, type: 3}
