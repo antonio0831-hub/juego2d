@@ -12,7 +12,7 @@ public class Final : MonoBehaviour
     // Update is called once per frame
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("final"))        
+        if (other.CompareTag("Player"))        
         {
             final.SetActive(true);
              Time.timeScale = 0f; 
