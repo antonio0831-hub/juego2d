@@ -4,6 +4,11 @@ using System.Collections;
 [DisallowMultipleComponent]
 public class vida_enemigo : MonoBehaviour
 {
+    [Header("Conteo por tipo (objetivos)")]
+    public bool countsForCharge = true;          // <- si suma al KillChargeManager (especial)
+    public bool countsForObjective = false;      // <- si suma a un objetivo separado
+    public string objectiveId = "Ballesteros";   // <- ID del objetivo
+    public int objectiveKillValue = 1;           // <- cuánto suma a ese objetivo
     [Header("Vida")]
     public int maxHealth = 1;
     private int currentHealth;
@@ -77,24 +82,40 @@ void Die()
         muertenemigos.PlayOneShot(murio);
     }
 
-    // --- NUEVO BLOQUE PARA SUMAR KILLS ---
-    if (!countKillOnlyIfFromPlayer || lastHitFromPlayer)
+// --- BLOQUE PARA SUMAR KILLS ---
+if (!countKillOnlyIfFromPlayer || lastHitFromPlayer)
+{
+    // 1) SUMA PARA LA CARGA DEL ESPECIAL (KillChargeManager) si corresponde
+    if (countsForCharge)
     {
-        // Buscamos el manager directamente por su tipo de script
         KillChargeManager charge = Object.FindAnyObjectByType<KillChargeManager>();
-
         if (charge != null)
         {
             charge.AddKill(Mathf.Max(1, killValue));
-            Debug.Log("Kill añadida correctamente al KillChargeManager");
+            Debug.Log("Kill añadida al KillChargeManager (carga especial)");
         }
-        else 
+        else
         {
-            // Si ves este error en la consola de Unity, es que el Player no tiene el script
-            Debug.LogError("¡OJO! No he encontrado el KillChargeManager en la escena");
+            Debug.LogError("No he encontrado el KillChargeManager en la escena");
         }
     }
-    // -------------------------------------
+
+    // 2) SUMA PARA OBJETIVOS POR TIPO (KillObjectiveManager) si corresponde
+    if (countsForObjective && !string.IsNullOrEmpty(objectiveId))
+    {
+        KillObjectiveManager obj = Object.FindAnyObjectByType<KillObjectiveManager>();
+        if (obj != null)
+        {
+            obj.AddKill(objectiveId, Mathf.Max(1, objectiveKillValue));
+            Debug.Log($"Kill añadida al objetivo: {objectiveId}");
+        }
+        else
+        {
+            Debug.LogWarning("No he encontrado el KillObjectiveManager en la escena");
+        }
+    }
+}
+// --------------------------------
 
     // Animación de muerte
     if (anim != null && !string.IsNullOrEmpty(deathTrigger))

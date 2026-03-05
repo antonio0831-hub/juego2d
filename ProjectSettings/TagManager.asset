@@ -8,6 +8,7 @@ TagManager:
   - portal1
   - portal2
   - final
+  - Pocionvida
   layers:
   - Default
   - TransparentFX

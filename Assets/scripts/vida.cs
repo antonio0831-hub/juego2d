@@ -1,209 +1,148 @@
 using System.Collections;
 using UnityEngine;
-using UnityEngine.SceneManagement; // Necesario si quieres reiniciar el nivel después
+using UnityEngine.SceneManagement;
 
 public class vida : MonoBehaviour
 {
     [Header("Vida (Corazones)")]
     public int maxHealth = 3;
     private int currentHealth;
-    [Header("Sonidos Vida")]
-    public AudioSource audioSource; // Arrastra el AudioSource del jugador
-    public AudioClip sonidoHerida;  // Arrastra el sonido de "daño"
-    public AudioSource gameover;
-    public AudioSource muerte;
-    public AudioClip murio;
-    public AudioSource pausa;
-    [Header("Intentos (Game Over)")]
-    public int intentosMaximos = 3;
-    private int intentosActuales;
-    public GameObject panelGameOver; // Arrastra aquí tu panel de Game Over
 
-    [Header("Corazones UI (Animators)")]
-    public Animator[] controlador_vida; 
+    [Header("Sonidos")]
+    public AudioSource audioSource;
+    public AudioClip sonidoHerida;
+    public AudioSource gameoverAudio;
+    public AudioSource muerteAudio;
+    public AudioClip murioClip;
+
+    [Header("Sistema de 3 Oportunidades")]
+    private static int vidasExtras = 3; // Tienes 3 vidas antes del Game Over definitivo
+    public GameObject panelGameOver;
+
+    [Header("UI Corazones")]
+    public Animator[] controlador_vida;
     public string breakStateName = "corazon_vacio";
-    public string fullStateName = "corazon_lleno"; 
+    public string fullStateName = "corazon_lleno";
 
-    [Header("Muerte")]
+    [Header("Muerte y Respawn")]
     public Animator anim;
     public string deathTrigger = "muerte";
     public float deathAnimDuration = 1.0f;
+    public Transform initialRespawnPoint;
+    private Transform currentRespawnPoint;
+    public Rigidbody2D rb;
+    public MonoBehaviour[] scriptsDeMovimiento;
+    public bool esInvencible = false;
 
-    [Header("Respawn")]
-    public Transform initialRespawnPoint;      
-    private Transform currentRespawnPoint;    
-
-    [Header("Componentes a desactivar")]
-    public MonoBehaviour[] disableScriptsWhileDead; 
-    public Rigidbody2D rb;                    
-
-    private bool dead;
+    private bool dead = false;
 
     void Awake()
     {
-        if (anim == null) anim = GetComponent<Animator>();
-        if (rb == null) rb = GetComponent<Rigidbody2D>();
+        Time.timeScale = 1f;
+        SceneManager.sceneLoaded += OnSceneLoaded;
     }
+
+    void OnDestroy() => SceneManager.sceneLoaded -= OnSceneLoaded;
+
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode) => Time.timeScale = 1f;
 
     void Start()
     {
         currentHealth = maxHealth;
-        intentosActuales = 0; // Empezamos con 0 muertes
-        if (panelGameOver != null) panelGameOver.SetActive(false); // Escondemos el panel al empezar
-
         currentRespawnPoint = initialRespawnPoint != null ? initialRespawnPoint : transform;
+        if (panelGameOver != null) panelGameOver.SetActive(false);
         RefreshHeartsFull();
     }
 
-    public void TakeDamage(int amount)
-    {
-        if (dead) return;
-        if (audioSource != null && sonidoHerida != null)
-        {
-        audioSource.PlayOneShot(sonidoHerida);
-        }
-        int prev = currentHealth;
-        currentHealth = Mathf.Max(0, currentHealth - amount);
+public void TakeDamage(int amount)
+{
+    if (dead || esInvencible) return; // 🔥 Ahora comprueba si es invencible
+    currentHealth = Mathf.Max(0, currentHealth - amount);
+    UpdateHeartsUI();
 
-        for (int hp = prev; hp > currentHealth; hp--)
-        {
-            int idx = hp - 1; 
-            if (idx >= 0 && idx < controlador_vida.Length && controlador_vida[idx] != null)
-            {
-                controlador_vida[idx].Play(breakStateName, 0, 0f);
-            }
-        }
+    if (currentHealth <= 0) StartCoroutine(DieSequence());
+}
 
-        if (currentHealth <= 0) StartCoroutine(DieAndRespawn());
-    }
-
-    // --- SISTEMA DE MUERTE Y RESPAWN MODIFICADO ---
-    IEnumerator DieAndRespawn()
+    IEnumerator DieSequence()
     {
         dead = true;
-        intentosActuales++; // Sumamos una muerte
-    if (muerte != null && murio != null)
-    {
-        muerte.PlayOneShot(murio);
-    }
-        // 1. Iniciar animación de muerte y detener físicas
+        vidasExtras--;
+        
+        if (muerteAudio != null) muerteAudio.PlayOneShot(murioClip);
         if (anim != null) anim.SetTrigger(deathTrigger);
         if (rb != null) { rb.linearVelocity = Vector2.zero; rb.simulated = false; }
+        
+        ToggleScripts(false);
 
-        if (disableScriptsWhileDead != null)
-            foreach (var s in disableScriptsWhileDead) if (s != null) s.enabled = false;
+        yield return new WaitForSecondsRealtime(deathAnimDuration);
 
-        // 2. Esperar a que se vea la animación de muerte
-        yield return new WaitForSeconds(deathAnimDuration);
-
-        // --- COMPROBACIÓN DE GAME OVER ---
-        if (intentosActuales >= intentosMaximos)
+        if (vidasExtras <= 0)
         {
-            MostrarGameOver();
-            yield break; // Detenemos la corrutina aquí, no hay respawn
-        }
-
-        // 3. REINICIAR ENEMIGOS
-        vida_enemigo[] todosLosEnemigos = Resources.FindObjectsOfTypeAll<vida_enemigo>();
-        foreach (vida_enemigo en in todosLosEnemigos)
-        {
-            if (en.gameObject.scene.name != null) en.ReiniciarEnemigo();
-        }
-
-        // 4. Teletransporte al Checkpoint
-        Transform rp = currentRespawnPoint != null ? currentRespawnPoint : initialRespawnPoint;
-        if (rp != null) transform.position = rp.position;
-
-        // 5. Restaurar Vida y UI
-        currentHealth = maxHealth;
-        yield return new WaitForEndOfFrame(); 
-        RefreshHeartsFull(); 
-
-        // 6. Resetear Animator
-        if (anim != null)
-        {
-            anim.Rebind();
-            anim.Update(0f);
-        }
-
-        // 7. Reactivar todo
-        if (rb != null) rb.simulated = true;
-        if (disableScriptsWhileDead != null)
-            foreach (var s in disableScriptsWhileDead) if (s != null) s.enabled = true;
-
-        dead = false;
-    }
-
-    void MostrarGameOver()
-    {
-        Debug.Log("GAME OVER: Has muerto " + intentosMaximos + " veces.");
-        if (panelGameOver != null) 
-        {
-            panelGameOver.SetActive(true); //Mostramos el panel (el que configuramos antes)
-            gameover.Play(); 
-        }
-        // Opcional: Congelar el tiempo de juego
-        // Time.timeScale = 0f; 
-    }
-
-    // Para botones en el panel de Game Over
-
-    // --- RESTO DE FUNCIONES (SetCheckpoint, Heal, etc) ---
-    public void SetCheckpoint(Transform checkpoint) 
-    {
-        if (currentRespawnPoint != checkpoint)
-        {
-            currentRespawnPoint = checkpoint;
-            HealOneHeart(); 
-        }
-    }
-
-    public void HealOneHeart()
-    {
-        if (currentHealth < maxHealth && !dead)
-        {
-            currentHealth++;
-            int idx = currentHealth - 1;
-            if (idx >= 0 && idx < controlador_vida.Length && controlador_vida[idx] != null)
+            if (panelGameOver != null) 
             {
-                controlador_vida[idx].Rebind();
-                controlador_vida[idx].Update(0f);
-                controlador_vida[idx].Play(fullStateName, 0, 0f);
+                panelGameOver.SetActive(true);
+                if (gameoverAudio != null) gameoverAudio.Play();
+                Time.timeScale = 0f;
             }
+        }
+        else
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
+    }
+
+    void ToggleScripts(bool state)
+    {
+        foreach (var s in scriptsDeMovimiento) if (s != null) s.enabled = state;
+    }
+
+    public void SetCheckpoint(Transform cp) => currentRespawnPoint = cp;
+
+  public void HealOneHeart()
+{
+    // Solo curamos si el jugador no está muerto y le falta vida
+    if (!dead && currentHealth < maxHealth) 
+    { 
+        currentHealth++; 
+    }
+    
+    // Llamamos SIEMPRE a la actualización visual para asegurar que el Canvas refleje la vida real
+    UpdateHeartsUI();
+}
+
+    void UpdateHeartsUI()
+    {
+        for (int i = 0; i < controlador_vida.Length; i++)
+        {
+            if (controlador_vida[i] != null)
+                controlador_vida[i].Play(i < currentHealth ? fullStateName : breakStateName);
         }
     }
 
     void RefreshHeartsFull()
     {
-        if (controlador_vida == null) return;
-        foreach (var heart in controlador_vida)
-        {
-            if (heart != null)
-            {
-                heart.Rebind();
-                heart.Update(0f);
-                heart.Play(fullStateName, 0, 0f);
-            }
-        }
+        foreach (var h in controlador_vida) if (h != null) h.Play(fullStateName);
     }
-    // Función para cerrar el juego
-public void ReiniciarNivel()
-{
-    Time.timeScale = 1f;
-    // Esta línea carga la escena de nuevo
-    SceneManager.LoadScene(SceneManager.GetActiveScene().name); 
-    gameover.Stop();
-}
 
-public void SalirDelJuego()
-{
-    gameover.Stop();
-    #if UNITY_EDITOR
-        // ESTA es la línea que te saca al editor. 
-        // Solo debe estar AQUÍ, no en ReiniciarNivel.
-        UnityEditor.EditorApplication.isPlaying = false; 
-    #else
-        Application.Quit();
-    #endif
-}
+    // --- LÍNEAS MODIFICADAS PARA QUE EL BOTÓN FUNCIONE BIEN ---
+
+    public void ResetGameTotal()
+    {
+        vidasExtras = 3;
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void SalirAlMenu(string Interfaz)
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(Interfaz);
+    }
+
+    public void ReiniciarNivelBoton()
+    {
+        vidasExtras = 3; // Corregido: Ahora usa 'vidasExtras' en lugar de 'muertesTotales'
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
 }

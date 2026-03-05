@@ -264,8 +264,8 @@ MonoBehaviour:
   pointA: {fileID: 0}
   pointB: {fileID: 0}
   arriveDistance: 0.12
-  audioSourcePasos: {fileID: 0}
-  sonidoPaso: {fileID: 8300000, guid: 7f2b127afd034c04d9b782833c482d45, type: 3}
+  footstepsSource: {fileID: 0}
+  stepClip: {fileID: 0}
   tiempoEntrePasos: 0.4
   waitAtPatrolPoint: 1
   playerTag: Player
@@ -297,6 +297,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d400b702b60aac4b8487613a0c7bf82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::vida_enemigo
+  countsForCharge: 1
+  countsForObjective: 1
+  objectiveId: Soldados
+  objectiveKillValue: 1
   maxHealth: 1
   muertenemigos: {fileID: 0}
   murio: {fileID: 8300000, guid: 26bd7637fd13a824b8cc8fc8bb5a3425, type: 3}
@@ -366,7 +370,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -428,7 +432,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 2
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -525,7 +529,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 2
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0

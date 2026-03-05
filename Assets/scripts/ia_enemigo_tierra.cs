@@ -11,11 +11,13 @@ public class ia_enemigo_tierra : MonoBehaviour
     public Transform pointA;
     public Transform pointB;
     public float arriveDistance = 0.2f;
+
     [Header("Sonido de Pasos")]
-    public AudioSource audioSourcePasos;
-    public AudioClip sonidoPaso;
+    public AudioSource footstepsSource;
+    public AudioClip stepClip;
     public float tiempoEntrePasos = 0.4f;
     private float stepTimer;
+
     [Header("Pausa en puntos")]
     public float waitAtPatrolPoint = 1f;
 
@@ -26,7 +28,7 @@ public class ia_enemigo_tierra : MonoBehaviour
     public float detectionRange = 6f;
 
     [Header("Ataque")]
-    public float attackRange = 3f; // Para rango, asegúrate que sea menor que detectionRange
+    public float attackRange = 3f;
     public float attackCooldown = 0.8f;
     public float attackAnimDuration = 0.45f;
     public float idleAfterAttack = 0.25f;
@@ -41,7 +43,7 @@ public class ia_enemigo_tierra : MonoBehaviour
     public bool spriteDefaultFacesRight = true;
 
     [Header("Obstáculos")]
-    public LayerMask obstacleLayer; 
+    public LayerMask obstacleLayer;
 
     [Header("Animación")]
     public string isWalkingBool = "isWalking";
@@ -93,6 +95,9 @@ public class ia_enemigo_tierra : MonoBehaviour
 
         FindPlayer();
         state = State.Patrol;
+
+        // Para que no suene inmediatamente al empezar:
+        stepTimer = tiempoEntrePasos;
     }
 
     void Update()
@@ -129,7 +134,11 @@ public class ia_enemigo_tierra : MonoBehaviour
         {
             case State.Patrol: PatrolMove(); break;
             case State.Chase: ChaseMove(); break;
-            case State.WaitAtPoint: rb.linearVelocity = Vector2.zero; break;
+            case State.WaitAtPoint:
+                rb.linearVelocity = Vector2.zero;
+                // Si está quieto, no queremos que el timer siga y dispare pasos al reanudar
+                ResetFootstepsTimer();
+                break;
         }
     }
 
@@ -155,21 +164,49 @@ public class ia_enemigo_tierra : MonoBehaviour
 
     void MoveTowardsTarget(Vector2 target)
     {
+        Vector2 prevPos = rb.position;
+
         Vector2 next = Vector2.MoveTowards(rb.position, target, moveSpeed * Time.fixedDeltaTime);
         rb.MovePosition(next);
 
         float dx = target.x - rb.position.x;
         UpdateFlip(dx);
-        SetWalking(true);
-        stepTimer -= Time.deltaTime;
-    if (stepTimer <= 0f)
-    {
-        if (audioSourcePasos != null && sonidoPaso != null)
+
+        // ¿Se ha movido realmente este frame?
+        bool moved = Vector2.Distance(prevPos, next) > 0.0001f;
+
+        SetWalking(moved);
+
+        // PASOS: solo si se mueve y NO está atacando
+        if (moved && !attackingLoop)
         {
-            audioSourcePasos.PlayOneShot(sonidoPaso);
+            HandleFootsteps();
         }
-        stepTimer = tiempoEntrePasos; // Reinicia el cronómetro
+        else
+        {
+            ResetFootstepsTimer();
+        }
     }
+
+    void HandleFootsteps()
+    {
+        // Restamos con fixedDeltaTime porque esto corre en FixedUpdate (y MoveTowardsTarget se llama desde ahí)
+        stepTimer -= Time.fixedDeltaTime;
+
+        if (stepTimer <= 0f)
+        {
+            if (footstepsSource != null && stepClip != null)
+            {
+                footstepsSource.PlayOneShot(stepClip);
+            }
+            stepTimer = tiempoEntrePasos;
+        }
+    }
+
+    void ResetFootstepsTimer()
+    {
+        // Así no dispara un paso “instantáneo” cuando vuelve a moverse
+        stepTimer = tiempoEntrePasos;
     }
 
     // --- LÓGICA DE ATAQUE ---
@@ -184,12 +221,12 @@ public class ia_enemigo_tierra : MonoBehaviour
         attackingLoop = true;
         state = State.Attack;
         SetWalking(false);
+        ResetFootstepsTimer();
 
         if (ataqueDistancia != null) ataqueDistancia.enabled = true;
 
         while (CanSeePlayer(out float dist, attackRange))
         {
-            // Re-orientar hacia el jugador antes de disparar
             UpdateFlip(player.position.x - transform.position.x);
 
             if (meleeAttack != null) meleeAttack.DoAttack();
@@ -205,7 +242,7 @@ public class ia_enemigo_tierra : MonoBehaviour
         state = State.Patrol;
     }
 
-    // --- VISIÓN Y FLIP (PUNTOS CLAVE) ---
+    // --- VISIÓN Y FLIP ---
 
     bool CanSeePlayer(out float dist, float maxRange)
     {
@@ -215,23 +252,17 @@ public class ia_enemigo_tierra : MonoBehaviour
         dist = Vector2.Distance(transform.position, player.position);
         if (dist > maxRange) return false;
 
-        // Comprobar ángulo
         Vector2 dirToPlayer = (player.position - transform.position).normalized;
         float angle = Vector2.Angle(GetForward2D(), dirToPlayer);
         if (angle > viewAngle * 0.5f) return false;
 
-        // Comprobar obstáculos
         RaycastHit2D hit = Physics2D.Raycast(transform.position, dirToPlayer, dist, obstacleLayer);
         return hit.collider == null;
     }
 
     Vector2 GetForward2D()
     {
-        // Esta es la corrección principal:
         if (sr == null) return transform.right;
-        
-        // Si el sprite NO tiene flip, mira hacia su lado original.
-        // Si tiene flip, mira al lado opuesto.
         Vector2 facing = spriteDefaultFacesRight ? Vector2.right : Vector2.left;
         return sr.flipX ? -facing : facing;
     }
@@ -240,7 +271,6 @@ public class ia_enemigo_tierra : MonoBehaviour
     {
         if (!useFlipX || sr == null || Mathf.Abs(dx) < 0.05f) return;
 
-        // Si dx > 0 (derecha) y el sprite mira originalmente a la derecha, flipX = false
         if (spriteDefaultFacesRight)
             sr.flipX = (dx < 0);
         else
@@ -259,6 +289,8 @@ public class ia_enemigo_tierra : MonoBehaviour
     {
         state = State.WaitAtPoint;
         SetWalking(false);
+        ResetFootstepsTimer();
+
         yield return new WaitForSeconds(waitAtPatrolPoint);
         currentPatrolTarget = (currentPatrolTarget == aPos) ? bPos : aPos;
         state = State.Patrol;

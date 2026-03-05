@@ -165,8 +165,8 @@ MonoBehaviour:
   pointA: {fileID: 0}
   pointB: {fileID: 0}
   arriveDistance: 0.12
-  audioSourcePasos: {fileID: 0}
-  sonidoPaso: {fileID: 0}
+  footstepsSource: {fileID: 0}
+  stepClip: {fileID: 0}
   tiempoEntrePasos: 0.4
   waitAtPatrolPoint: 1
   playerTag: Player
@@ -268,6 +268,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d400b702b60aac4b8487613a0c7bf82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::vida_enemigo
+  countsForCharge: 1
+  countsForObjective: 0
+  objectiveId: Constructo
+  objectiveKillValue: 1
   maxHealth: 2
   muertenemigos: {fileID: 0}
   murio: {fileID: 8300000, guid: 26bd7637fd13a824b8cc8fc8bb5a3425, type: 3}
