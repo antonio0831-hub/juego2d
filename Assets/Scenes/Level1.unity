@@ -28504,7 +28504,7 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
+  m_TextStyleHashCode: 2425
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
@@ -40298,7 +40298,7 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
+  m_TextStyleHashCode: 2425
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
@@ -83358,6 +83358,10 @@ PrefabInstance:
     - target: {fileID: 172896016618871481, guid: 91f6e15b8c2b92e47b113090cb01692e, type: 3}
       propertyPath: m_Name
       value: tutorial
+      objectReference: {fileID: 0}
+    - target: {fileID: 1904187093854913281, guid: 91f6e15b8c2b92e47b113090cb01692e, type: 3}
+      propertyPath: listaDeEventos.Array.data[0].duracionDelEvento
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1904187093854913281, guid: 91f6e15b8c2b92e47b113090cb01692e, type: 3}
       propertyPath: listaDeEventos.Array.data[0].accionAlActivar.m_PersistentCalls.m_Calls.Array.data[0].m_Target

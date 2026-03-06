@@ -5,7 +5,9 @@ public class TeleportDashDynamic : MonoBehaviour
     [Header("Punto dinámico (Empty hijo del player)")]
     public Transform dashPointChild;
     public float dashDistance = 2.0f;
-
+    [Header("Sonidos")]
+    public AudioSource fuenteDeAudio;
+    public AudioClip sonidoAtaque;
     [Header("Input")]
     public KeyCode teleportKey = KeyCode.E;
 
@@ -43,6 +45,7 @@ public class TeleportDashDynamic : MonoBehaviour
 
         if (Input.GetKeyDown(teleportKey))
         {
+            fuenteDeAudio.PlayOneShot(sonidoAtaque);
             if (animator != null && !string.IsNullOrEmpty(triggerName))
                 animator.SetTrigger(triggerName);
             else

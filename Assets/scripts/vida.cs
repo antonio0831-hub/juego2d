@@ -16,7 +16,7 @@ public class vida : MonoBehaviour
     public AudioClip murioClip;
 
     [Header("Sistema de 3 Oportunidades")]
-    private static int vidasExtras = 3; // Tienes 3 vidas antes del Game Over definitivo
+    private static int vidasExtras = 3; 
     public GameObject panelGameOver;
 
     [Header("UI Corazones")]
@@ -29,7 +29,11 @@ public class vida : MonoBehaviour
     public string deathTrigger = "muerte";
     public float deathAnimDuration = 1.0f;
     public Transform initialRespawnPoint;
-    private Transform currentRespawnPoint;
+    
+    // 🔥 CLAVE: Guardamos la posición en variables estáticas para que no se borren al recargar escena
+    private static Vector3 posicionCheckpointGuardada;
+    private static bool hayCheckpointRegistrado = false;
+
     public Rigidbody2D rb;
     public MonoBehaviour[] scriptsDeMovimiento;
     public bool esInvencible = false;
@@ -39,29 +43,34 @@ public class vida : MonoBehaviour
     void Awake()
     {
         Time.timeScale = 1f;
-        SceneManager.sceneLoaded += OnSceneLoaded;
     }
-
-    void OnDestroy() => SceneManager.sceneLoaded -= OnSceneLoaded;
-
-    void OnSceneLoaded(Scene scene, LoadSceneMode mode) => Time.timeScale = 1f;
 
     void Start()
     {
         currentHealth = maxHealth;
-        currentRespawnPoint = initialRespawnPoint != null ? initialRespawnPoint : transform;
+
+        // ✅ Si tocamos un checkpoint antes, aparecemos ahí al empezar/recargar
+        if (hayCheckpointRegistrado)
+        {
+            transform.position = posicionCheckpointGuardada;
+        }
+        else if (initialRespawnPoint != null)
+        {
+            transform.position = initialRespawnPoint.position;
+        }
+
         if (panelGameOver != null) panelGameOver.SetActive(false);
-        RefreshHeartsFull();
+        UpdateHeartsUI();
     }
 
-public void TakeDamage(int amount)
-{
-    if (dead || esInvencible) return; // 🔥 Ahora comprueba si es invencible
-    currentHealth = Mathf.Max(0, currentHealth - amount);
-    UpdateHeartsUI();
+    public void TakeDamage(int amount)
+    {
+        if (dead || esInvencible) return;
+        currentHealth = Mathf.Max(0, currentHealth - amount);
+        UpdateHeartsUI();
 
-    if (currentHealth <= 0) StartCoroutine(DieSequence());
-}
+        if (currentHealth <= 0) StartCoroutine(DieSequence());
+    }
 
     IEnumerator DieSequence()
     {
@@ -78,6 +87,7 @@ public void TakeDamage(int amount)
 
         if (vidasExtras <= 0)
         {
+            hayCheckpointRegistrado = false; // Reset checkpoint al perder todo
             if (panelGameOver != null) 
             {
                 panelGameOver.SetActive(true);
@@ -87,6 +97,7 @@ public void TakeDamage(int amount)
         }
         else
         {
+            // Recarga la escena; el Start() se encargará de ponerte en el checkpoint
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
@@ -96,39 +107,42 @@ public void TakeDamage(int amount)
         foreach (var s in scriptsDeMovimiento) if (s != null) s.enabled = state;
     }
 
-    public void SetCheckpoint(Transform cp) => currentRespawnPoint = cp;
-
-  public void HealOneHeart()
-{
-    // Solo curamos si el jugador no está muerto y le falta vida
-    if (!dead && currentHealth < maxHealth) 
-    { 
-        currentHealth++; 
-    }
-    
-    // Llamamos SIEMPRE a la actualización visual para asegurar que el Canvas refleje la vida real
-    UpdateHeartsUI();
-}
-
-    void UpdateHeartsUI()
+    // ✅ Guarda la posición del checkpoint de forma persistente
+    public void SetCheckpoint(Transform cp) 
     {
-        for (int i = 0; i < controlador_vida.Length; i++)
-        {
-            if (controlador_vida[i] != null)
-                controlador_vida[i].Play(i < currentHealth ? fullStateName : breakStateName);
+        posicionCheckpointGuardada = cp.position;
+        hayCheckpointRegistrado = true;
+    }
+
+    public void HealOneHeart()
+    {
+        if (!dead && currentHealth < maxHealth) 
+        { 
+            currentHealth++; 
+            UpdateHeartsUI(); 
         }
     }
 
-    void RefreshHeartsFull()
+    // ✅ Forzamos al Animator a refrescarse para que se vea el cambio visual siempre
+    void UpdateHeartsUI()
     {
-        foreach (var h in controlador_vida) if (h != null) h.Play(fullStateName);
-    }
+        if (controlador_vida == null) return;
 
-    // --- LÍNEAS MODIFICADAS PARA QUE EL BOTÓN FUNCIONE BIEN ---
+        for (int i = 0; i < controlador_vida.Length; i++)
+        {
+            if (controlador_vida[i] != null)
+            {
+                controlador_vida[i].Rebind(); // Reset del estado del animador
+                string animName = (i < currentHealth) ? fullStateName : breakStateName;
+                controlador_vida[i].Play(animName, 0, 0f);
+            }
+        }
+    }
 
     public void ResetGameTotal()
     {
         vidasExtras = 3;
+        hayCheckpointRegistrado = false;
         Time.timeScale = 1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
@@ -137,12 +151,5 @@ public void TakeDamage(int amount)
     {
         Time.timeScale = 1f;
         SceneManager.LoadScene(Interfaz);
-    }
-
-    public void ReiniciarNivelBoton()
-    {
-        vidasExtras = 3; // Corregido: Ahora usa 'vidasExtras' en lugar de 'muertesTotales'
-        Time.timeScale = 1f;
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
