@@ -47,6 +47,12 @@ public class vida : MonoBehaviour
 
     void Start()
     {
+            if (PowerUpPersistent.tienePoderEspecial)
+    {
+        maxHealth = 5; // la vida que tu quieras
+    }
+
+    currentHealth = maxHealth;
         currentHealth = maxHealth;
 
         // ✅ Si tocamos un checkpoint antes, aparecemos ahí al empezar/recargar

@@ -113,7 +113,6 @@ GameObject:
   - component: {fileID: 2171440551315697773}
   - component: {fileID: 1869548772450930450}
   - component: {fileID: 185008571845529591}
-  - component: {fileID: 5468276717883974338}
   - component: {fileID: 8059303383660605761}
   - component: {fileID: 7657579881276660396}
   - component: {fileID: 4212282329633856960}
@@ -370,11 +369,9 @@ MonoBehaviour:
   maxHealth: 3
   audioSource: {fileID: 8059303383660605761}
   sonidoHerida: {fileID: 8300000, guid: 1598cf2e42c98174597e3221a093998f, type: 3}
-  gameover: {fileID: 0}
-  muerte: {fileID: 8059303383660605761}
-  murio: {fileID: 8300000, guid: 3ee1f2f7459a1854eafcf86800bcc4f7, type: 3}
-  pausa: {fileID: 0}
-  intentosMaximos: 3
+  gameoverAudio: {fileID: 0}
+  muerteAudio: {fileID: 0}
+  murioClip: {fileID: 0}
   panelGameOver: {fileID: 0}
   controlador_vida:
   - {fileID: 0}
@@ -386,8 +383,9 @@ MonoBehaviour:
   deathTrigger: muerte
   deathAnimDuration: 1.27
   initialRespawnPoint: {fileID: 0}
-  disableScriptsWhileDead: []
   rb: {fileID: 3907112155185824515}
+  scriptsDeMovimiento: []
+  esInvencible: 0
 --- !u!114 &397595549610893368
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -475,19 +473,6 @@ MonoBehaviour:
   fromPlayer: 1
   fireDelay: 0.3
   blockWhileWaiting: 1
---- !u!114 &5468276717883974338
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3168751456740503918}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f965e2e4aab652f47a135cf58568f532, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Final
-  final: {fileID: 0}
 --- !u!82 &8059303383660605761
 AudioSource:
   m_ObjectHideFlags: 0
