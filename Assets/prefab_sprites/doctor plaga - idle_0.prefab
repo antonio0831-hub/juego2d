@@ -37,7 +37,8 @@ Transform:
   m_LocalPosition: {x: 35.55564, y: 10.728, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1774117756870754002}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2524022205141945981
@@ -201,15 +202,15 @@ MonoBehaviour:
   objectiveId: DrPlaga
   objectiveKillValue: 1
   maxHealth: 1
-  muertenemigos: {fileID: 0}
-  murio: {fileID: 0}
+  muertenemigos: {fileID: 8275683481739374152}
+  murio: {fileID: 8300000, guid: 26bd7637fd13a824b8cc8fc8bb5a3425, type: 3}
   deathTrigger: muerte
   deactivateAfterSeconds: 1
   disableScriptsOnDeath:
   - {fileID: 9059609821963763699}
   - {fileID: 5683292293937117596}
   disableCollidersOnDeath:
-  - {fileID: 0}
+  - {fileID: 224683692409982945}
   countKillOnlyIfFromPlayer: 1
   killValue: 1
 --- !u!114 &9059609821963763699
@@ -228,7 +229,7 @@ MonoBehaviour:
   pointA: {fileID: 0}
   pointB: {fileID: 0}
   arriveDistance: 0.2
-  footstepsSource: {fileID: 0}
+  footstepsSource: {fileID: 8275683481739374152}
   stepClip: {fileID: 8300000, guid: 8ffa1e24b39162d4f8ca50b891c8af86, type: 3}
   tiempoEntrePasos: 0.4
   waitAtPatrolPoint: 1
@@ -244,7 +245,7 @@ MonoBehaviour:
   spriteDefaultFacesRight: 0
   obstacleLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   isWalkingBool: isWalking
   attackTrigger: ataque
   useFlipX: 1
@@ -262,11 +263,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ataque_distancia
   shotMode: 1
-  ballesta: {fileID: 0}
+  ballesta: {fileID: 8275683481739374152}
   flecha: {fileID: 0}
   useSpriteFlipX: 1
   defaultFacesRight: 0
-  firePoint: {fileID: 0}
+  firePoint: {fileID: 1774117756870754002}
   boltPrefab: {fileID: 2989712451936902142, guid: 13deb31f0e0fbe2428ff2955ea72bc8b, type: 3}
   boltSpeed: 2
   boltMaxDistance: 6
@@ -467,3 +468,34 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &8987047567576421965
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1774117756870754002}
+  m_Layer: 3
+  m_Name: firepoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1774117756870754002
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8987047567576421965}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.173, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 194058549060295526}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

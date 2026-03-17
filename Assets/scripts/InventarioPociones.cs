@@ -26,11 +26,26 @@ public class InventarioPociones : MonoBehaviour
 
     private vida scriptVida;
 
-    void Start()
+void Start()
+{
+    scriptVida = FindFirstObjectByType<vida>();
+
+    for (int i = 0; i < misPociones.Length; i++)
     {
-        scriptVida = GetComponent<vida>(); // Buscamos el script de vida en el jugador
-        ActualizarInterfaz();
+        string key = misPociones[i].tagPocion;
+
+        if (InventarioGlobal.pociones.ContainsKey(key))
+        {
+            misPociones[i].cantidad = InventarioGlobal.pociones[key];
+        }
+        else
+        {
+            InventarioGlobal.pociones[key] = misPociones[i].cantidad;
+        }
     }
+
+    ActualizarInterfaz();
+}
 
     void Update()
     {
@@ -75,25 +90,40 @@ public class InventarioPociones : MonoBehaviour
     }
 
     // --- USO DE POCIONES ---
-    public void UsarPocionSeleccionada()
-    {
-        TipoPocion actual = misPociones[indiceSeleccionado];
+public void UsarPocionSeleccionada()
+{
+    if (misPociones.Length == 0) return;
 
-        if (actual.cantidad > 0)
+    TipoPocion actual = misPociones[indiceSeleccionado];
+
+    if (actual.cantidad > 0)
+    {
+        if (actual.poderCurativo > 0)
         {
-            // Si es una poción de vida, llamamos a HealOneHeart de tu script 'vida'
-            if (actual.poderCurativo > 0)
+            if (scriptVida == null)
             {
-                scriptVida.HealOneHeart(); //
+                scriptVida = FindFirstObjectByType<vida>();
             }
 
-            actual.cantidad--;
-            ActualizarInterfaz();
-            Debug.Log("Usaste " + actual.nombre);
+            if (scriptVida != null)
+            {
+                scriptVida.HealOneHeart();
+            }
+            else
+            {
+                Debug.LogWarning("No se encontró el script vida en esta escena.");
+                return;
+            }
         }
-        else
-        {
-            Debug.Log("No tienes más " + actual.nombre);
-        }
+
+        actual.cantidad--;
+        InventarioGlobal.pociones[actual.tagPocion] = actual.cantidad;
+        ActualizarInterfaz();
+        Debug.Log("Usaste " + actual.nombre);
     }
+    else
+    {
+        Debug.Log("No tienes más " + actual.nombre);
+    }
+}
 }

@@ -299,7 +299,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::vida_enemigo
   countsForCharge: 1
   countsForObjective: 1
-  objectiveId: Soldados
+  objectiveId: Espada
   objectiveKillValue: 1
   maxHealth: 1
   muertenemigos: {fileID: 0}
