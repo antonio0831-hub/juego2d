@@ -1,0 +1,1211 @@
+fileFormatVersion: 2
+guid: 80180586de2383c4aa88e3217b8a6960
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3364539826878882602
+    second: jefe - 3fase - transicion_0
+  - first:
+      213: 7248308910716139556
+    second: jefe - 3fase - transicion_1
+  - first:
+      213: 2951011340760668414
+    second: jefe - 3fase - transicion_2
+  - first:
+      213: 9182048661630537265
+    second: jefe - 3fase - transicion_3
+  - first:
+      213: -7158271274386936192
+    second: jefe - 3fase - transicion_4
+  - first:
+      213: -8199893014053653210
+    second: jefe - 3fase - transicion_5
+  - first:
+      213: -7874691487566687185
+    second: jefe - 3fase - transicion_6
+  - first:
+      213: -1224374020441371858
+    second: jefe - 3fase - transicion_7
+  - first:
+      213: 9073673445407517234
+    second: jefe - 3fase - transicion_8
+  - first:
+      213: -6214392030555499650
+    second: jefe - 3fase - transicion_9
+  - first:
+      213: 8924584161636496994
+    second: jefe - 3fase - transicion_10
+  - first:
+      213: -6916614935336475479
+    second: jefe - 3fase - transicion_11
+  - first:
+      213: 3921519991910281195
+    second: jefe - 3fase - transicion_12
+  - first:
+      213: -4511602670316471353
+    second: jefe - 3fase - transicion_13
+  - first:
+      213: 2996576194897257114
+    second: jefe - 3fase - transicion_14
+  - first:
+      213: -1714686181046398240
+    second: jefe - 3fase - transicion_15
+  - first:
+      213: -415588492668806937
+    second: jefe - 3fase - transicion_16
+  - first:
+      213: 7852254912104105505
+    second: jefe - 3fase - transicion_17
+  - first:
+      213: -6648570369538533968
+    second: jefe - 3fase - transicion_18
+  - first:
+      213: -2539716780590113342
+    second: jefe - 3fase - transicion_19
+  - first:
+      213: -2154750852706933318
+    second: jefe - 3fase - transicion_20
+  - first:
+      213: 7199345172943445921
+    second: jefe - 3fase - transicion_21
+  - first:
+      213: 969247210990759584
+    second: jefe - 3fase - transicion_22
+  - first:
+      213: 7987014201010171126
+    second: jefe - 3fase - transicion_23
+  - first:
+      213: -6061628282291804372
+    second: jefe - 3fase - transicion_24
+  - first:
+      213: 3759404844645953746
+    second: jefe - 3fase - transicion_25
+  - first:
+      213: -1878388546675494162
+    second: jefe - 3fase - transicion_26
+  - first:
+      213: 948806224872051644
+    second: jefe - 3fase - transicion_27
+  - first:
+      213: -3139295505494775644
+    second: jefe - 3fase - transicion_28
+  - first:
+      213: -2369519698363104197
+    second: jefe - 3fase - transicion_29
+  - first:
+      213: -1236302514546609011
+    second: jefe - 3fase - transicion_30
+  - first:
+      213: 6096105969843673366
+    second: jefe - 3fase - transicion_31
+  - first:
+      213: -2623033377774107406
+    second: jefe - 3fase - transicion_32
+  - first:
+      213: -8036387800218603393
+    second: jefe - 3fase - transicion_33
+  - first:
+      213: 4058400812613459872
+    second: jefe - 3fase - transicion_34
+  - first:
+      213: 2742024351739492105
+    second: jefe - 3fase - transicion_35
+  - first:
+      213: 8514675043820443188
+    second: jefe - 3fase - transicion_36
+  - first:
+      213: 4030574498656618049
+    second: jefe - 3fase - transicion_37
+  - first:
+      213: 6885613539914863898
+    second: jefe - 3fase - transicion_38
+  - first:
+      213: 7935123313937694946
+    second: jefe - 3fase - transicion_39
+  - first:
+      213: -6286723106414751364
+    second: jefe - 3fase - transicion_40
+  - first:
+      213: -1811951829808055762
+    second: jefe - 3fase - transicion_41
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 150
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: jefe - 3fase - transicion_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2325cd752f31be20800000000000000
+      internalID: 3364539826878882602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe - 3fase - transicion_1
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 428b8851d8a279460800000000000000
+      internalID: 7248308910716139556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe - 3fase - transicion_2
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef85036ed2914f820800000000000000
+      internalID: 2951011340760668414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe - 3fase - transicion_3
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13ec6d2fb903d6f70800000000000000
+      internalID: 9182048661630537265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe - 3fase - transicion_4
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08ea84cb336b8ac90800000000000000
+      internalID: -7158271274386936192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe - 3fase - transicion_5
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 625ff15afb0243e80800000000000000
+      internalID: -8199893014053653210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe - 3fase - transicion_6
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f249bcf50d977b290800000000000000
+      internalID: -7874691487566687185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe - 3fase - transicion_7
+      rect:
+        serializedVersion: 2
+        x: 1232
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2b006fb056220fe0800000000000000
+      internalID: -1224374020441371858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe - 3fase - transicion_8
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23ae8699ce92ced70800000000000000
+      internalID: 9073673445407517234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe - 3fase - transicion_9
+      rect:
+        serializedVersion: 2
+        x: 1584
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7398bb9f5b02c9a0800000000000000
+      internalID: -6214392030555499650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe - 3fase - transicion_10
+      rect:
+        serializedVersion: 2
+        x: 1760
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 266bb62b20e7adb70800000000000000
+      internalID: 8924584161636496994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe - 3fase - transicion_11
+      rect:
+        serializedVersion: 2
+        x: 1936
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a4ab13bc5f3300a0800000000000000
+      internalID: -6916614935336475479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe - 3fase - transicion_12
+      rect:
+        serializedVersion: 2
+        x: 2112
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: befa761d7a90c6630800000000000000
+      internalID: 3921519991910281195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe - 3fase - transicion_13
+      rect:
+        serializedVersion: 2
+        x: 2288
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cb351c56419361c0800000000000000
+      internalID: -4511602670316471353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe - 3fase - transicion_14
+      rect:
+        serializedVersion: 2
+        x: 2464
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a922e373c2af59920800000000000000
+      internalID: 2996576194897257114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe - 3fase - transicion_15
+      rect:
+        serializedVersion: 2
+        x: 2640
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e2557dc0063438e0800000000000000
+      internalID: -1714686181046398240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe - 3fase - transicion_16
+      rect:
+        serializedVersion: 2
+        x: 2816
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e85cb1c7788b3af0800000000000000
+      internalID: -415588492668806937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe - 3fase - transicion_17
+      rect:
+        serializedVersion: 2
+        x: 2992
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12608c15d30d8fc60800000000000000
+      internalID: 7852254912104105505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe - 3fase - transicion_18
+      rect:
+        serializedVersion: 2
+        x: 3168
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b5d77b79788bb3a0800000000000000
+      internalID: -6648570369538533968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe - 3fase - transicion_19
+      rect:
+        serializedVersion: 2
+        x: 3344
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cdd3d64b0d11ccd0800000000000000
+      internalID: -2539716780590113342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe - 3fase - transicion_20
+      rect:
+        serializedVersion: 2
+        x: 3520
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab5eeec0489c812e0800000000000000
+      internalID: -2154750852706933318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe - 3fase - transicion_21
+      rect:
+        serializedVersion: 2
+        x: 3696
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1af97b08a4639e360800000000000000
+      internalID: 7199345172943445921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe - 3fase - transicion_22
+      rect:
+        serializedVersion: 2
+        x: 3872
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ae64aef335737d00800000000000000
+      internalID: 969247210990759584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe - 3fase - transicion_23
+      rect:
+        serializedVersion: 2
+        x: 4048
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fc263b491397de60800000000000000
+      internalID: 7987014201010171126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe - 3fase - transicion_24
+      rect:
+        serializedVersion: 2
+        x: 4224
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2729817135c0eba0800000000000000
+      internalID: -6061628282291804372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe - 3fase - transicion_25
+      rect:
+        serializedVersion: 2
+        x: 4400
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d0310cb9c61c2430800000000000000
+      internalID: 3759404844645953746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe - 3fase - transicion_26
+      rect:
+        serializedVersion: 2
+        x: 4576
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee2be35a19f9ee5e0800000000000000
+      internalID: -1878388546675494162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe - 3fase - transicion_27
+      rect:
+        serializedVersion: 2
+        x: 4752
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb39d2a0c36da2d00800000000000000
+      internalID: 948806224872051644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe - 3fase - transicion_28
+      rect:
+        serializedVersion: 2
+        x: 4928
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a8e006de5bfe64d0800000000000000
+      internalID: -3139295505494775644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe - 3fase - transicion_29
+      rect:
+        serializedVersion: 2
+        x: 5104
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b34c6ca7366cd1fd0800000000000000
+      internalID: -2369519698363104197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe - 3fase - transicion_30
+      rect:
+        serializedVersion: 2
+        x: 5280
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d84f689c965c7dee0800000000000000
+      internalID: -1236302514546609011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe - 3fase - transicion_31
+      rect:
+        serializedVersion: 2
+        x: 5456
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6199badb418b99450800000000000000
+      internalID: 6096105969843673366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe - 3fase - transicion_32
+      rect:
+        serializedVersion: 2
+        x: 5632
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f408c35a0d199bd0800000000000000
+      internalID: -2623033377774107406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe - 3fase - transicion_33
+      rect:
+        serializedVersion: 2
+        x: 5808
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f70ffa2dfd3097090800000000000000
+      internalID: -8036387800218603393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe - 3fase - transicion_34
+      rect:
+        serializedVersion: 2
+        x: 5984
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0af5bf76906525830800000000000000
+      internalID: 4058400812613459872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe - 3fase - transicion_35
+      rect:
+        serializedVersion: 2
+        x: 6160
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90737eabe90ad0620800000000000000
+      internalID: 2742024351739492105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe - 3fase - transicion_36
+      rect:
+        serializedVersion: 2
+        x: 6336
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4361dc4f6d33a2670800000000000000
+      internalID: 8514675043820443188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe - 3fase - transicion_37
+      rect:
+        serializedVersion: 2
+        x: 6512
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1460d21d62a7fe730800000000000000
+      internalID: 4030574498656618049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe - 3fase - transicion_38
+      rect:
+        serializedVersion: 2
+        x: 6688
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a15de33780d9e8f50800000000000000
+      internalID: 6885613539914863898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe - 3fase - transicion_39
+      rect:
+        serializedVersion: 2
+        x: 6864
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e04d28ac983f1e60800000000000000
+      internalID: 7935123313937694946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe - 3fase - transicion_40
+      rect:
+        serializedVersion: 2
+        x: 7040
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7198e8a4a211c8a0800000000000000
+      internalID: -6286723106414751364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe - 3fase - transicion_41
+      rect:
+        serializedVersion: 2
+        x: 7216
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2afb223967aad6e0800000000000000
+      internalID: -1811951829808055762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: a380c01aac2b7384fb9785140af4a627
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":42.0,"y":1.0},"gridSpriteSize":{"x":176.0,"y":176.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      jefe - 3fase - transicion_0: 3364539826878882602
+      jefe - 3fase - transicion_1: 7248308910716139556
+      jefe - 3fase - transicion_10: 8924584161636496994
+      jefe - 3fase - transicion_11: -6916614935336475479
+      jefe - 3fase - transicion_12: 3921519991910281195
+      jefe - 3fase - transicion_13: -4511602670316471353
+      jefe - 3fase - transicion_14: 2996576194897257114
+      jefe - 3fase - transicion_15: -1714686181046398240
+      jefe - 3fase - transicion_16: -415588492668806937
+      jefe - 3fase - transicion_17: 7852254912104105505
+      jefe - 3fase - transicion_18: -6648570369538533968
+      jefe - 3fase - transicion_19: -2539716780590113342
+      jefe - 3fase - transicion_2: 2951011340760668414
+      jefe - 3fase - transicion_20: -2154750852706933318
+      jefe - 3fase - transicion_21: 7199345172943445921
+      jefe - 3fase - transicion_22: 969247210990759584
+      jefe - 3fase - transicion_23: 7987014201010171126
+      jefe - 3fase - transicion_24: -6061628282291804372
+      jefe - 3fase - transicion_25: 3759404844645953746
+      jefe - 3fase - transicion_26: -1878388546675494162
+      jefe - 3fase - transicion_27: 948806224872051644
+      jefe - 3fase - transicion_28: -3139295505494775644
+      jefe - 3fase - transicion_29: -2369519698363104197
+      jefe - 3fase - transicion_3: 9182048661630537265
+      jefe - 3fase - transicion_30: -1236302514546609011
+      jefe - 3fase - transicion_31: 6096105969843673366
+      jefe - 3fase - transicion_32: -2623033377774107406
+      jefe - 3fase - transicion_33: -8036387800218603393
+      jefe - 3fase - transicion_34: 4058400812613459872
+      jefe - 3fase - transicion_35: 2742024351739492105
+      jefe - 3fase - transicion_36: 8514675043820443188
+      jefe - 3fase - transicion_37: 4030574498656618049
+      jefe - 3fase - transicion_38: 6885613539914863898
+      jefe - 3fase - transicion_39: 7935123313937694946
+      jefe - 3fase - transicion_4: -7158271274386936192
+      jefe - 3fase - transicion_40: -6286723106414751364
+      jefe - 3fase - transicion_41: -1811951829808055762
+      jefe - 3fase - transicion_5: -8199893014053653210
+      jefe - 3fase - transicion_6: -7874691487566687185
+      jefe - 3fase - transicion_7: -1224374020441371858
+      jefe - 3fase - transicion_8: 9073673445407517234
+      jefe - 3fase - transicion_9: -6214392030555499650
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

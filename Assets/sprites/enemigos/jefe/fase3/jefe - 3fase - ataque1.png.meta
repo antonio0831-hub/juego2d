@@ -1,0 +1,855 @@
+fileFormatVersion: 2
+guid: 819c3fd15724ed844907efc22388ef1c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5608876014650062670
+    second: jefe - 3fase - ataque1_0
+  - first:
+      213: 5572020863716888885
+    second: jefe - 3fase - ataque1_1
+  - first:
+      213: 3785581300492430918
+    second: jefe - 3fase - ataque1_2
+  - first:
+      213: -7852243214087599177
+    second: jefe - 3fase - ataque1_3
+  - first:
+      213: 2322599993398300263
+    second: jefe - 3fase - ataque1_4
+  - first:
+      213: 3383300072419101865
+    second: jefe - 3fase - ataque1_5
+  - first:
+      213: 2060121550061495464
+    second: jefe - 3fase - ataque1_6
+  - first:
+      213: -4704652796804313869
+    second: jefe - 3fase - ataque1_7
+  - first:
+      213: 7030670397425421461
+    second: jefe - 3fase - ataque1_8
+  - first:
+      213: -4019640181566063857
+    second: jefe - 3fase - ataque1_9
+  - first:
+      213: -5205882326627873861
+    second: jefe - 3fase - ataque1_10
+  - first:
+      213: -898014525126837004
+    second: jefe - 3fase - ataque1_11
+  - first:
+      213: 3706861293285100575
+    second: jefe - 3fase - ataque1_12
+  - first:
+      213: 4963411826151868014
+    second: jefe - 3fase - ataque1_13
+  - first:
+      213: -7531887465960657776
+    second: jefe - 3fase - ataque1_14
+  - first:
+      213: 2876898185228234766
+    second: jefe - 3fase - ataque1_15
+  - first:
+      213: -1622277937287453128
+    second: jefe - 3fase - ataque1_16
+  - first:
+      213: 7775164901214149523
+    second: jefe - 3fase - ataque1_17
+  - first:
+      213: 8909418341285078372
+    second: jefe - 3fase - ataque1_18
+  - first:
+      213: 4087427667780667258
+    second: jefe - 3fase - ataque1_19
+  - first:
+      213: 8962923862495783247
+    second: jefe - 3fase - ataque1_20
+  - first:
+      213: 1195976819407617420
+    second: jefe - 3fase - ataque1_21
+  - first:
+      213: 5825317399377558191
+    second: jefe - 3fase - ataque1_22
+  - first:
+      213: 2563348477966056851
+    second: jefe - 3fase - ataque1_23
+  - first:
+      213: 5416065191852749244
+    second: jefe - 3fase - ataque1_24
+  - first:
+      213: 9038828304702648931
+    second: jefe - 3fase - ataque1_25
+  - first:
+      213: -2170011019858097065
+    second: jefe - 3fase - ataque1_26
+  - first:
+      213: 998902349826969823
+    second: jefe - 3fase - ataque1_27
+  - first:
+      213: -3364458535530587794
+    second: jefe - 3fase - ataque1_28
+  - first:
+      213: 6354263849554776593
+    second: jefe - 3fase - ataque1_29
+  - first:
+      213: -1340718290145954601
+    second: jefe - 3fase - ataque1_30
+  - first:
+      213: -1811990293697291168
+    second: jefe - 3fase - ataque1_31
+  - first:
+      213: -8336988497564576891
+    second: jefe - 3fase - ataque1_32
+  - first:
+      213: -5723332403370136504
+    second: jefe - 3fase - ataque1_33
+  - first:
+      213: -4202881409836271877
+    second: jefe - 3fase - ataque1_34
+  - first:
+      213: 4126834447138684939
+    second: jefe - 3fase - ataque1_35
+  - first:
+      213: 5917595537885512153
+    second: jefe - 3fase - ataque1_36
+  - first:
+      213: -9135580262513692915
+    second: jefe - 3fase - ataque1_37
+  - first:
+      213: 6995991395208343986
+    second: jefe - 3fase - ataque1_38
+  - first:
+      213: -2529459020183747381
+    second: jefe - 3fase - ataque1_39
+  - first:
+      213: -1681866059688685733
+    second: jefe - 3fase - ataque1_40
+  - first:
+      213: -6820677254995347155
+    second: jefe - 3fase - ataque1_41
+  - first:
+      213: 4128418397170035979
+    second: jefe - 3fase - ataque1_42
+  - first:
+      213: 4408173629407255429
+    second: jefe - 3fase - ataque1_43
+  - first:
+      213: 2138614012211914949
+    second: jefe - 3fase - ataque1_44
+  - first:
+      213: -487835050445903595
+    second: jefe - 3fase - ataque1_45
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 150
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: jefe - 3fase - ataque1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b803955bf44922b0800000000000000
+      internalID: -5608876014650062670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe - 3fase - ataque1_1
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53119e6247bc35d40800000000000000
+      internalID: 5572020863716888885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe - 3fase - ataque1_2
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64e663cc226198430800000000000000
+      internalID: 3785581300492430918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe - 3fase - ataque1_3
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bb4656566a370390800000000000000
+      internalID: -7852243214087599177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe - 3fase - ataque1_4
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76e84d963688b3020800000000000000
+      internalID: 2322599993398300263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe - 3fase - ataque1_5
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ac08198d75e3fe20800000000000000
+      internalID: 3383300072419101865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe - 3fase - ataque1_6
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a4ea8182a5079c10800000000000000
+      internalID: 2060121550061495464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe - 3fase - ataque1_7
+      rect:
+        serializedVersion: 2
+        x: 1232
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fc4ee62537b5beb0800000000000000
+      internalID: -4704652796804313869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe - 3fase - ataque1_8
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59c8563f975f19160800000000000000
+      internalID: 7030670397425421461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe - 3fase - ataque1_9
+      rect:
+        serializedVersion: 2
+        x: 1584
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0b3ed44d8e5738c0800000000000000
+      internalID: -4019640181566063857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe - 3fase - ataque1_10
+      rect:
+        serializedVersion: 2
+        x: 1760
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbb8cda1b9df0c7b0800000000000000
+      internalID: -5205882326627873861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe - 3fase - ataque1_11
+      rect:
+        serializedVersion: 2
+        x: 1936
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fc7caa1c8c9983f0800000000000000
+      internalID: -898014525126837004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe - 3fase - ataque1_12
+      rect:
+        serializedVersion: 2
+        x: 2112
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1c47e9d4ba617330800000000000000
+      internalID: 3706861293285100575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe - 3fase - ataque1_13
+      rect:
+        serializedVersion: 2
+        x: 2288
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6641c332c491e440800000000000000
+      internalID: 4963411826151868014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe - 3fase - ataque1_14
+      rect:
+        serializedVersion: 2
+        x: 2464
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09ca23f514c597790800000000000000
+      internalID: -7531887465960657776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe - 3fase - ataque1_15
+      rect:
+        serializedVersion: 2
+        x: 2640
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e00be7138abcce720800000000000000
+      internalID: 2876898185228234766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe - 3fase - ataque1_16
+      rect:
+        serializedVersion: 2
+        x: 2816
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 836270dafc28c79e0800000000000000
+      internalID: -1622277937287453128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe - 3fase - ataque1_17
+      rect:
+        serializedVersion: 2
+        x: 2992
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39b54f6784fe6eb60800000000000000
+      internalID: 7775164901214149523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe - 3fase - ataque1_18
+      rect:
+        serializedVersion: 2
+        x: 3168
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 465a5abf6cc94ab70800000000000000
+      internalID: 8909418341285078372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe - 3fase - ataque1_19
+      rect:
+        serializedVersion: 2
+        x: 3344
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a778b27cec579b830800000000000000
+      internalID: 4087427667780667258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe - 3fase - ataque1_20
+      rect:
+        serializedVersion: 2
+        x: 3520
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f49eeece3c3b26c70800000000000000
+      internalID: 8962923862495783247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe - 3fase - ataque1_21
+      rect:
+        serializedVersion: 2
+        x: 3696
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8d7468a496f89010800000000000000
+      internalID: 1195976819407617420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe - 3fase - ataque1_22
+      rect:
+        serializedVersion: 2
+        x: 3872
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: faa3dc59f4fa7d050800000000000000
+      internalID: 5825317399377558191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe - 3fase - ataque1_23
+      rect:
+        serializedVersion: 2
+        x: 4048
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39d74b80cd7d29320800000000000000
+      internalID: 2563348477966056851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe - 3fase - ataque1_24
+      rect:
+        serializedVersion: 2
+        x: 4224
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb1bdb0b89ab92b40800000000000000
+      internalID: 5416065191852749244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe - 3fase - ataque1_25
+      rect:
+        serializedVersion: 2
+        x: 4400
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3623c8f047e507d70800000000000000
+      internalID: 9038828304702648931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 22646dbf1c29dd54ba2e48d827434171
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":26.0,"y":1.0},"gridSpriteSize":{"x":176.0,"y":176.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      jefe - 3fase - ataque1_0: -5608876014650062670
+      jefe - 3fase - ataque1_1: 5572020863716888885
+      jefe - 3fase - ataque1_10: -5205882326627873861
+      jefe - 3fase - ataque1_11: -898014525126837004
+      jefe - 3fase - ataque1_12: 3706861293285100575
+      jefe - 3fase - ataque1_13: 4963411826151868014
+      jefe - 3fase - ataque1_14: -7531887465960657776
+      jefe - 3fase - ataque1_15: 2876898185228234766
+      jefe - 3fase - ataque1_16: -1622277937287453128
+      jefe - 3fase - ataque1_17: 7775164901214149523
+      jefe - 3fase - ataque1_18: 8909418341285078372
+      jefe - 3fase - ataque1_19: 4087427667780667258
+      jefe - 3fase - ataque1_2: 3785581300492430918
+      jefe - 3fase - ataque1_20: 8962923862495783247
+      jefe - 3fase - ataque1_21: 1195976819407617420
+      jefe - 3fase - ataque1_22: 5825317399377558191
+      jefe - 3fase - ataque1_23: 2563348477966056851
+      jefe - 3fase - ataque1_24: 5416065191852749244
+      jefe - 3fase - ataque1_25: 9038828304702648931
+      jefe - 3fase - ataque1_3: -7852243214087599177
+      jefe - 3fase - ataque1_4: 2322599993398300263
+      jefe - 3fase - ataque1_5: 3383300072419101865
+      jefe - 3fase - ataque1_6: 2060121550061495464
+      jefe - 3fase - ataque1_7: -4704652796804313869
+      jefe - 3fase - ataque1_8: 7030670397425421461
+      jefe - 3fase - ataque1_9: -4019640181566063857
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

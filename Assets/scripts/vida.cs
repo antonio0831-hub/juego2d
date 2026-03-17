@@ -49,11 +49,19 @@ public class vida : MonoBehaviour
     {
  
 
-    currentHealth = maxHealth;
-    if (PlayerPowerUps.tieneVidaExtra)
-        maxHealth = 5;
+currentHealth = maxHealth;
 
+// 🔥 SOLO si cogiste el powerup en el nivel anterior
+if (PlayerPowerUps.vidaExtraPendiente)
+{
+    maxHealth += 1;
     currentHealth = maxHealth;
+
+    // 🔥 IMPORTANTE: lo consumimos para que no se repita
+    PlayerPowerUps.vidaExtraPendiente = false;
+}
+
+UpdateHeartsUI();
 
     UpdateHeartsUI();
 

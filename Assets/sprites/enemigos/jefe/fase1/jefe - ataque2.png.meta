@@ -1,0 +1,1306 @@
+fileFormatVersion: 2
+guid: c50034e6622dc3547bb93f22fb51573c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5338346214754757497
+    second: jefe - ataque2_0
+  - first:
+      213: 3457295933744284511
+    second: jefe - ataque2_1
+  - first:
+      213: -1745354782735192750
+    second: jefe - ataque2_2
+  - first:
+      213: -8526221537672064566
+    second: jefe - ataque2_3
+  - first:
+      213: -5095138649669215311
+    second: jefe - ataque2_4
+  - first:
+      213: 8132800358089520239
+    second: jefe - ataque2_5
+  - first:
+      213: 8594148411438898391
+    second: jefe - ataque2_6
+  - first:
+      213: 8927238442306637840
+    second: jefe - ataque2_7
+  - first:
+      213: -6847941376673098092
+    second: jefe - ataque2_8
+  - first:
+      213: -4681170127509414119
+    second: jefe - ataque2_9
+  - first:
+      213: -1701498387813535116
+    second: jefe - ataque2_10
+  - first:
+      213: 3774165489383707465
+    second: jefe - ataque2_11
+  - first:
+      213: -738483979417054186
+    second: jefe - ataque2_12
+  - first:
+      213: 4763985412749873846
+    second: jefe - ataque2_13
+  - first:
+      213: 5405701471524742477
+    second: jefe - ataque2_14
+  - first:
+      213: 1473336003241080219
+    second: jefe - ataque2_15
+  - first:
+      213: -2612080370287794859
+    second: jefe - ataque2_16
+  - first:
+      213: -4461570497027585331
+    second: jefe - ataque2_17
+  - first:
+      213: 7906349040562914056
+    second: jefe - ataque2_18
+  - first:
+      213: -1379590965703263701
+    second: jefe - ataque2_19
+  - first:
+      213: -5844755528031293087
+    second: jefe - ataque2_20
+  - first:
+      213: 116619742189734908
+    second: jefe - ataque2_21
+  - first:
+      213: -7770442996822671689
+    second: jefe - ataque2_22
+  - first:
+      213: -6591918162049952763
+    second: jefe - ataque2_23
+  - first:
+      213: 4683156771349673445
+    second: jefe - ataque2_24
+  - first:
+      213: -949945961005956019
+    second: jefe - ataque2_25
+  - first:
+      213: 1711692718205484753
+    second: jefe - ataque2_26
+  - first:
+      213: 4324272345427503715
+    second: jefe - ataque2_27
+  - first:
+      213: 5159542921997636793
+    second: jefe - ataque2_28
+  - first:
+      213: 7233793870576095035
+    second: jefe - ataque2_29
+  - first:
+      213: 6650665365292348683
+    second: jefe - ataque2_30
+  - first:
+      213: 6569111646394730495
+    second: jefe - ataque2_31
+  - first:
+      213: 4806550482220717586
+    second: jefe - ataque2_32
+  - first:
+      213: -7598943022415970510
+    second: jefe - ataque2_33
+  - first:
+      213: -1916899000572030312
+    second: jefe - ataque2_34
+  - first:
+      213: 8554465786881674830
+    second: jefe - ataque2_35
+  - first:
+      213: -5739808950060686287
+    second: jefe - ataque2_36
+  - first:
+      213: -2939121372016574008
+    second: jefe - ataque2_37
+  - first:
+      213: -3916668261974225059
+    second: jefe - ataque2_38
+  - first:
+      213: 51173264035437636
+    second: jefe - ataque2_39
+  - first:
+      213: 6948281879350494400
+    second: jefe - ataque2_40
+  - first:
+      213: 5768787115664502760
+    second: jefe - ataque2_41
+  - first:
+      213: 317774889224134338
+    second: jefe - ataque2_42
+  - first:
+      213: -6348915423119421927
+    second: jefe - ataque2_43
+  - first:
+      213: -6373442242050501338
+    second: jefe - ataque2_44
+  - first:
+      213: -5367902928290718727
+    second: jefe - ataque2_45
+  - first:
+      213: 1027386949369798461
+    second: jefe - ataque2_46
+  - first:
+      213: 2751599747162152533
+    second: jefe - ataque2_47
+  - first:
+      213: -6745691736686592911
+    second: jefe - ataque2_48
+  - first:
+      213: -1197016459909497155
+    second: jefe - ataque2_49
+  - first:
+      213: -5691017753510467290
+    second: jefe - ataque2_50
+  - first:
+      213: 943662453872328887
+    second: jefe - ataque2_51
+  - first:
+      213: -8359427572907802565
+    second: jefe - ataque2_52
+  - first:
+      213: 2512313280429404853
+    second: jefe - ataque2_53
+  - first:
+      213: 8063287570413713977
+    second: jefe - ataque2_54
+  - first:
+      213: -6421779456421253179
+    second: jefe - ataque2_55
+  - first:
+      213: -758371883147405036
+    second: jefe - ataque2_56
+  - first:
+      213: -4765335269202273869
+    second: jefe - ataque2_57
+  - first:
+      213: -7790243197223660991
+    second: jefe - ataque2_58
+  - first:
+      213: 428688415464206145
+    second: jefe - ataque2_59
+  - first:
+      213: -1513422541964600511
+    second: jefe - ataque2_60
+  - first:
+      213: 7203895437116908462
+    second: jefe - ataque2_61
+  - first:
+      213: -5786784965190669412
+    second: jefe - ataque2_62
+  - first:
+      213: -5435404149927125139
+    second: jefe - ataque2_63
+  - first:
+      213: 687177189526589145
+    second: jefe - ataque2_64
+  - first:
+      213: -2215352537376758830
+    second: jefe - ataque2_65
+  - first:
+      213: -1465773635002091365
+    second: jefe - ataque2_66
+  - first:
+      213: 5426331930992045303
+    second: jefe - ataque2_67
+  - first:
+      213: 5266759020731081578
+    second: jefe - ataque2_68
+  - first:
+      213: 2262961382123856974
+    second: jefe - ataque2_69
+  - first:
+      213: 2756462556307410243
+    second: jefe - ataque2_70
+  - first:
+      213: -8853786372953554278
+    second: jefe - ataque2_71
+  - first:
+      213: 5461745530706986744
+    second: jefe - ataque2_72
+  - first:
+      213: -8443921328265954375
+    second: jefe - ataque2_73
+  - first:
+      213: 7125821100109542519
+    second: jefe - ataque2_74
+  - first:
+      213: 7215098231622497535
+    second: jefe - ataque2_75
+  - first:
+      213: 6197616783269244920
+    second: jefe - ataque2_76
+  - first:
+      213: 1260192585868628019
+    second: jefe - ataque2_77
+  - first:
+      213: 9042700522586713165
+    second: jefe - ataque2_78
+  - first:
+      213: -8225743620087524637
+    second: jefe - ataque2_79
+  - first:
+      213: -4794100705974278078
+    second: jefe - ataque2_80
+  - first:
+      213: -2936398818518194043
+    second: jefe - ataque2_81
+  - first:
+      213: -8192668426827971940
+    second: jefe - ataque2_82
+  - first:
+      213: -7316689516844797109
+    second: jefe - ataque2_83
+  - first:
+      213: -8060870297124428870
+    second: jefe - ataque2_84
+  - first:
+      213: -5292239862944551516
+    second: jefe - ataque2_85
+  - first:
+      213: -6828685901664459280
+    second: jefe - ataque2_86
+  - first:
+      213: 5457887233725667403
+    second: jefe - ataque2_87
+  - first:
+      213: -999756806198307094
+    second: jefe - ataque2_88
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 150
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: jefe - ataque2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97b228a399d951a40800000000000000
+      internalID: 5338346214754757497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe - ataque2_1
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f530b3e8558caff20800000000000000
+      internalID: 3457295933744284511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe - ataque2_2
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25d2a08821147c7e0800000000000000
+      internalID: -1745354782735192750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe - ataque2_3
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac195c27fa6cca980800000000000000
+      internalID: -8526221537672064566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe - ataque2_4
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bb5a11b46e6a49b0800000000000000
+      internalID: -5095138649669215311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe - ataque2_5
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f64781516d28dd070800000000000000
+      internalID: 8132800358089520239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe - ataque2_6
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7dc9dca427c844770800000000000000
+      internalID: 8594148411438898391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe - ataque2_7
+      rect:
+        serializedVersion: 2
+        x: 1232
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01016e2901ce3eb70800000000000000
+      internalID: 8927238442306637840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe - ataque2_8
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49653b0999937f0a0800000000000000
+      internalID: -6847941376673098092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe - ataque2_9
+      rect:
+        serializedVersion: 2
+        x: 1584
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91f91a82294290fb0800000000000000
+      internalID: -4681170127509414119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe - ataque2_10
+      rect:
+        serializedVersion: 2
+        x: 1760
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47279703b301368e0800000000000000
+      internalID: -1701498387813535116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe - ataque2_11
+      rect:
+        serializedVersion: 2
+        x: 1936
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94311462487806430800000000000000
+      internalID: 3774165489383707465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe - ataque2_12
+      rect:
+        serializedVersion: 2
+        x: 2112
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 614978ebbb060c5f0800000000000000
+      internalID: -738483979417054186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe - ataque2_13
+      rect:
+        serializedVersion: 2
+        x: 2288
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b259120e731d1240800000000000000
+      internalID: 4763985412749873846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe - ataque2_14
+      rect:
+        serializedVersion: 2
+        x: 2464
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d45e90409d8e40b40800000000000000
+      internalID: 5405701471524742477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe - ataque2_15
+      rect:
+        serializedVersion: 2
+        x: 2640
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b957af3f947527410800000000000000
+      internalID: 1473336003241080219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe - ataque2_16
+      rect:
+        serializedVersion: 2
+        x: 2816
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 555a93c1eb600cbd0800000000000000
+      internalID: -2612080370287794859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe - ataque2_17
+      rect:
+        serializedVersion: 2
+        x: 2992
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcace4875415512c0800000000000000
+      internalID: -4461570497027585331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe - ataque2_18
+      rect:
+        serializedVersion: 2
+        x: 3168
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 803c001109ef8bd60800000000000000
+      internalID: 7906349040562914056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe - ataque2_19
+      rect:
+        serializedVersion: 2
+        x: 3344
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2a3be97355badce0800000000000000
+      internalID: -1379590965703263701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe - ataque2_20
+      rect:
+        serializedVersion: 2
+        x: 3520
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 161b1b860d143eea0800000000000000
+      internalID: -5844755528031293087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe - ataque2_21
+      rect:
+        serializedVersion: 2
+        x: 3696
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfb4403a9015e9100800000000000000
+      internalID: 116619742189734908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe - ataque2_22
+      rect:
+        serializedVersion: 2
+        x: 3872
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7be76f29347d92490800000000000000
+      internalID: -7770442996822671689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe - ataque2_23
+      rect:
+        serializedVersion: 2
+        x: 4048
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 504119a6b5dc484a0800000000000000
+      internalID: -6591918162049952763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe - ataque2_24
+      rect:
+        serializedVersion: 2
+        x: 4224
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e533c7654aedf040800000000000000
+      internalID: 4683156771349673445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe - ataque2_25
+      rect:
+        serializedVersion: 2
+        x: 4400
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d444c667e2d11d2f0800000000000000
+      internalID: -949945961005956019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe - ataque2_26
+      rect:
+        serializedVersion: 2
+        x: 4576
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1deb241557721c710800000000000000
+      internalID: 1711692718205484753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe - ataque2_27
+      rect:
+        serializedVersion: 2
+        x: 4752
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36a604589c6e20c30800000000000000
+      internalID: 4324272345427503715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe - ataque2_28
+      rect:
+        serializedVersion: 2
+        x: 4928
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b4dc0d73f06a9740800000000000000
+      internalID: 5159542921997636793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe - ataque2_29
+      rect:
+        serializedVersion: 2
+        x: 5104
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3f0612f239936460800000000000000
+      internalID: 7233793870576095035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe - ataque2_30
+      rect:
+        serializedVersion: 2
+        x: 5280
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b057e3ab9e8eb4c50800000000000000
+      internalID: 6650665365292348683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe - ataque2_31
+      rect:
+        serializedVersion: 2
+        x: 5456
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff74d3ddc3c2a2b50800000000000000
+      internalID: 6569111646394730495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe - ataque2_32
+      rect:
+        serializedVersion: 2
+        x: 5632
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2169fb7823c44b240800000000000000
+      internalID: 4806550482220717586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe - ataque2_33
+      rect:
+        serializedVersion: 2
+        x: 5808
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23f767005912b8690800000000000000
+      internalID: -7598943022415970510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe - ataque2_34
+      rect:
+        serializedVersion: 2
+        x: 5984
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8925a90e38ec565e0800000000000000
+      internalID: -1916899000572030312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe - ataque2_35
+      rect:
+        serializedVersion: 2
+        x: 6160
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4e80564f4197b670800000000000000
+      internalID: 8554465786881674830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe - ataque2_36
+      rect:
+        serializedVersion: 2
+        x: 6336
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1346605bb2a1850b0800000000000000
+      internalID: -5739808950060686287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe - ataque2_37
+      rect:
+        serializedVersion: 2
+        x: 6512
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c1813d2fa42637d0800000000000000
+      internalID: -2939121372016574008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe - ataque2_38
+      rect:
+        serializedVersion: 2
+        x: 6688
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5fcaf597f235a9c0800000000000000
+      internalID: -3916668261974225059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe - ataque2_39
+      rect:
+        serializedVersion: 2
+        x: 6864
+        y: 0
+        width: 176
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44c54d000ddc5b000800000000000000
+      internalID: 51173264035437636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: e37db52b07c040d46bb782f764c2dffe
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":40.0,"y":1.0},"gridSpriteSize":{"x":176.0,"y":176.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      jefe - ataque2_0: 5338346214754757497
+      jefe - ataque2_1: 3457295933744284511
+      jefe - ataque2_10: -1701498387813535116
+      jefe - ataque2_11: 3774165489383707465
+      jefe - ataque2_12: -738483979417054186
+      jefe - ataque2_13: 4763985412749873846
+      jefe - ataque2_14: 5405701471524742477
+      jefe - ataque2_15: 1473336003241080219
+      jefe - ataque2_16: -2612080370287794859
+      jefe - ataque2_17: -4461570497027585331
+      jefe - ataque2_18: 7906349040562914056
+      jefe - ataque2_19: -1379590965703263701
+      jefe - ataque2_2: -1745354782735192750
+      jefe - ataque2_20: -5844755528031293087
+      jefe - ataque2_21: 116619742189734908
+      jefe - ataque2_22: -7770442996822671689
+      jefe - ataque2_23: -6591918162049952763
+      jefe - ataque2_24: 4683156771349673445
+      jefe - ataque2_25: -949945961005956019
+      jefe - ataque2_26: 1711692718205484753
+      jefe - ataque2_27: 4324272345427503715
+      jefe - ataque2_28: 5159542921997636793
+      jefe - ataque2_29: 7233793870576095035
+      jefe - ataque2_3: -8526221537672064566
+      jefe - ataque2_30: 6650665365292348683
+      jefe - ataque2_31: 6569111646394730495
+      jefe - ataque2_32: 4806550482220717586
+      jefe - ataque2_33: -7598943022415970510
+      jefe - ataque2_34: -1916899000572030312
+      jefe - ataque2_35: 8554465786881674830
+      jefe - ataque2_36: -5739808950060686287
+      jefe - ataque2_37: -2939121372016574008
+      jefe - ataque2_38: -3916668261974225059
+      jefe - ataque2_39: 51173264035437636
+      jefe - ataque2_4: -5095138649669215311
+      jefe - ataque2_5: 8132800358089520239
+      jefe - ataque2_6: 8594148411438898391
+      jefe - ataque2_7: 8927238442306637840
+      jefe - ataque2_8: -6847941376673098092
+      jefe - ataque2_9: -4681170127509414119
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
