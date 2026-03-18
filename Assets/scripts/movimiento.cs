@@ -4,7 +4,7 @@ public class movimiento : MonoBehaviour
 {
     private Rigidbody2D rb;
     private float Horizontal;
-
+    public bool puedeMoverse = true;
     [Header("Movimiento")]
     public float Speed = 5f;
     public float velocidadNormal;
@@ -48,6 +48,12 @@ public class movimiento : MonoBehaviour
     {
         Horizontal = Input.GetAxisRaw("Horizontal");
         anim.SetBool("andar", Horizontal != 0.0f);
+          if (!puedeMoverse)
+{
+    Horizontal = 0f;
+    rb.linearVelocity = Vector2.zero;
+    return;
+}
     if (Horizontal != 0.0f) 
     {
     // ...y el sonido NO está sonando, lo activamos
@@ -124,6 +130,11 @@ public class movimiento : MonoBehaviour
     void FixedUpdate()
     {
         // ✅ si estás pegado, NO sobrescribas la velocidad
+          if (!puedeMoverse)
+        {
+            rb.linearVelocity = Vector2.zero;
+            return;
+        }
         if (wallScript != null && wallScript.IsClinging())
             return;
 

@@ -5,14 +5,22 @@ public class coleccionable : MonoBehaviour
     [Header("Sonidos")]
     public AudioSource fuenteDeAudio;
     public AudioClip sonidoAtaque;
+
+    private bool recogido = false;
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
-        {
-             fuenteDeAudio.PlayOneShot(sonidoAtaque);
-            contadorManager manager = Object.FindFirstObjectByType<contadorManager>();
-            if (manager != null) manager.SumarColeccionable();
-            Destroy(gameObject);
-        }
+        if (recogido) return;
+        if (!collision.CompareTag("Player")) return;
+
+        recogido = true;
+
+        if (fuenteDeAudio != null && sonidoAtaque != null)
+            fuenteDeAudio.PlayOneShot(sonidoAtaque);
+
+        if (contadorManager.instancia != null)
+            contadorManager.instancia.SumarColeccionable();
+
+        Destroy(gameObject);
     }
 }

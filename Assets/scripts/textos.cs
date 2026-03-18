@@ -21,10 +21,16 @@ public class textos : MonoBehaviour
     // Se activa automáticamente al entrar en el trigger
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag(tagJugador))
-        {
-            ActivarSiguienteEvento();
-        }
+        
+  if (collision.CompareTag(tagJugador))
+{
+    movimiento player = collision.GetComponent<movimiento>();
+
+    if (player != null)
+        player.puedeMoverse = false;
+
+    ActivarSiguienteEvento();
+}
     }
 
     public void ActivarSiguienteEvento()
@@ -52,6 +58,10 @@ public class textos : MonoBehaviour
 
         // 3. Ejecutar la acción de limpieza (ej: Desactivar el texto)
         ev.accionAlTerminar.Invoke();
+        movimiento player = FindObjectOfType<movimiento>();
+
+if (player != null)
+    player.puedeMoverse = true;
         
         Debug.Log("Evento finalizado: " + ev.nombreDelEvento);
     }
