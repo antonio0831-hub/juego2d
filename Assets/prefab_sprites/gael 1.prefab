@@ -106,8 +106,8 @@ GameObject:
   - component: {fileID: 9069561344581910278}
   - component: {fileID: 5294908802835618486}
   - component: {fileID: 3907112155185824515}
-  - component: {fileID: 8701573118704179618}
   - component: {fileID: 8607819457219409286}
+  - component: {fileID: 8701573118704179618}
   - component: {fileID: 5151121723204016878}
   - component: {fileID: 397595549610893368}
   - component: {fileID: 2171440551315697773}
@@ -291,37 +291,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &8701573118704179618
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3168751456740503918}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bca7256c63e80234494fee2d16eb6267, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::melee_player
-  shape: 1
-  fuenteDeAudio: {fileID: 8059303383660605761}
-  sonidoAtaque: {fileID: 8300000, guid: 8020dcdd0ce9f3b4bb2c83d90a41fef0, type: 3}
-  useInput: 1
-  attackKey: 323
-  attackPoint: {fileID: 7997512694582250563}
-  hitLayer:
-    serializedVersion: 2
-    m_Bits: 8
-  damage: 1
-  cooldown: 1
-  radius: 0.16
-  boxSize: {x: 0.43, y: 0.39}
-  damagePlayer: 0
-  damageEnemies: 1
-  fromPlayer: 1
-  anim: {fileID: 9069561344581910278}
-  attackTrigger: ataque
-  debugHits: 1
 --- !u!114 &8607819457219409286
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -354,6 +323,37 @@ MonoBehaviour:
     m_Bits: 64
   TouchingWall: 1
   debug: 1
+--- !u!114 &8701573118704179618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3168751456740503918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bca7256c63e80234494fee2d16eb6267, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::melee_player
+  shape: 1
+  fuenteDeAudio: {fileID: 8059303383660605761}
+  sonidoAtaque: {fileID: 8300000, guid: 8020dcdd0ce9f3b4bb2c83d90a41fef0, type: 3}
+  useInput: 1
+  attackKey: 323
+  attackPoint: {fileID: 7997512694582250563}
+  hitLayer:
+    serializedVersion: 2
+    m_Bits: 8
+  damage: 1
+  cooldown: 1
+  radius: 0.16
+  boxSize: {x: 0.43, y: 0.39}
+  damagePlayer: 0
+  damageEnemies: 1
+  fromPlayer: 1
+  anim: {fileID: 9069561344581910278}
+  attackTrigger: ataque
+  debugHits: 1
 --- !u!114 &5151121723204016878
 MonoBehaviour:
   m_ObjectHideFlags: 0
