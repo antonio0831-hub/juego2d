@@ -94,7 +94,7 @@ public class movimiento : MonoBehaviour
         }
 
         if (debug)
-            Debug.Log($"Grounded={Grounded}  TouchingWall={TouchingWall}");
+           // Debug.Log($"Grounded={Grounded}  TouchingWall={TouchingWall}");
 
         // Salto normal SOLO si grounded y NO estás pegado
         if (Input.GetKeyDown(KeyCode.Space) && Grounded && (wallScript == null || !wallScript.IsClinging()))

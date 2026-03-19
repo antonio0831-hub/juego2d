@@ -54,8 +54,9 @@ public class BossIntroTrigger : MonoBehaviour
         if (playerCamera != null) playerCamera.gameObject.SetActive(false);
         if (bossIntroCamera != null) bossIntroCamera.gameObject.SetActive(true);
 
-        if (musicFader != null && bossMusic != null)
-            StartCoroutine(musicFader.ChangeMusicCoroutine(bossMusic, audioFadeOutTime, audioFadeInTime));
+      // Por esto
+if (musicFader != null && bossMusic != null)
+    musicFader.ChangeMusic(bossMusic, audioFadeOutTime, audioFadeInTime);
 
         if (bossController != null)
             bossController.PlayIntroAnimation();
@@ -78,4 +79,8 @@ public class BossIntroTrigger : MonoBehaviour
     {
         introFinished = true;
     }
+    public void FinishIntro()
+{
+    introFinished = true;
+}
 }
