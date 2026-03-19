@@ -1,144 +1,79 @@
-using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BossHealthController : MonoBehaviour
 {
-    public enum BossState
-    {
-        Intro,
-        Combat,
-        Stunned,
-        Returning,
-        Dead
-    }
-
-    [Header("Vida")]
+    [Header("Vida UI")]
     public int maxHealth = 100;
     public int currentHealth;
-
-    [Header("Estado")]
-    public BossState currentState = BossState.Intro;
+    public Slider healthSlider;
 
     [Header("Referencias")]
-    public Animator animator;
     public Rigidbody2D rb;
+    public BossBehaviour bossBehaviour;
 
-    [Header("Posición original")]
-    public Transform originalPoint;
-    public float returnSpeed = 4f;
+    private void Awake()
+    {
+        if (rb == null)
+            rb = GetComponent<Rigidbody2D>();
 
-    [Header("Stun / atrapado")]
-    public float stunnedDuration = 5f;
-    public string stunTriggerName = "Stunned";
-    public string returnTriggerName = "Return";
-    public bool canTakeExtraDamageWhenStunned = true;
-
-    private bool fightStarted = false;
-    private bool isInvulnerable = false;
+        if (bossBehaviour == null)
+            bossBehaviour = GetComponent<BossBehaviour>();
+    }
 
     private void Start()
     {
         currentHealth = maxHealth;
-    }
 
-    private void Update()
-    {
-        if (currentState == BossState.Returning && originalPoint != null)
+        if (healthSlider != null)
         {
-            transform.position = Vector2.MoveTowards(
-                transform.position,
-                originalPoint.position,
-                returnSpeed * Time.deltaTime
-            );
-
-            if (Vector2.Distance(transform.position, originalPoint.position) < 0.05f)
-            {
-                transform.position = originalPoint.position;
-                currentState = BossState.Combat;
-            }
+            healthSlider.maxValue = maxHealth;
+            healthSlider.value = currentHealth;
+            healthSlider.gameObject.SetActive(false);
         }
     }
 
     public void StartBossFight()
     {
-        fightStarted = true;
-        currentState = BossState.Combat;
+        if (healthSlider != null)
+            healthSlider.gameObject.SetActive(true);
+
+        if (bossBehaviour != null)
+            bossBehaviour.StartBossFight();
     }
 
-public void TakeDamage(int damage)
+    // COMPATIBILIDAD:
+    // otros scripts seguramente siguen llamando a este método
+public void TriggerStunnedState()
 {
-    // 🛡️ SOLO recibe daño si está en estado Stunned
-    if (currentState != BossState.Stunned)
+    BossBehaviour boss = GetComponent<BossBehaviour>();
+    if (boss != null)
     {
-        Debug.Log("El Boss es invulnerable. ¡Destruye los objetos primero!");
-        return; 
-    }
-
-    currentHealth -= damage;
-    Debug.Log("¡DAÑO RECIBIDO! Vida restante: " + currentHealth);
-
-    // Como no tienes animación de Hurt, no llamamos a ningún Trigger aquí.
-    // El Boss seguirá en su animación de 'Stunned' que ya se activó en StunnedRoutine.
-
-    if (currentHealth <= 0)
-    {
-        Die();
+        boss.TriggerStunnedState();
     }
 }
 
-    public void TriggerStunnedState()
+    // Si algún objeto sigue llamando al daño aquí, lo reenviamos también
+    public void TakeDamage(int damage)
     {
-        if (currentState == BossState.Dead) return;
-        if (currentState == BossState.Stunned) return;
-        if (currentState == BossState.Returning) return;
-
-        StartCoroutine(StunnedRoutine());
-    }
-
-    private IEnumerator StunnedRoutine()
-    {
-        currentState = BossState.Stunned;
-
-        // parar movimiento
-        if (rb != null)
+        if (bossBehaviour != null)
         {
-            rb.linearVelocity = Vector2.zero;
-            rb.angularVelocity = 0f;
-            rb.constraints = RigidbodyConstraints2D.FreezePositionX |
-                             RigidbodyConstraints2D.FreezePositionY |
-                             RigidbodyConstraints2D.FreezeRotation;
+            bossBehaviour.TakeDamage(damage);
         }
 
-        if (animator != null && !string.IsNullOrEmpty(stunTriggerName))
+        // Opcional: si quieres que la barra refleje vidas del boss
+        if (bossBehaviour != null && healthSlider != null)
         {
-            animator.SetTrigger(stunTriggerName);
-        }
-
-        yield return new WaitForSeconds(stunnedDuration);
-
-        // quitar bloqueo físico
-        if (rb != null)
-        {
-            rb.constraints = RigidbodyConstraints2D.FreezeRotation;
-        }
-
-        currentState = BossState.Returning;
-
-        if (animator != null && !string.IsNullOrEmpty(returnTriggerName))
-        {
-            animator.SetTrigger(returnTriggerName);
+            float percent = 1f - ((float)bossBehaviour.currentLives / Mathf.Max(1, bossBehaviour.maxLives));
+            healthSlider.value = percent * maxHealth;
         }
     }
 
     private void Die()
     {
-        currentState = BossState.Dead;
-
         if (rb != null)
-        {
             rb.linearVelocity = Vector2.zero;
-        }
 
-        Debug.Log("Boss derrotado");
+        Debug.Log("BossHealthController: vida agotada");
     }
 }

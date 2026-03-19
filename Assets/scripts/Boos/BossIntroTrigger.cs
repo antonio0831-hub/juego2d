@@ -24,7 +24,7 @@ public class BossIntroTrigger : MonoBehaviour
 
     [Header("Boss")]
     public BossController bossController;
-
+    public BossHealthController bossHealth;
     private bool activated = false;
     private bool introFinished = false;
 
