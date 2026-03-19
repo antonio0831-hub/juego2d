@@ -55,45 +55,47 @@ public class bolt : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other) => HandleHit(other);
     void OnCollisionEnter2D(Collision2D col) => HandleHit(col.collider);
+void HandleHit(Collider2D other)
+{
+    if (other == null) return;
 
-    void HandleHit(Collider2D other)
+    if (fromPlayer)
     {
-        if (other == null) return;
-
-        // 1) Walls
-        int otherMask = 1 << other.gameObject.layer;
-        if ((wallsLayer.value & otherMask) != 0)
+        // Detectar Pilar
+        BossWeakObject weak = other.GetComponent<BossWeakObject>();
+        if (weak != null)
         {
+            weak.ReceiveHit();
             Destroy(gameObject);
             return;
         }
 
-        // 2) Si lo dispara el PLAYER: daña ENEMIGOS
-        if (fromPlayer)
+        // Detectar Boss
+        BossHealthController boss = other.GetComponent<BossHealthController>();
+        if (boss == null) boss = other.GetComponentInParent<BossHealthController>();
+
+        if (boss != null)
         {
-            // ✅ No dependemos del tag: buscamos vida_enemigo en el objeto o padres
-            vida_enemigo enemy = other.GetComponentInParent<vida_enemigo>();
-            if (enemy != null && !enemy.IsDead())
-            {
-                enemy.TakeDamage(damage, true);  // ✅ clave: fromPlayer=true
-                Destroy(gameObject);
-                return;
-            }
-        }
-        // 3) Si lo dispara el ENEMIGO: daña PLAYER
-        else
-        {
-            vida playerVida = other.GetComponentInParent<vida>();
-            if (playerVida != null)
-            {
-                playerVida.TakeDamage(damage);
-                Destroy(gameObject);
-                return;
-            }
+            boss.TakeDamage(damage);
+            Destroy(gameObject);
+            return;
         }
 
-        // 4) Opcional: si choca con algo que no es wall ni objetivo, lo destruimos igual
-        // (si no lo quieres, borra estas líneas)
-        // Destroy(gameObject);
+        // Enemigo normal
+        vida_enemigo enemy = other.GetComponent<vida_enemigo>();
+        if (enemy == null) enemy = other.GetComponentInParent<vida_enemigo>();
+
+        if (enemy != null && !enemy.IsDead())
+        {
+            enemy.TakeDamage(damage, true);
+            Destroy(gameObject);
+            return;
+        }
     }
+    
+    // Si choca con pared
+    int otherMask = 1 << other.gameObject.layer;
+    if ((wallsLayer.value & otherMask) != 0) Destroy(gameObject);
 }
+}
+

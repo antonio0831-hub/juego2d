@@ -93,55 +93,90 @@ public class melee_universal : MonoBehaviour
 
         // ✅ evita pegar varias veces al mismo objetivo si tiene varios colliders
         HashSet<object> damaged = new HashSet<object>();
+// Busca esta sección dentro del foreach de melee_universal.cs:
+foreach (var h in hits)
+{
+    if (h == null) continue;
 
-        foreach (var h in hits)
+    // Evitar autohit
+    if (h.transform == transform) continue;
+
+    if (damageEnemies)
+    {
+        // 1. Objetos débiles del boss
+        BossWeakObject weakObj =
+            h.GetComponent<BossWeakObject>() ??
+            h.GetComponentInParent<BossWeakObject>() ??
+            h.transform.root.GetComponentInChildren<BossWeakObject>(true);
+
+        if (weakObj != null && !damaged.Contains(weakObj))
         {
-            if (h == null) continue;
-
-            // Evitar autohit
-            if (h.transform == transform) continue;
-
-            if (damageEnemies)
-            {
-                vida_enemigo ve =
-                    h.GetComponent<vida_enemigo>() ??
-                    h.GetComponentInParent<vida_enemigo>() ??
-                    h.transform.root.GetComponentInChildren<vida_enemigo>(true);
-
-                if (ve != null && !damaged.Contains(ve))
-                {
-                    damaged.Add(ve);
-
-                    if (debugHits)
-                        Debug.Log($"[melee_universal] Dañando ENEMIGO: {ve.name} (fromPlayer={fromPlayer})");
-
-                    // ✅ CLAVE: pasar fromPlayer para que cuente kill solo si mata el player
-                    ve.TakeDamage(damage, fromPlayer);
-                    continue;
-                }
-            }
-            if (damagePlayer)
-            {
-                vida vp =
-                    h.GetComponent<vida>() ??
-                    h.GetComponentInParent<vida>() ??
-                    h.transform.root.GetComponentInChildren<vida>(true);
-
-                if (vp != null && !damaged.Contains(vp))
-                {
-                    damaged.Add(vp);
-
-                    if (debugHits)
-                        Debug.Log($"[melee_universal] Dañando PLAYER: {vp.name}");
-
-                    vp.TakeDamage(damage);
-                    continue;
-                }
-            }
+            damaged.Add(weakObj);
 
             if (debugHits)
-                Debug.Log($"[melee_universal] Golpeó '{h.name}' pero no encontró objetivo válido.");
+                Debug.Log($"[melee_universal] Golpeando OBJETO DÉBIL: {weakObj.name}");
+
+            weakObj.ReceiveHit();
+            continue;
         }
+
+        // 2. Vida del boss
+        BossHealthController boss =
+            h.GetComponent<BossHealthController>() ??
+            h.GetComponentInParent<BossHealthController>() ??
+            h.transform.root.GetComponentInChildren<BossHealthController>(true);
+
+        if (boss != null && !damaged.Contains(boss))
+        {
+            damaged.Add(boss);
+
+            if (debugHits)
+                Debug.Log($"[melee_universal] Dañando BOSS: {boss.name}");
+
+            boss.TakeDamage(damage);
+            continue;
+        }
+
+        // 3. Enemigos normales
+        vida_enemigo ve =
+            h.GetComponent<vida_enemigo>() ??
+            h.GetComponentInParent<vida_enemigo>() ??
+            h.transform.root.GetComponentInChildren<vida_enemigo>(true);
+
+        if (ve != null && !damaged.Contains(ve))
+        {
+            damaged.Add(ve);
+
+            if (debugHits)
+                Debug.Log($"[melee_universal] Dañando ENEMIGO: {ve.name} (fromPlayer={fromPlayer})");
+
+            ve.TakeDamage(damage, fromPlayer);
+            continue;
+        }
+    }
+
+    if (damagePlayer)
+    {
+        vida vp =
+            h.GetComponent<vida>() ??
+            h.GetComponentInParent<vida>() ??
+            h.transform.root.GetComponentInChildren<vida>(true);
+
+        if (vp != null && !damaged.Contains(vp))
+        {
+            damaged.Add(vp);
+
+            if (debugHits)
+                Debug.Log($"[melee_universal] Dañando PLAYER: {vp.name}");
+
+            vp.TakeDamage(damage);
+            continue;
+        }
+    }
+
+    if (debugHits)
+        Debug.Log($"[melee_universal] Golpeó '{h.name}' pero no encontró objetivo válido.");
+}
     }
     /*System.Collections.IEnumerator reset()
     {

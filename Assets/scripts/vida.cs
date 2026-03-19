@@ -81,6 +81,7 @@ UpdateHeartsUI();
 
     public void TakeDamage(int amount)
     {
+        Debug.Log("Me ha hecho daño el objeto: " + gameObject.name);
         if (dead || esInvencible) return;
         currentHealth = Mathf.Max(0, currentHealth - amount);
         UpdateHeartsUI();

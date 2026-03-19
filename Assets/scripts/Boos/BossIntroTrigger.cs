@@ -39,48 +39,52 @@ public class BossIntroTrigger : MonoBehaviour
 
     private IEnumerator PlayBossIntro()
     {
-        if (playerMovement != null)
-            playerMovement.enabled = false;
-
+        // 1. Bloquear jugador
+        if (playerMovement != null) playerMovement.enabled = false;
         if (playerRb != null)
         {
             playerRb.linearVelocity = Vector2.zero;
             playerRb.angularVelocity = 0f;
         }
 
+        // 2. Fade Out (Pantalla a negro)
         if (screenFader != null)
             yield return screenFader.FadeInCoroutine(fadeToBlackTime);
 
+        // 3. Cambiar cámaras y música
         if (playerCamera != null) playerCamera.gameObject.SetActive(false);
         if (bossIntroCamera != null) bossIntroCamera.gameObject.SetActive(true);
 
-      // Por esto
-if (musicFader != null && bossMusic != null)
-    musicFader.ChangeMusic(bossMusic, audioFadeOutTime, audioFadeInTime);
+        if (musicFader != null && bossMusic != null)
+            musicFader.ChangeMusic(bossMusic, audioFadeOutTime, audioFadeInTime);
 
+        // 4. Activar Boss e iniciar Animación
         if (bossController != null)
-            bossController.PlayIntroAnimation();
+        {
+            bossController.enabled = true;
+            if (bossController.attackController != null) 
+                bossController.attackController.enabled = true;
 
+            bossController.PlayIntroAnimation();
+        }
+
+        // 5. Fade In (Mostrar escena)
         if (screenFader != null)
             yield return screenFader.FadeOutCoroutine(fadeFromBlackTime);
 
-        // Espera hasta que la animación dispare el Animation Event
+        // 6. Esperar a que el Animation Event del Boss Controller diga que terminó
         while (!introFinished)
             yield return null;
 
+        // 7. Devolver control al jugador
         if (playerMovement != null)
             playerMovement.enabled = true;
 
         gameObject.SetActive(false);
     }
 
-    // Esta función la llama BossController cuando termina la animación
-    public void OnBossIntroFinished()
+    public void FinishIntro()
     {
         introFinished = true;
     }
-    public void FinishIntro()
-{
-    introFinished = true;
-}
 }

@@ -29,17 +29,28 @@ public class BossAttackController : MonoBehaviour
     private int nextAreaAttackThreshold;
     private float cooldownTimer = 0f;
     private bool isAttacking = false;
-
-    private void Start()
-    {
-        PickNextAreaThreshold();
-        canAttack = false;
-        isAttacking = false;
-        cooldownTimer = attackCooldown;
-    }
+private void Start()
+{
+    PickNextAreaThreshold();
+    canAttack = false; // El jefe empieza en paz
+    isAttacking = false;
+    cooldownTimer = attackCooldown;
+}
 
 private void Update()
 {
+    // Si la intro no ha TERMINADO de verdad, salimos inmediatamente
+    if (bossController == null || !bossController.fightStarted || bossController.introPlaying) 
+    {
+        canAttack = false;
+        return; 
+    }
+
+    if (!canAttack || isAttacking || player == null) return;
+
+    cooldownTimer -= Time.deltaTime;
+    // ... resto del código
+
     if (bossController == null) return;
     if (!bossController.fightStarted) return; // Asegúrate de que esto sea true
     if (!canAttack) return; // Esto debe ser true ahora
@@ -53,19 +64,19 @@ private void Update()
     }
 }
 
-public void StartAttacking()
-{
-    canAttack = true;
-    isAttacking = false; // Desbloquea por si acaso se quedó trabado
-    cooldownTimer = attackCooldown; // Reinicia el tiempo de espera
-    Debug.Log("Sistema de ataque del Boss: ACTIVADO");
-}
-
-    public void StopAttacking()
+    public void StartAttacking()
     {
-        canAttack = false;
+        Debug.Log("Atacando");
+        canAttack = true;
         isAttacking = false;
+        cooldownTimer = attackCooldown;
     }
+
+ public void StopAttacking()
+{
+    canAttack = false;
+    isAttacking = false;
+}
 
     void DecideNextAttack()
     {

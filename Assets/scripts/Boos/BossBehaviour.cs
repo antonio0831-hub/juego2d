@@ -47,6 +47,7 @@ public class BossBehaviour : MonoBehaviour
     public void StartBossFight()
     {
         currentState = BossState.Combat;
+        Debug.Log("Boss en estado COMBAT");
     }
 
     private void Update()
@@ -89,7 +90,9 @@ public class BossBehaviour : MonoBehaviour
 
     public void TriggerTrapState()
     {
+        Debug.Log("TriggerTrapState llamado. Estado actual: " + currentState);
         if (currentState != BossState.Combat)
+        Debug.LogWarning("No se puede stunear porque el boss NO está en Combat");
             return;
 
         currentState = BossState.Trapped;
@@ -102,6 +105,7 @@ public class BossBehaviour : MonoBehaviour
         }
 
         movingToTrap = true;
+        Debug.Log("Boss entrando en estado TRAPPED");
     }
 
     private IEnumerator TrappedRoutine()

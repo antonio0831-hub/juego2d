@@ -7,10 +7,22 @@ public class BossWeakObjectManager : MonoBehaviour
     public BossWeakObject object2;
 
     [Header("Boss")]
-    // CAMBIO CLAVE: Debe ser BossBehaviour, no BossController
     public BossBehaviour boss; 
 
     private int currentStep = 0;
+
+    private void Awake()
+    {
+        if (boss == null)
+        {
+            boss = Object.FindFirstObjectByType<BossBehaviour>();
+        }
+    }
+
+    private void Start()
+    {
+        StartNewCycle();
+    }
 
     public void StartNewCycle()
     {
@@ -29,8 +41,13 @@ public class BossWeakObjectManager : MonoBehaviour
         else if (destroyedObject == object2 && currentStep == 1)
         {
             currentStep = 2;
-            // Ahora esta función SÍ existe en BossBehaviour
-            if (boss != null) boss.TriggerTrapState(); 
+
+            Debug.Log("Objeto 2 destruido, intentando stunear boss");
+
+            if (boss != null) 
+                boss.TriggerTrapState(); 
+            else
+                Debug.LogError("ERROR: El Manager no encuentra al BossBehaviour.");
         }
     }
 }
