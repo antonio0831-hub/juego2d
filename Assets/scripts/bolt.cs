@@ -72,7 +72,22 @@ void HandleHit(Collider2D other)
 
         // Detectar Boss
 
+else // <--- AQUÍ ES DONDE DISPARA EL ENEMIGO
+    {
+        // 1. Detectar si chocó con el Jugador
+        if (other.CompareTag("Player")) 
+        {
+            vida playerVida = other.GetComponent<vida>();
+            if (playerVida == null) playerVida = other.GetComponentInParent<vida>();
 
+            if (playerVida != null)
+            {
+                playerVida.TakeDamage(damage); // Le quita la cantidad de 'damage' definida en el inspector
+                Destroy(gameObject); // Destruye la flecha al tocarte
+                return;
+            }
+        }
+    }
         // Enemigo normal
         vida_enemigo enemy = other.GetComponent<vida_enemigo>();
         if (enemy == null) enemy = other.GetComponentInParent<vida_enemigo>();

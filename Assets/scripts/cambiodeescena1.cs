@@ -10,6 +10,7 @@ public class cambiodeescena1 : MonoBehaviour
     {
         if(other.CompareTag("Player"))
         {
+            vida.ResetCheckpointGlobal();
             SceneManager.LoadScene("Level3");
         }
     }

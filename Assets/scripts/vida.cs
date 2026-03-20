@@ -169,4 +169,9 @@ UpdateHeartsUI();
         Time.timeScale = 1f;
         SceneManager.LoadScene(Interfaz);
     }
+    // Añade esto en vida.cs si no lo tienes así
+public static void ResetCheckpointGlobal()
+{
+    hayCheckpointRegistrado = false;
+}
 }
