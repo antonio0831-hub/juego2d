@@ -30,7 +30,7 @@ public class TriggerDialogoSecuencia : MonoBehaviour
 
         // Si no asignaste el jugador manualmente, lo busca
         if (scriptMovimientoJugador == null)
-            scriptMovimientoJugador = FindObjectOfType<movimiento>();
+scriptMovimientoJugador = Object.FindFirstObjectByType<movimiento>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

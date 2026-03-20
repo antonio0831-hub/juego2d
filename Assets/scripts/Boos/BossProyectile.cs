@@ -28,15 +28,11 @@ public class BossProjectile : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        // Solo daña al jugador
         vida playerLife = other.GetComponent<vida>();
         if (playerLife != null)
         {
             playerLife.TakeDamage(damage);
             Destroy(gameObject);
         }
-
-        // No destruimos por paredes
-        // Así atraviesa muros
     }
 }

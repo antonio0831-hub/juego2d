@@ -58,8 +58,7 @@ public class textos : MonoBehaviour
 
         // 3. Ejecutar la acción de limpieza (ej: Desactivar el texto)
         ev.accionAlTerminar.Invoke();
-        movimiento player = FindObjectOfType<movimiento>();
-
+movimiento player = Object.FindFirstObjectByType<movimiento>();
 if (player != null)
     player.puedeMoverse = true;
         

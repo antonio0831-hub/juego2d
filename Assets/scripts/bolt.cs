@@ -71,15 +71,7 @@ void HandleHit(Collider2D other)
         }
 
         // Detectar Boss
-        BossHealthController boss = other.GetComponent<BossHealthController>();
-        if (boss == null) boss = other.GetComponentInParent<BossHealthController>();
 
-        if (boss != null)
-        {
-            boss.TakeDamage(damage);
-            Destroy(gameObject);
-            return;
-        }
 
         // Enemigo normal
         vida_enemigo enemy = other.GetComponent<vida_enemigo>();

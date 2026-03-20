@@ -19,22 +19,18 @@ public class BossController : MonoBehaviour
 
     private void Awake()
     {
-        fightStarted = false; 
+        fightStarted = false;
         introPlaying = false;
     }
 
     private void Start()
     {
-        // Aseguramos que el ataque esté apagado al iniciar el nivel
         if (attackController != null)
-        {
             attackController.StopAttacking();
-        }
     }
 
     public void PlayIntroAnimation()
     {
-        // Si ya está sonando la intro, no hacemos nada
         if (introPlaying) return;
 
         fightStarted = false;
@@ -50,7 +46,6 @@ public class BossController : MonoBehaviour
             musicaintro.PlayOneShot(musica);
     }
 
-    // Se llama mediante Animation Event al final del clip de Intro
     public void OnIntroAnimationFinished()
     {
         introPlaying = false;
@@ -58,11 +53,6 @@ public class BossController : MonoBehaviour
 
         if (bossBehaviour != null)
             bossBehaviour.StartBossFight();
-
-        if (attackController != null)
-        {
-            attackController.StartAttacking(); 
-        }
 
         if (introTrigger != null)
             introTrigger.FinishIntro();

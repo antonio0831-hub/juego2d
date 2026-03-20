@@ -24,7 +24,7 @@ public class BossIntroTrigger : MonoBehaviour
 
     [Header("Boss")]
     public BossController bossController;
-    public BossHealthController bossHealth;
+
     private bool activated = false;
     private bool introFinished = false;
 
@@ -39,7 +39,6 @@ public class BossIntroTrigger : MonoBehaviour
 
     private IEnumerator PlayBossIntro()
     {
-        // 1. Bloquear jugador
         if (playerMovement != null) playerMovement.enabled = false;
         if (playerRb != null)
         {
@@ -47,36 +46,30 @@ public class BossIntroTrigger : MonoBehaviour
             playerRb.angularVelocity = 0f;
         }
 
-        // 2. Fade Out (Pantalla a negro)
         if (screenFader != null)
             yield return screenFader.FadeInCoroutine(fadeToBlackTime);
 
-        // 3. Cambiar cámaras y música
         if (playerCamera != null) playerCamera.gameObject.SetActive(false);
         if (bossIntroCamera != null) bossIntroCamera.gameObject.SetActive(true);
 
         if (musicFader != null && bossMusic != null)
             musicFader.ChangeMusic(bossMusic, audioFadeOutTime, audioFadeInTime);
 
-        // 4. Activar Boss e iniciar Animación
         if (bossController != null)
         {
             bossController.enabled = true;
-            if (bossController.attackController != null) 
+            if (bossController.attackController != null)
                 bossController.attackController.enabled = true;
 
             bossController.PlayIntroAnimation();
         }
 
-        // 5. Fade In (Mostrar escena)
         if (screenFader != null)
             yield return screenFader.FadeOutCoroutine(fadeFromBlackTime);
 
-        // 6. Esperar a que el Animation Event del Boss Controller diga que terminó
         while (!introFinished)
             yield return null;
 
-        // 7. Devolver control al jugador
         if (playerMovement != null)
             playerMovement.enabled = true;
 

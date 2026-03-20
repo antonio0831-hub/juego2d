@@ -22,6 +22,10 @@ public class BossAttackController : MonoBehaviour
     [Header("Daño proyectiles")]
     public int projectileDamage = 1;
 
+    [Header("Triggers Animator")]
+    public string attack1Trigger = "Ataque1";
+    public string attack2Trigger = "Ataque2";
+
     [Header("Estado")]
     public bool canAttack = false;
 
@@ -29,91 +33,91 @@ public class BossAttackController : MonoBehaviour
     private int nextAreaAttackThreshold;
     private float cooldownTimer = 0f;
     private bool isAttacking = false;
-private void Start()
-{
-    PickNextAreaThreshold();
-    canAttack = false; // El jefe empieza en paz
-    isAttacking = false;
-    cooldownTimer = attackCooldown;
-}
 
-private void Update()
-{
-    // Si la intro no ha TERMINADO de verdad, salimos inmediatamente
-    if (bossController == null || !bossController.fightStarted || bossController.introPlaying) 
+    private void Start()
     {
+        PickNextAreaThreshold();
         canAttack = false;
-        return; 
-    }
-
-    if (!canAttack || isAttacking || player == null) return;
-
-    cooldownTimer -= Time.deltaTime;
-    // ... resto del código
-
-    if (bossController == null) return;
-    if (!bossController.fightStarted) return; // Asegúrate de que esto sea true
-    if (!canAttack) return; // Esto debe ser true ahora
-    
-    cooldownTimer -= Time.deltaTime;
-
-    if (cooldownTimer <= 0f)
-    {
-        DecideNextAttack();
-        cooldownTimer = attackCooldown;
-    }
-}
-
-    public void StartAttacking()
-    {
-        Debug.Log("Atacando");
-        canAttack = true;
         isAttacking = false;
         cooldownTimer = attackCooldown;
     }
 
- public void StopAttacking()
-{
-    canAttack = false;
-    isAttacking = false;
-}
+    private void Update()
+    {
+        if (bossController == null || !bossController.fightStarted || bossController.introPlaying)
+        {
+            canAttack = false;
+            return;
+        }
 
-    void DecideNextAttack()
+        if (bossBehaviour == null || bossBehaviour.currentState != BossBehaviour.BossState.Combat)
+            return;
+
+        if (!canAttack || isAttacking || player == null)
+            return;
+
+        cooldownTimer -= Time.deltaTime;
+
+        if (cooldownTimer <= 0f)
+        {
+            DecideNextAttack();
+            cooldownTimer = attackCooldown;
+        }
+    }
+
+    public void StartAttacking()
+    {
+        canAttack = true;
+        isAttacking = false;
+        cooldownTimer = attackCooldown;
+        Debug.Log("BossAttackController: ataques activados");
+    }
+
+    public void StopAttacking()
+    {
+        canAttack = false;
+        isAttacking = false;
+        Debug.Log("BossAttackController: ataques detenidos");
+    }
+
+    private void DecideNextAttack()
     {
         if (isAttacking) return;
 
         isAttacking = true;
-        cooldownTimer = attackCooldown;
 
         if (attack1Counter >= nextAreaAttackThreshold)
         {
             attack1Counter = 0;
             PickNextAreaThreshold();
 
-            Debug.Log("Trigger Attack2");
+            Debug.Log("Trigger Ataque2");
             if (animator != null)
-                animator.SetTrigger("Attack2");
+            {
+                animator.ResetTrigger(attack1Trigger);
+                animator.SetTrigger(attack2Trigger);
+            }
         }
         else
         {
             attack1Counter++;
 
-            Debug.Log("Trigger Attack1");
+            Debug.Log("Trigger Ataque1");
             if (animator != null)
-                animator.SetTrigger("Attack1");
+            {
+                animator.ResetTrigger(attack2Trigger);
+                animator.SetTrigger(attack1Trigger);
+            }
         }
     }
 
-    void PickNextAreaThreshold()
+    private void PickNextAreaThreshold()
     {
         nextAreaAttackThreshold = Random.Range(minAttack1BeforeArea, maxAttack1BeforeArea + 1);
     }
 
-    // Animation Event
     public void FireAttack1()
     {
-        Debug.Log("FireAttack1 llamado");
-
         if (player == null || firePoint == null || projectilePrefab == null) return;
 
         Vector2 dir = (player.position - firePoint.position).normalized;
@@ -131,11 +135,8 @@ private void Update()
         bullet.transform.rotation = Quaternion.Euler(0f, 0f, angle);
     }
 
-    // Animation Event
     public void FireAttack2()
     {
-        Debug.Log("FireAttack2 llamado");
-
         if (player == null || firePoint == null || projectilePrefab == null) return;
 
         Vector2 baseDir = (player.position - firePoint.position).normalized;
@@ -157,7 +158,7 @@ private void Update()
         }
     }
 
-    void SpawnProjectileAtAngle(float angleDeg)
+    private void SpawnProjectileAtAngle(float angleDeg)
     {
         GameObject bullet = Instantiate(projectilePrefab, firePoint.position, Quaternion.identity);
 
@@ -176,10 +177,8 @@ private void Update()
         bullet.transform.rotation = Quaternion.Euler(0f, 0f, angleDeg);
     }
 
-    // Animation Event al final del clip de ataque
     public void EndAttack()
     {
-        Debug.Log("EndAttack llamado");
         isAttacking = false;
     }
 }

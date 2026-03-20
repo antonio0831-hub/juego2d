@@ -121,21 +121,9 @@ foreach (var h in hits)
         }
 
         // 2. Vida del boss
-        BossHealthController boss =
-            h.GetComponent<BossHealthController>() ??
-            h.GetComponentInParent<BossHealthController>() ??
-            h.transform.root.GetComponentInChildren<BossHealthController>(true);
 
-        if (boss != null && !damaged.Contains(boss))
-        {
-            damaged.Add(boss);
 
-            if (debugHits)
-                Debug.Log($"[melee_universal] Dañando BOSS: {boss.name}");
 
-            boss.TakeDamage(damage);
-            continue;
-        }
 
         // 3. Enemigos normales
         vida_enemigo ve =
